@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace MyRazorApp.Pages;
@@ -44,8 +43,8 @@ public class IndexModel : PageModel
             HttpContext.Session.SetString("IsAuthenticated", "true");
             HttpContext.Session.SetString("Username", Username);
 
-            Message = "Login successful!";
-            return RedirectToPage("/Index");
+            // Redirect to the Home page
+            return RedirectToPage("/Home");
         }
         else
         {

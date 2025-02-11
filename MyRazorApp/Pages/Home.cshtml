@@ -1,0 +1,15 @@
+@page
+@model MyRazorApp.Pages.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Home Page</h1>
+    <p>You are logged in as: <strong>@Model.Username</strong></p>
+
+    <!-- Logout Button -->
+    <form method="post" asp-page-handler="Logout">
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+</div>
