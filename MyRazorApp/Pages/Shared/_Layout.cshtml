@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body class="@ViewData["BodyClass"]">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-black border-bottom mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-page="/Index">PAYPERWORKAI</a>
+                <a class="navbar-brand" asp-page="/Index"><img src="/Assets/logo.png" alt="Payperwork Logo" class="w-52 h-auto"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,25 +19,25 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Cinematic">Cinematic</a>
+                            <a class="nav-link text-light" asp-page="/Cinematic">Cinematic</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Fashion">Fashion</a>
+                            <a class="nav-link text-light" asp-page="/Fashion">Fashion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Food">Food</a>
+                            <a class="nav-link text-light" asp-page="/Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Architecture">Architecture</a>
+                            <a class="nav-link text-light" asp-page="/Architecture">Architecture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/ScienceFiction">Science Fiction</a>
+                            <a class="nav-link text-light" asp-page="/ScienceFiction">Science Fiction</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/PersonalVideo">Personal Video</a>
+                            <a class="nav-link text-light" asp-page="/PersonalVideo">Personal Video</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Cars">Cars</a>
+                            <a class="nav-link text-light" asp-page="/Cars">Cars</a>
                         </li>
                     </ul>
                 </div>

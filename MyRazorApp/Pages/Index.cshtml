@@ -2,32 +2,40 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home Page";
+    ViewData["BodyClass"] = "login-page";  // Set the class for login page only
 }
 
-<div class="text-center">
-    <h1 class="display-4">PAYPERWORK</h1>
-</div>
 
-<!-- Login Form -->
-<div class="login-form">
-    <h2>Login</h2>
-    <form method="post" asp-page-handler="Login">
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" required />
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" required />
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-</div>
-
-<!-- Display Login Message -->
-@if (!string.IsNullOrEmpty(Model.Message))
-{
-    <div class="alert alert-info">
-        @Model.Message
+<div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 login-page">
+    <!-- Logo and Heading -->
+    <div class="text-center mb-4">
+        <img src="/Assets/logo.png" alt="Payperwork Logo" class="logo">
     </div>
-}
+
+    <!-- Login Card -->
+    <div class="login-card">
+        <h2 class="text-center text-white mb-3">Login</h2>
+
+        <form method="post" asp-page-handler="Login">
+            <div class="mb-3">
+                <label for="username" class="form-label text-white">Username</label>
+                <input type="text" class="form-control bg-dark text-white border-0" id="username" name="username" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label text-white">Password</label>
+                <input type="password" class="form-control bg-dark text-white border-0" default="Password" id="password" name="password" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+
+    <!-- Display Login Message -->
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-info mt-3" style="max-width: 400px;">
+            @Model.Message
+        </div>
+    }
+</div>
