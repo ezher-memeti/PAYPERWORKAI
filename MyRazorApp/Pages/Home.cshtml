@@ -1,26 +1,59 @@
 @page
-@model MyRazorApp.Pages.HomeModel
+@model IndexModel
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to the Home Page</h1>
-    <p>You are logged in as: <strong>@Model.Username</strong></p>
+<!-- Link the external CSS -->
+<link rel="stylesheet" href="~/css/styles.css" />
 
-    <!-- Buttons for Choices -->
-    <div class="d-grid gap-3">
-        <a class="btn btn-primary btn-lg" asp-page="/Cinematic">Cinematic</a>
-        <a class="btn btn-secondary btn-lg" asp-page="/Fashion">Fashion</a>
-        <a class="btn btn-success btn-lg" asp-page="/Food">Food</a>
-        <a class="btn btn-danger btn-lg" asp-page="/Architecture">Architecture</a>
-        <a class="btn btn-warning btn-lg" asp-page="/ScienceFiction">Science Fiction</a>
-        <a class="btn btn-info btn-lg" asp-page="/PersonalVideo">Personal Video</a>
-        <a class="btn btn-dark btn-lg" asp-page="/Cars">Cars</a>
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Column for Category Buttons -->
+        <div class="col-md-3">
+            <h3 class="text-center mb-4">Select Category</h3>
+            <div class="d-flex flex-column">
+                <button class="category-btn" onclick="updatePlaceholder('general')">General</button>
+                <button class="category-btn" onclick="updatePlaceholder('business')">Business</button>
+                <button class="category-btn" onclick="updatePlaceholder('creative')">Creative</button>
+                <button class="category-btn" onclick="updatePlaceholder('casual')">Casual</button>
+            </div>
+        </div>
+
+        <!-- Right Column for Image Upload and Text Area -->
+        <div class="col-md-9">
+            <h2 class="text-center">Upload Your Photos & Text</h2>
+
+            <form method="post" enctype="multipart/form-data">
+                <!-- File Upload for Photos -->
+                <div class="mb-3">
+                    <label class="form-label">Upload Photos</label>
+                    <div class="image-upload-container">
+                        <!-- Image Upload Square 1 -->
+                        <div class="square-img-upload">
+                            <input type="file" class="form-control" name="photo1" accept="image/*" onchange="previewImage(this, 'imgPreview1')" required>
+                            <img id="imgPreview1" alt="Preview 1" style="display:none;">
+                        </div>
+                        <!-- Image Upload Square 2 -->
+                        <div class="square-img-upload">
+                            <input type="file" class="form-control" name="photo2" accept="image/*" onchange="previewImage(this, 'imgPreview2')" required>
+                            <img id="imgPreview2" alt="Preview 2" style="display:none;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Area -->
+                <div class="mb-3">
+                    <label for="userText" class="form-label">Enter Your Text</label>
+                    <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Enter your text here..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
     </div>
-
-    <!-- Logout Button -->
-    <form method="post" asp-page-handler="Logout" class="mt-4">
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
 </div>
+
+<!-- Link the external JavaScript -->
+<script src="~/js/script.js"></script>

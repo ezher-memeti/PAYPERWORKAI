@@ -1,0 +1,96 @@
+/* Flexbox Layout for the Left and Right Columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left Column (Categories) */
+.category-btn {
+    background-color: #5B53FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+    background-color: #766FFF;
+}
+
+/* Right Column (Image Upload and Text Area) */
+.square-img-upload {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    /* Maintains aspect ratio */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    max-width: 250px;
+    /* Set max width for squares */
+    margin-right: 10px;
+    /* Space between the squares */
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Container for image upload to align them horizontally */
+.image-upload-container {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    /* Gap between squares */
+    flex-wrap: wrap;
+    /* Allow them to wrap if the screen is too small */
+}
+
+/* File input and preview image styling */
+.square-img-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.square-img-upload img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fills the square */
+}
+
+/* Form styling for the text area and buttons */
+textarea.form-control {
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #5B53FF;
+}
+
+button {
+    background-color: #5B53FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #766FFF;
+}
