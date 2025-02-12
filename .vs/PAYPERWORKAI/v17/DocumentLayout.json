@@ -40,6 +40,10 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
@@ -79,10 +83,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Program.cs",
@@ -103,7 +103,7 @@
               "RelativeDocumentMoniker": "MyRazorApp\\Pages\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\Hande\\source\\repos\\PAYPERWORKAI\\MyRazorApp\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "MyRazorApp\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T09:38:18.2Z",
               "EditorCaption": ""
