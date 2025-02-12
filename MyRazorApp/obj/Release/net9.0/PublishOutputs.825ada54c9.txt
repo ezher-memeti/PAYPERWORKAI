@@ -1,0 +1,7 @@
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/MyRazorApp
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/appsettings.Development.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/appsettings.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/MyRazorApp.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/MyRazorApp.deps.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/MyRazorApp.runtimeconfig.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/out/MyRazorApp.pdb
