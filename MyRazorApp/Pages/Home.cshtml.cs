@@ -23,4 +23,5 @@ public class HomeModel : PageModel
         // Redirect to the Index page
         return RedirectToPage("/Index");
     }
-}
+}  
+//deneme
