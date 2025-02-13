@@ -59,6 +59,16 @@ function previewImage(input, previewId, textOverlayId) {
     }
 }
 
+const promptsData = {
+    cinematic: ["Dramatic lighting", "Slow motion", "High contrast"],
+    fashion: ["Runway look", "Vogue style", "Urban chic"],
+    food: ["Gourmet plating", "Bright colors", "Close-up shot"],
+    architecture: ["Modern design", "Vintage style", "Symmetrical"],
+    sciencefiction: ["Futuristic city", "Neon glow", "Alien landscapes"],
+    personalvideo: ["Casual vlog", "Family moment", "Travel highlights"],
+    cars: ["Sports car showcase", "Classic car aesthetic", "Motion blur"]
+};
+
 function updatePlaceholder(category) {
     const placeholders = {
         cinematic: "General Image",
@@ -71,10 +81,39 @@ function updatePlaceholder(category) {
     };
 
     const newText = placeholders[category] || "Upload Image";
-
     document.getElementById("textOverlay1").textContent = newText + " 1";
     document.getElementById("textOverlay2").textContent = newText + " 2";
+
+    updatePromptDropdown(category);
 }
+
+function updatePromptDropdown(category) {
+    const promptSelect = document.getElementById("promptSelect");
+    const userText = document.getElementById("userText");
+
+    promptSelect.innerHTML = ""; // Clear previous options
+
+    if (promptsData[category]) {
+        promptsData[category].forEach(prompt => {
+            const option = document.createElement("option");
+            option.value = prompt;
+            option.textContent = prompt;
+            promptSelect.appendChild(option);
+        });
+
+        // Show dropdown if category has prompts
+        promptSelect.style.display = "block";
+    } else {
+        promptSelect.style.display = "none";
+    }
+
+    // Update the text area when prompts are selected
+    promptSelect.addEventListener("change", function () {
+        const selectedPrompts = Array.from(promptSelect.selectedOptions).map(opt => opt.value);
+        userText.value = selectedPrompts.join(", "); // Combine selected prompts
+    });
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const categories = ["Cinematic", "Fashion", "Food", "Architecture", "Sciencefiction", "Personalvideo", "Cars"];

@@ -43,9 +43,15 @@
 
                 <!-- Text Area -->
                 <div class="mb-4">
-                    @* <label for="userText" class="form-label">Enter Your Text</label> *@
-                    <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Enter your text here..."></textarea>
+                <label class="form-label">Select Effect Style</label>
+                <select id="promptSelect" class="form-control" multiple style="display: none;"></select>
                 </div>
+
+                <!-- Text Area -->
+                <div class="mb-4">
+                    <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Selected prompts will appear here..." readonly></textarea>
+                </div>
+
 
                 <!-- Submit Button -->
                 <button type="submit" class="btn btn-primary w-100">GENERATE</button>
