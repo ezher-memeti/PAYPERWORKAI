@@ -200,5 +200,5 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/ref/MyRazorApp
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/out/MyRazorApp.runtimeconfig.json
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/out/MyRazorApp.staticwebassets.endpoints.json
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-gnsutecb1t.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-ut3q91ehhc.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-o4px255i2s.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-jhe9430t50.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-lvartk2ag0.gz
