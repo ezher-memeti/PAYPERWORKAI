@@ -1,5 +1,5 @@
 @page
-@model IndexModel
+@model HomeModel
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -11,7 +11,6 @@
     <div class="row">
         <!-- Left Column for Category Buttons -->
         <div class="col-md-3">
-            @* <h3 class="text-center mb-4">Select Category</h3> *@
             <div class="d-flex flex-column">
                 <div id="category-buttons" class="d-flex flex-column"></div>
             </div>
@@ -19,13 +18,9 @@
 
         <!-- Right Column for Image Upload and Text Area -->
         <div class="col-md-9">
-            @* <h2 class="text-center">Upload Your Photos & Text</h2> *@
-
-            <form method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data" id="videoForm">
                 <!-- File Upload for Photos -->
-                <div>
-                    @* <label class="form-label">Upload Photos</label> *@
-                  <div class="image-upload-container">
+                <div class="image-upload-container">
                     <!-- Image Upload Square 1 -->
                     <div class="square-img-upload">
                         <input type="file" class="form-control" name="photo1" accept="image/*" onchange="previewImage(this, 'imgPreview1', 'textOverlay1')" required>
@@ -39,11 +34,9 @@
                         <span id="textOverlay2" class="text-placeholder">Upload Image 2</span>
                     </div>
                 </div>
-                </div>
 
                 <!-- Text Area -->
                 <div class="mb-4">
-                    @* <label for="userText" class="form-label">Enter Your Text</label> *@
                     <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Enter your text here..."></textarea>
                 </div>
 
