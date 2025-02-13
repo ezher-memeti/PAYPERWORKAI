@@ -41,3 +41,52 @@ function updatePlaceholder() {
 
     textArea.placeholder = placeholders[category] || "Enter your text here...";
 }
+
+
+function previewImage(input, previewId, textOverlayId) {
+    const file = input.files[0];
+    const previewImg = document.getElementById(previewId);
+    const textOverlay = document.getElementById(textOverlayId);
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            previewImg.src = e.target.result;
+            previewImg.style.display = "block";
+            textOverlay.style.display = "none"; // Hide text when image is uploaded
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function updatePlaceholder(category) {
+    const placeholders = {
+        cinematic: "General Image",
+        fashion: "Business Image",
+        food: "Creative Design",
+        architecture: "Casual Photo",
+        sciencefiction: "Casual Photo",
+        personalvideo: "Casual Photo",
+        cars: "Casual Photo"
+    };
+
+    const newText = placeholders[category] || "Upload Image";
+
+    document.getElementById("textOverlay1").textContent = newText + " 1";
+    document.getElementById("textOverlay2").textContent = newText + " 2";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const categories = ["Cinematic", "Fashion", "Food", "Architecture", "Sciencefiction", "Personalvideo", "Cars"];
+    const buttonContainer = document.getElementById("category-buttons");
+
+    categories.forEach(category => {
+        const button = document.createElement("button");
+        button.className = "category-btn";
+        button.textContent = category;
+        button.onclick = () => updatePlaceholder(category.toLowerCase());
+        buttonContainer.appendChild(button);
+    });
+});
+
+
