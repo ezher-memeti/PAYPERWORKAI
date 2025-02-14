@@ -1,35 +1,40 @@
-// Function to generate category options dynamically
-function generateCategories() {
+document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        { value: "Cinematic", text: "Cinematic" },
-        { value: "Fashion", text: "Fashion" },
-        { value: "Food", text: "Food" },
-        { value: "Architecture", text: "Architecture" },
-        { value: "Science fiction", text: "Science Fiction" },
-        { value: "Personal Video", text: "Personal Video" },
-        { value: "Cars", text: "Cars" },
-
+        "Cinematic", "Fashion", "Food", "Architecture",
+        "Science Fiction", "Personal Video", "Cars"
     ];
 
-    const selectElement = document.getElementById("category");
+    const buttonContainer = document.getElementById("category-buttons");
 
     categories.forEach(category => {
-        let option = document.createElement("option");
-        option.value = category.value;
-        option.textContent = category.text;
-        selectElement.appendChild(option);
+        // Create a button element
+        const button = document.createElement("button");
+        button.className = "category-btn bg-dark text-white text-center p-4 rounded";
+        button.textContent = category;
+
+        // Set the onclick handler to update the placeholder
+        button.onclick = () => updatePlaceholder(category.toLowerCase());
+        button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
+
+            // Add active class to the clicked button
+            this.classList.add("active");
+        });
+
+        // Append the button to the container
+        const colDiv = document.createElement("div");
+        colDiv.className = "col-md-4";
+        colDiv.appendChild(button);
+        buttonContainer.appendChild(colDiv);
     });
-}
+});
 
-// Call the function to generate categories when the page loads
-window.onload = generateCategories;
+function updatePlaceholder(category) {
+    const textArea = document.getElementById("userText");
+    const promptSelect = document.getElementById("promptSelect");
 
-
-function updatePlaceholder() {
-    let category = document.getElementById("category").value;
-    let textArea = document.getElementById("userText");
-
-    let placeholders = {
+    const placeholders = {
         "Cinematic": "Write something general...",
         "Fashion": "Write a professional business-related text...",
         "Food": "Unleash your creativity! Type something unique...",
@@ -39,57 +44,19 @@ function updatePlaceholder() {
         "Cars": "Write a friendly and casual message..."
     };
 
+    // Set the placeholder based on the selected category
     textArea.placeholder = placeholders[category] || "Enter your text here...";
-}
 
-
-function previewImage(input, previewId, textOverlayId) {
-    const file = input.files[0];
-    const previewImg = document.getElementById(previewId);
-    const textOverlay = document.getElementById(textOverlayId);
-
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            previewImg.src = e.target.result;
-            previewImg.style.display = "block";
-            textOverlay.style.display = "none"; // Hide text when image is uploaded
-        };
-        reader.readAsDataURL(file);
-    }
-}
-
-const promptsData = {
-    cinematic: ["Dramatic lighting", "Slow motion", "High contrast"],
-    fashion: ["Runway look", "Vogue style", "Urban chic"],
-    food: ["Gourmet plating", "Bright colors", "Close-up shot"],
-    architecture: ["Modern design", "Vintage style", "Symmetrical"],
-    sciencefiction: ["Futuristic city", "Neon glow", "Alien landscapes"],
-    personalvideo: ["Casual vlog", "Family moment", "Travel highlights"],
-    cars: ["Sports car showcase", "Classic car aesthetic", "Motion blur"]
-};
-
-function updatePlaceholder(category) {
-    const placeholders = {
-        cinematic: "General Image",
-        fashion: "Business Image",
-        food: "Creative Design",
-        architecture: "Casual Photo",
-        sciencefiction: "Casual Photo",
-        personalvideo: "Casual Photo",
-        cars: "Casual Photo"
+    // Update the dropdown with category-specific prompts
+    const promptsData = {
+        cinematic: ["Dramatic lighting", "Slow motion", "High contrast"],
+        fashion: ["Runway look", "Vogue style", "Urban chic"],
+        food: ["Gourmet plating", "Bright colors", "Close-up shot"],
+        architecture: ["Modern design", "Vintage style", "Symmetrical"],
+        sciencefiction: ["Futuristic city", "Neon glow", "Alien landscapes"],
+        personalvideo: ["Casual vlog", "Family moment", "Travel highlights"],
+        cars: ["Sports car showcase", "Classic car aesthetic", "Motion blur"]
     };
-
-    const newText = placeholders[category] || "Upload Image";
-    document.getElementById("textOverlay1").textContent = newText + " 1";
-    document.getElementById("textOverlay2").textContent = newText + " 2";
-
-    updatePromptDropdown(category);
-}
-
-function updatePromptDropdown(category) {
-    const promptSelect = document.getElementById("promptSelect");
-    const userText = document.getElementById("userText");
 
     promptSelect.innerHTML = ""; // Clear previous options
 
@@ -100,32 +67,14 @@ function updatePromptDropdown(category) {
             option.textContent = prompt;
             promptSelect.appendChild(option);
         });
-
-        // Show dropdown if category has prompts
-        promptSelect.style.display = "block";
+        promptSelect.style.display = "block"; // Show dropdown if category has prompts
     } else {
-        promptSelect.style.display = "none";
+        promptSelect.style.display = "none"; // Hide dropdown if no prompts
     }
 
     // Update the text area when prompts are selected
     promptSelect.addEventListener("change", function () {
         const selectedPrompts = Array.from(promptSelect.selectedOptions).map(opt => opt.value);
-        userText.value = selectedPrompts.join(", "); // Combine selected prompts
+        textArea.value = selectedPrompts.join(", "); // Combine selected prompts
     });
 }
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const categories = ["Cinematic", "Fashion", "Food", "Architecture", "Sciencefiction", "Personalvideo", "Cars"];
-    const buttonContainer = document.getElementById("category-buttons");
-
-    categories.forEach(category => {
-        const button = document.createElement("button");
-        button.className = "category-btn";
-        button.textContent = category;
-        button.onclick = () => updatePlaceholder(category.toLowerCase());
-        buttonContainer.appendChild(button);
-    });
-});
-
-

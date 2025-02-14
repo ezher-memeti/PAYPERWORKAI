@@ -9,18 +9,29 @@ a.navbar-brand {
 
 a {
   color: #ffffff;
+  font-family: 'Archivo';
 }
 
 .btn-primary {
   color: #ffffff;
-  background-color: #1b6ec2;
+  background-color: #ffffff;
   border-color: #1861ac;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn-login {
+  background-color: white;
+  border-radius: 15%;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #ffffff;
   border-color: #1861ac;
 }
 
