@@ -5,7 +5,7 @@
 }
 
 body {
-    /* background-color: black; */
+    background-color: black;
     /* background: url('/Assets/background.png') no-repeat center center fixed; */
 
 }
@@ -14,23 +14,103 @@ body::before {
     background: url('/Assets/background.png') no-repeat center center fixed;
 }
 
-/* Left Column (Categories) */
-.category-btn {
-    background-color: #15125a;
+button.category-btn {
+    background-color: #2A3145;
     color: white;
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: 5px;
     margin: 5px;
-    padding: 10px;
-    font-size: 16px;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s;
 }
 
-.category-btn:hover {
-    background-color: #766FFF;
+button.category-btn:hover {
+    background-color: #d3a5ff !important;
+    color: black !important;
 }
+
+button.category-btn.active {
+    background-color: #d3a5ff !important;
+    color: rgb(0, 0, 0) !important;
+    transform: scale(0.95);
+}
+
+
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff, #d3a5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Heading Styling */
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Sparkle Image Styling */
+.sparkle-img {
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    position: absolute;
+}
+
+/* Positioning Sparkles */
+.sparkle-left {
+    top: 25%;
+    left: 33%;
+}
+
+.sparkle-right {
+    top: 32%;
+    right: 34%;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+}
+
+/* Get Started Text */
+.inline-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bold-text {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Wrapper for Flexbox Alignment */
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .square-img-upload {
     width: 100%;
@@ -90,21 +170,6 @@ textarea.form-control {
     border: 1px solid #5B53FF;
 }
 
-button {
-    background: linear-gradient(90deg, #4800BA, #5B53FF);
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    padding: 12px;
-    border: none;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #766FFF;
-}
-
 /* Ensure proper spacing for the form container */
 .col-md-9 {
     padding: 20px;
@@ -137,12 +202,4 @@ textarea.form-control {
     /* Add space before the text area */
     margin-bottom: 20px;
     /* Space before the submit button */
-}
-
-/* Adjust the button spacing */
-button {
-    display: block;
-    margin: 10px auto;
-    /* Centers the button */
-    width: 100%;
 }
