@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/imageBottom.png",
+      "PackagePath": "staticwebassets/Assets/Background/imageBottom.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
+      "PackagePath": "staticwebassets/Assets/Categories/Hover/image7.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Static/image8.png",
+      "PackagePath": "staticwebassets/Assets/Categories/Static/image8.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
       "PackagePath": "staticwebassets/Assets/LogoMockup.png"
     },

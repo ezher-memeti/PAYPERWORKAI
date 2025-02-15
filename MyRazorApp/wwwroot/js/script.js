@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        { name: "Cinematic", image: "/Assets/Vector.png" },
+        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png" },
         { name: "Fashion", image: "/Assets/Vector.png" },
         { name: "Food", image: "/Assets/Vector.png" },
         { name: "Architecture", image: "/Assets/Vector.png" },
@@ -17,6 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
         button.className = "category-btn text-white text-center p-3 rounded";
         button.textContent = category.name;
         button.style.backgroundImage = `url('${category.image}')`;
+        // button.style.hover.backgroundImage = `url('${category.hover}')`
+
+        // Change background on hover
+        button.addEventListener("mouseenter", function () {
+            if (category.hover) {
+                this.style.backgroundImage = `url('${category.hover}')`;
+            }
+        });
+
+        button.addEventListener("mouseleave", function () {
+            this.style.backgroundImage = `url('${category.image}')`;
+        });
 
         // Set the onclick handler to update the placeholder
         button.onclick = () => updatePlaceholder(category.name.toLowerCase());
@@ -27,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Add active class to the clicked button
             this.classList.add("active");
+            if (category.hover) {
+                this.style.backgroundImage = `url('${category.hover}')`;
+            }
         });
 
         // Append the button to the container
@@ -87,23 +102,3 @@ function updatePlaceholder(category) {
 }
 
 
-function createSparkles() {
-    const sparkleContainer = document.getElementById("sparkle");
-    sparkleContainer.innerHTML = ""; // Clear existing sparkles
-
-    let numSparkles = window.innerWidth > 1024 ? 50 : window.innerWidth > 768 ? 30 : 15;
-
-    for (let i = 0; i < numSparkles; i++) {
-        const sparkle = document.createElement("div");
-        sparkle.classList.add("sparkle");
-
-        sparkle.style.left = `${Math.random() * 100}%`;
-        sparkle.style.top = `${Math.random() * 100}%`;
-
-        sparkleContainer.appendChild(sparkle);
-    }
-}
-
-// Recreate sparkles on window resize
-window.addEventListener("resize", createSparkles);
-document.addEventListener("DOMContentLoaded", createSparkles);

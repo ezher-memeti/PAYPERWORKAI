@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ADRKK0670lURsWFxP1QLLrj+BlbpFEEzhjuBqMirgug=",
+  "Hash": "4bN8I/Z+Rvd2Nda+Uuutca9HMntgkYpD1nf2T770C5g=",
   "Source": "MyRazorApp",
   "BasePath": "_content/MyRazorApp",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz",
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-y602t2ly0d.gz",
       "SourceId": "MyRazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MyRazorApp",
-      "RelativePath": "js/script#[.{fingerprint=fyq4bod2yf}]?.js.gz",
+      "RelativePath": "js/script#[.{fingerprint=y602t2ly0d}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "th0b59h44b",
-      "Integrity": "vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA=",
+      "Fingerprint": "2l1q967cs0",
+      "Integrity": "hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js"
@@ -1340,12 +1340,12 @@
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz",
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-51nukbmndd.gz",
       "SourceId": "MyRazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MyRazorApp",
-      "RelativePath": "css/styles#[.{fingerprint=t1fh92s1kd}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=51nukbmndd}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1354,8 +1354,8 @@
       "RelatedAsset": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ra78anpe6k",
-      "Integrity": "8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0=",
+      "Fingerprint": "x9p6gbut3p",
+      "Integrity": "i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css"
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz",
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-7ugjyx4fkr.gz",
       "SourceId": "MyRazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MyRazorApp",
-      "RelativePath": "css/site#[.{fingerprint=b3sfnhzwwu}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=7ugjyx4fkr}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8cngk82g03",
-      "Integrity": "2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0=",
+      "Fingerprint": "8ka4ncfwt1",
+      "Integrity": "eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css"
@@ -1613,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot/Assets/Background/Ellipse5.png"
     },
     {
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/imageBottom.png",
+      "SourceId": "MyRazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/",
+      "BasePath": "_content/MyRazorApp",
+      "RelativePath": "Assets/Background/imageBottom#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "znmx6fgl93",
+      "Integrity": "AW2NFB0rw9S/KcGNATTtnroq/cGWWICn8vOgCiFQODE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Assets/Background/imageBottom.png"
+    },
+    {
       "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
       "SourceId": "MyRazorApp",
       "SourceType": "Discovered",
@@ -1674,6 +1695,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Assets/background2.png"
+    },
+    {
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
+      "SourceId": "MyRazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/",
+      "BasePath": "_content/MyRazorApp",
+      "RelativePath": "Assets/Categories/Hover/image7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "38w1399hzc",
+      "Integrity": "nS9lba1ixYSUIAzAJqvv49rXhy2TIlm0AbAcVBzdVSY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Assets/Categories/Hover/image7.png"
+    },
+    {
+      "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Static/image8.png",
+      "SourceId": "MyRazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/",
+      "BasePath": "_content/MyRazorApp",
+      "RelativePath": "Assets/Categories/Static/image8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ofltoukw0",
+      "Integrity": "mb9m09rluH5WIX93oYJaC2esFSs3VaTbGGxpzwlLC+8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Assets/Categories/Static/image8.png"
     },
     {
       "Identity": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/logo.png",
@@ -1774,8 +1837,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b3sfnhzwwu",
-      "Integrity": "CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA=",
+      "Fingerprint": "7ugjyx4fkr",
+      "Integrity": "/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -1795,8 +1858,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t1fh92s1kd",
-      "Integrity": "cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE=",
+      "Fingerprint": "51nukbmndd",
+      "Integrity": "529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/styles.css"
@@ -1837,8 +1900,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fyq4bod2yf",
-      "Integrity": "d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I=",
+      "Fingerprint": "y602t2ly0d",
+      "Integrity": "esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/script.js"
@@ -3783,6 +3846,88 @@
       ]
     },
     {
+      "Route": "Assets/Background/imageBottom.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/imageBottom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "590571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW2NFB0rw9S/KcGNATTtnroq/cGWWICn8vOgCiFQODE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 20:12:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW2NFB0rw9S/KcGNATTtnroq/cGWWICn8vOgCiFQODE="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Background/imageBottom.znmx6fgl93.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/imageBottom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "590571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AW2NFB0rw9S/KcGNATTtnroq/cGWWICn8vOgCiFQODE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 20:12:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "znmx6fgl93"
+        },
+        {
+          "Name": "label",
+          "Value": "Assets/Background/imageBottom.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AW2NFB0rw9S/KcGNATTtnroq/cGWWICn8vOgCiFQODE="
+        }
+      ]
+    },
+    {
       "Route": "Assets/Background/Maskgroup.p9yrwoey4c.png",
       "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
       "Selectors": [],
@@ -4025,6 +4170,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-We8R3Y7gKYlpTdvvlr7BMMWb/dFuIP+kN2hgjxiIxEc="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Categories/Hover/image7.38w1399hzc.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nS9lba1ixYSUIAzAJqvv49rXhy2TIlm0AbAcVBzdVSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:48:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "38w1399hzc"
+        },
+        {
+          "Name": "label",
+          "Value": "Assets/Categories/Hover/image7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nS9lba1ixYSUIAzAJqvv49rXhy2TIlm0AbAcVBzdVSY="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Categories/Hover/image7.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nS9lba1ixYSUIAzAJqvv49rXhy2TIlm0AbAcVBzdVSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:48:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nS9lba1ixYSUIAzAJqvv49rXhy2TIlm0AbAcVBzdVSY="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Categories/Static/image8.9ofltoukw0.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Static/image8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mb9m09rluH5WIX93oYJaC2esFSs3VaTbGGxpzwlLC+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:48:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ofltoukw0"
+        },
+        {
+          "Name": "label",
+          "Value": "Assets/Categories/Static/image8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mb9m09rluH5WIX93oYJaC2esFSs3VaTbGGxpzwlLC+8="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Categories/Static/image8.png",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Static/image8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mb9m09rluH5WIX93oYJaC2esFSs3VaTbGGxpzwlLC+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:48:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mb9m09rluH5WIX93oYJaC2esFSs3VaTbGGxpzwlLC+8="
         }
       ]
     },
@@ -4357,13 +4666,13 @@
       ]
     },
     {
-      "Route": "css/site.b3sfnhzwwu.css",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz",
+      "Route": "css/site.7ugjyx4fkr.css",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-7ugjyx4fkr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001001001001"
+          "Quality": "0.001083423619"
         }
       ],
       "ResponseHeaders": [
@@ -4373,15 +4682,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "998"
+          "Value": "922"
         },
         {
           "Name": "ETag",
-          "Value": "\"2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0=\""
+          "Value": "\"eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4401,13 +4710,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA=\""
+          "Value": "W/\"/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b3sfnhzwwu"
+          "Value": "7ugjyx4fkr"
         },
         {
           "Name": "label",
@@ -4415,12 +4724,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA="
+          "Value": "sha256-/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM="
         }
       ]
     },
     {
-      "Route": "css/site.b3sfnhzwwu.css",
+      "Route": "css/site.7ugjyx4fkr.css",
       "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4430,7 +4739,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2812"
+          "Value": "2663"
         },
         {
           "Name": "Content-Type",
@@ -4438,11 +4747,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA=\""
+          "Value": "\"/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4452,7 +4761,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b3sfnhzwwu"
+          "Value": "7ugjyx4fkr"
         },
         {
           "Name": "label",
@@ -4460,13 +4769,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA="
+          "Value": "sha256-/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM="
         }
       ]
     },
     {
-      "Route": "css/site.b3sfnhzwwu.css.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz",
+      "Route": "css/site.7ugjyx4fkr.css.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-7ugjyx4fkr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4475,7 +4784,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "998"
+          "Value": "922"
         },
         {
           "Name": "Content-Type",
@@ -4483,11 +4792,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0=\""
+          "Value": "\"eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4505,7 +4814,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b3sfnhzwwu"
+          "Value": "7ugjyx4fkr"
         },
         {
           "Name": "label",
@@ -4513,18 +4822,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0="
+          "Value": "sha256-eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-7ugjyx4fkr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001001001001"
+          "Quality": "0.001083423619"
         }
       ],
       "ResponseHeaders": [
@@ -4534,15 +4843,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "998"
+          "Value": "922"
         },
         {
           "Name": "ETag",
-          "Value": "\"2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0=\""
+          "Value": "\"eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4562,13 +4871,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA=\""
+          "Value": "W/\"/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA="
+          "Value": "sha256-/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM="
         }
       ]
     },
@@ -4583,7 +4892,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2812"
+          "Value": "2663"
         },
         {
           "Name": "Content-Type",
@@ -4591,11 +4900,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA=\""
+          "Value": "\"/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4605,13 +4914,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CTnjeoKvYJy2Lf4iilyU7eX01vSVrYUWywk641gKAcA="
+          "Value": "sha256-/2GGFcV0txJFoxewIhwDQ+OLRLRjBHnLT4rTqjxH7nM="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-7ugjyx4fkr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4620,7 +4929,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "998"
+          "Value": "922"
         },
         {
           "Name": "Content-Type",
@@ -4628,11 +4937,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0=\""
+          "Value": "\"eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 19:32:02 GMT"
+          "Value": "Sat, 15 Feb 2025 21:41:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4650,18 +4959,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2FFARGScLyzSVEnctR7Yrx8fnfTsTOTHS8UfIjvICa0="
+          "Value": "sha256-eCU7UvjLV2UH6/ZQo3m3JBLYQ/+ZWAnSeQgJOFNDSYs="
         }
       ]
     },
     {
-      "Route": "css/styles.css",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz",
+      "Route": "css/styles.51nukbmndd.css",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-51nukbmndd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000659630607"
+          "Quality": "0.000669344043"
         }
       ],
       "ResponseHeaders": [
@@ -4671,19 +4980,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1515"
+          "Value": "1493"
         },
         {
           "Name": "ETag",
-          "Value": "\"8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0=\""
+          "Value": "\"i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4699,18 +5008,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE=\""
+          "Value": "W/\"529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "51nukbmndd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE="
+          "Value": "sha256-529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4="
         }
       ]
     },
     {
-      "Route": "css/styles.css",
+      "Route": "css/styles.51nukbmndd.css",
       "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4720,7 +5037,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4716"
+          "Value": "4582"
         },
         {
           "Name": "Content-Type",
@@ -4728,121 +5045,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE=\""
+          "Value": "\"529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1515"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.t1fh92s1kd.css",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000659630607"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1515"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t1fh92s1kd"
+          "Value": "51nukbmndd"
         },
         {
           "Name": "label",
@@ -4850,13 +5067,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE="
+          "Value": "sha256-529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4="
         }
       ]
     },
     {
-      "Route": "css/styles.t1fh92s1kd.css",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
+      "Route": "css/styles.51nukbmndd.css.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-51nukbmndd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4865,7 +5082,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4716"
+          "Value": "1493"
         },
         {
           "Name": "Content-Type",
@@ -4873,56 +5090,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE=\""
+          "Value": "\"i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "t1fh92s1kd"
-        },
-        {
-          "Name": "label",
-          "Value": "css/styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cVekPI0EEU5h8IJy/a51C6ztM4AuJZhYpuhINssjAcE="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.t1fh92s1kd.css.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1515"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 17:58:41 GMT"
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4940,7 +5112,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t1fh92s1kd"
+          "Value": "51nukbmndd"
         },
         {
           "Name": "label",
@@ -4948,7 +5120,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8+wAsipc8zgsPArSaTtqmi1Rpaz9lie6ziB4117Jrd0="
+          "Value": "sha256-i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-51nukbmndd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000669344043"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1493"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-529w2FOLvU/AL0+EVoFbVAuNZYDZbC71Zd/QO3xY3/4="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-51nukbmndd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i/7j2ZP0RhnNAE9udQ2zsS2xBwJ4xUZzYXN1yKCsNvE="
         }
       ]
     },
@@ -5251,13 +5560,13 @@
       ]
     },
     {
-      "Route": "js/script.fyq4bod2yf.js",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz",
+      "Route": "js/script.js",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-y602t2ly0d.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000637348630"
+          "Quality": "0.000644329897"
         }
       ],
       "ResponseHeaders": [
@@ -5267,19 +5576,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1568"
+          "Value": "1551"
         },
         {
           "Name": "ETag",
-          "Value": "\"vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA=\""
+          "Value": "\"hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5295,26 +5604,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I=\""
+          "Value": "W/\"esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "fyq4bod2yf"
-        },
-        {
-          "Name": "label",
-          "Value": "js/script.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I="
+          "Value": "sha256-esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ="
         }
       ]
     },
     {
-      "Route": "js/script.fyq4bod2yf.js",
+      "Route": "js/script.js",
       "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5324,7 +5625,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4547"
+          "Value": "4680"
         },
         {
           "Name": "Content-Type",
@@ -5332,11 +5633,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I=\""
+          "Value": "\"esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/script.js.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-y602t2ly0d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA="
+        }
+      ]
+    },
+    {
+      "Route": "js/script.y602t2ly0d.js",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-y602t2ly0d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000644329897"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1551"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y602t2ly0d"
+        },
+        {
+          "Name": "label",
+          "Value": "js/script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/script.y602t2ly0d.js",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5346,7 +5792,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fyq4bod2yf"
+          "Value": "y602t2ly0d"
         },
         {
           "Name": "label",
@@ -5354,13 +5800,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I="
+          "Value": "sha256-esJyTG2ltVdU4vpnpoZHh2jJ62ck1vectdYBfnRzuyQ="
         }
       ]
     },
     {
-      "Route": "js/script.fyq4bod2yf.js.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz",
+      "Route": "js/script.y602t2ly0d.js.gz",
+      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-y602t2ly0d.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5369,7 +5815,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1568"
+          "Value": "1551"
         },
         {
           "Name": "Content-Type",
@@ -5377,11 +5823,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA=\""
+          "Value": "\"hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
+          "Value": "Sat, 15 Feb 2025 22:14:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5399,7 +5845,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fyq4bod2yf"
+          "Value": "y602t2ly0d"
         },
         {
           "Name": "label",
@@ -5407,144 +5853,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA="
-        }
-      ]
-    },
-    {
-      "Route": "js/script.js",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000637348630"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1568"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I="
-        }
-      ]
-    },
-    {
-      "Route": "js/script.js",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4547"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d/wqoIOnk1kSDZpJfv7VXUBzrLdbkAIeKAMNt+JYd1I="
-        }
-      ]
-    },
-    {
-      "Route": "js/script.js.gz",
-      "AssetFile": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1568"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 15:30:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vy+PVlFQqYLypkl9mOh0ckqX1svHESUELye5IoEsgnA="
+          "Value": "sha256-hntJrh1J8zEW1Qv9he9DRLDADmSw9TDaRgutWjherGA="
         }
       ]
     },
