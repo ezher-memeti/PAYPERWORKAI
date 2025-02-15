@@ -15,7 +15,7 @@ body::before {
 }
 
 button.category-btn {
-    background-color: #2A3145;
+    background-color: #2A3145 !important;
     color: white;
     width: 100%;
     height: 100%;
@@ -28,12 +28,12 @@ button.category-btn {
 }
 
 button.category-btn:hover {
-    background-color: #d3a5ff !important;
+    background-color: #AEA9DD !important;
     color: black !important;
 }
 
 button.category-btn.active {
-    background-color: #d3a5ff !important;
+    background-color: #AEA9DD !important;
     color: rgb(0, 0, 0) !important;
     transform: scale(0.95);
 }
@@ -42,7 +42,7 @@ button.category-btn.active {
 
 /* Gradient Text */
 .gradient-text {
-    background: linear-gradient(90deg, #ffffff, #d3a5ff);
+    background: linear-gradient(90deg, #ffffff, #AEA9DD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -53,7 +53,6 @@ button.category-btn.active {
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.5;
-    margin-top: 3%;
     margin-bottom: 3%;
     position: relative;
     display: inline-block;
@@ -62,7 +61,7 @@ button.category-btn.active {
 
 /* Sparkle Image Styling */
 .sparkle-img {
-    width: 50px;
+    width: 60px;
     /* Adjust size */
     height: auto;
     position: absolute;
@@ -71,16 +70,17 @@ button.category-btn.active {
 /* Positioning Sparkles */
 .sparkle-left {
     top: 25%;
-    left: 33%;
+    left: 28%;
 }
 
 .sparkle-right {
     top: 32%;
-    right: 34%;
+    right: 30%;
 }
 
 /* Subtitle Styling */
 .subtitle {
+    display: inline;
     font-size: 1rem;
     font-weight: 400;
     color: #bbb;
@@ -88,7 +88,7 @@ button.category-btn.active {
 
 /* Get Started Text */
 .inline-text {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
