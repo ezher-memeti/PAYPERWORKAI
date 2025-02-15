@@ -44,9 +44,11 @@
                         @if (isAuthenticated)
                         {
                             <span class="nav-link text-light">Welcome, @username</span>
+                             <li class="nav-item px-2">
                             <form method="post" asp-page="/Index" asp-page-handler="Logout" class="d-inline">
-                                <button type="submit" class="btn btn-danger px-4 mg-4">Logout</button>
+                                <button type="submit" id="btn-login" class="btn px-4 mg-4">Logout</button>
                             </form>
+                            </li>
                         }
                         else
                         {
