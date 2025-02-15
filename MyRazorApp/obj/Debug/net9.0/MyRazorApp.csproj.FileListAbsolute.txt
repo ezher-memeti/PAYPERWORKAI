@@ -199,7 +199,6 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/ref/MyRazorApp
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/1asv1zt3du-x0bkw538x5.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/mtd3vu1hqi-i3k3d08gti.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/vm5ehv0xk4-i3k3d08gti.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-wuc0niuevh.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/bin/Debug/net9.0/out/web.config
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/bin/Debug/net9.0/appsettings.Development.json
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/bin/Debug/net9.0/appsettings.json
@@ -307,4 +306,5 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/MyRazorApp.pd
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/MyRazorApp.genruntimeconfig.cache
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/ref/MyRazorApp.dll
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-fyq4bod2yf.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-bvym0me5d9.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-t1fh92s1kd.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-b3sfnhzwwu.gz

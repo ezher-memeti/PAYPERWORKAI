@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets/Assets/Background/Ellipse5.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
+      "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
       "PackagePath": "staticwebassets/Assets/LogoMockup.png"
     },
