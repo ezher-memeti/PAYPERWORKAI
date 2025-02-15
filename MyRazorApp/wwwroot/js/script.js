@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        "Cinematic", "Fashion", "Food", "Architecture",
-        "Science Fiction", "Personal Video", "Cars"
+        { name: "Cinematic", image: "/Assets/Vector.png" },
+        { name: "Fashion", image: "/Assets/Vector.png" },
+        { name: "Food", image: "/Assets/Vector.png" },
+        { name: "Architecture", image: "/Assets/Vector.png" },
+        { name: "Science Fiction", image: "/Assets/Vector.png" },
+        { name: "Personal Video", image: "/Assets/Vector.png" },
+        { name: "Cars", image: "/Assets/Vector.png" }
     ];
 
     const buttonContainer = document.getElementById("category-buttons");
@@ -9,11 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     categories.forEach(category => {
         // Create a button element
         const button = document.createElement("button");
-        button.className = "category-btn bg-dark text-white text-center p-4 rounded";
-        button.textContent = category;
+        button.className = "category-btn text-white text-center p-3 rounded";
+        button.textContent = category.name;
+        button.style.backgroundImage = `url('${category.image}')`;
 
         // Set the onclick handler to update the placeholder
-        button.onclick = () => updatePlaceholder(category.toLowerCase());
+        button.onclick = () => updatePlaceholder(category.name.toLowerCase());
+
         button.addEventListener("click", function () {
             // Remove active class from all buttons
             document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
@@ -24,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append the button to the container
         const colDiv = document.createElement("div");
-        colDiv.className = "col-md-4";
+        colDiv.className = "col-md-3"; /* 3 buttons per row */
         colDiv.appendChild(button);
         buttonContainer.appendChild(colDiv);
     });
