@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddHttpContextAccessor();
 // Add session support
 builder.Services.AddSession(options =>
 {
@@ -12,6 +12,7 @@ builder.Services.AddSession(options =>
 });
 
 var app = builder.Build();
+builder.Services.AddHttpContextAccessor();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -24,11 +25,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();
 app.UseAuthorization();
 
 // Enable session middleware
-app.UseSession();
+
 
 app.MapRazorPages();
 
