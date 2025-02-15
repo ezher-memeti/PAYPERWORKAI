@@ -246,13 +246,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-<<<<<<< HEAD
-      <Fingerprint>n00duddd8n</Fingerprint>
-      <Integrity>qXzqqzjVi3ahxFq4vGpVu05SzylYKrO41wqFI2SAgf8=</Integrity>
-=======
-      <Fingerprint>koleg0nrpj</Fingerprint>
-      <Integrity>RKVU6d2fMDAUWSNoZmbXIeb4iCgprFWj4ULrNMrbhqo=</Integrity>
->>>>>>> origin/main
+      <Fingerprint>ua95peqzca</Fingerprint>
+      <Integrity>Vs93o2eCMSRk7KBORzDxsj9mz3isWqdNRxlfj+lSa9c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -269,8 +264,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vur0m4faqr</Fingerprint>
-      <Integrity>B2NlWmPvC39uxezzdHdJzp6Mh9OxTusYzf9w1TzyWGM=</Integrity>
+      <Fingerprint>wy61d2w48i</Fingerprint>
+      <Integrity>iE6Oo8r9+s9WHSSeDhdZt/UbsDGLeeWZ1MWTP2U609U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</OriginalItemSpec>
@@ -305,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1rs0os2f3t</Fingerprint>
-      <Integrity>c4ZTGVr+/XKZZx7RaLDpqKJEA5uaocquVfBd5BYyxzM=</Integrity>
+      <Fingerprint>r70pd1u7yq</Fingerprint>
+      <Integrity>qcEkY01o3efgxEhu5HhXX7lU7AajmCaL+hnkngs1qDY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</OriginalItemSpec>

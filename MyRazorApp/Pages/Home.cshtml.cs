@@ -24,4 +24,6 @@ public class HomeModel : PageModel
         return RedirectToPage("/Index");
     }
 }  
+
+
 //deneme

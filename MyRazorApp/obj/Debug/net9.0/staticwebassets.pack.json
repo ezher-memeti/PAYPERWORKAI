@@ -1,41 +1,36 @@
 {
   "Files": [
     {
-<<<<<<< HEAD
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/scopedcss/projectbundle/MyRazorApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/MyRazorApp.svp39k2inr.bundle.scp.css"
-=======
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/scopedcss/projectbundle/MyRazorApp.bundle.scp.css",
       "PackagePath": "staticwebassets/MyRazorApp.i3k3d08gti.bundle.scp.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/2.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/2.png",
       "PackagePath": "staticwebassets/Assets/2.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/3.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/3.png",
       "PackagePath": "staticwebassets/Assets/3.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse1.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse1.png",
       "PackagePath": "staticwebassets/Assets/Background/Ellipse1.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse2.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse2.png",
       "PackagePath": "staticwebassets/Assets/Background/Ellipse2.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse3.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse3.png",
       "PackagePath": "staticwebassets/Assets/Background/Ellipse3.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse4.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse4.png",
       "PackagePath": "staticwebassets/Assets/Background/Ellipse4.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse5.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Ellipse5.png",
       "PackagePath": "staticwebassets/Assets/Background/Ellipse5.png"
->>>>>>> origin/main
     },
     {
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
@@ -66,27 +61,19 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-<<<<<<< HEAD
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/js/site.js",
-=======
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/styles.css",
-      "PackagePath": "staticwebassets/css/styles.css"
-    },
-    {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
-    },
-    {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/js/script.js",
       "PackagePath": "staticwebassets/js/script.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/js/site.js",
->>>>>>> origin/main
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
