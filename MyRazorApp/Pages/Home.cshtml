@@ -1,26 +1,86 @@
 @page
-@model MyRazorApp.Pages.HomeModel
+@model IndexModel
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to the Home Page</h1>
-    <p>You are logged in as: <strong>@Model.Username</strong></p>
+<!-- Link the external CSS -->
+<link rel="stylesheet" href="~/css/styles.css" />
 
-    <!-- Buttons for Choices -->
-    <div class="d-grid gap-3">
-        <a class="btn btn-primary btn-lg" asp-page="/Cinematic">Cinematic</a>
-        <a class="btn btn-secondary btn-lg" asp-page="/Fashion">Fashion</a>
-        <a class="btn btn-success btn-lg" asp-page="/Food">Food</a>
-        <a class="btn btn-danger btn-lg" asp-page="/Architecture">Architecture</a>
-        <a class="btn btn-warning btn-lg" asp-page="/ScienceFiction">Science Fiction</a>
-        <a class="btn btn-info btn-lg" asp-page="/PersonalVideo">Personal Video</a>
-        <a class="btn btn-dark btn-lg" asp-page="/Cars">Cars</a>
+<!-- Hero Section -->
+    <section class="text-center text-white mt-5">
+        <h2 class="subtitle">Bring Your Vision to Life with AI-Generated Videos</h2>
+        
+        <!-- Main Heading with Sparkles -->
+        <div class="hero-container">
+            <img src="/Assets/3.png" alt="Sparkle Left" class="sparkle-img sparkle-left">
+            <h1 class="hero-heading">
+                <span class="gradient-text d-block display-4">From Static</span> 
+                <span class="gradient-text d-block display-4">to Cinematic</span>
+            </h1>
+            <img src="/Assets/2.png" alt="Sparkle Right" class="sparkle-img sparkle-right">
+        </div>
+
+        <!-- Subtitle with "Get Started" in Gradient -->
+      <p class="inline-text">
+            <span class="gradient-text fw-bold me-3 display-5">Get Started</span> 
+            <span class="subtitle text-light fs-7">Selecta category, upload your images, and let our AI transform them into a stunning video.</span>
+        </p>
+    </section>
+
+    <!-- Categories Grid -->
+   <section class="container mt-5">
+    <div class="row g-4" id="category-buttons">
+        <!-- Category buttons will be inserted here -->
     </div>
+</section>
 
-    <!-- Logout Button -->
-    <form method="post" asp-page-handler="Logout" class="mt-4">
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Column for Category Buttons -->
+        <!-- Right Column for Image Upload and Text Area -->
+        <div class="col-md-9">
+            @* <h2 class="text-center">Upload Your Photos & Text</h2> *@
+
+            <form method="post" enctype="multipart/form-data">
+                <!-- File Upload for Photos -->
+                <div>
+                    @* <label class="form-label">Upload Photos</label> *@
+                  <div class="image-upload-container">
+                    <!-- Image Upload Square 1 -->
+                    <div class="square-img-upload">
+                        <input type="file" class="form-control" name="photo1" accept="image/*" onchange="previewImage(this, 'imgPreview1', 'textOverlay1')" required>
+                        <img id="imgPreview1" src="" alt="Preview 1">
+                        <span id="textOverlay1" class="text-placeholder">Upload Image 1</span>
+                    </div>
+                    <!-- Image Upload Square 2 -->
+                    <div class="square-img-upload">
+                        <input type="file" class="form-control" name="photo2" accept="image/*" onchange="previewImage(this, 'imgPreview2', 'textOverlay2')" required>
+                        <img id="imgPreview2" src="" alt="Preview 2">
+                        <span id="textOverlay2" class="text-placeholder">Upload Image 2</span>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Text Area -->
+                <div class="mb-4">
+                <label class="form-label">Select Effect Style</label>
+                <select id="promptSelect" class="form-control" multiple style="display: none;"></select>
+                </div>
+
+                <!-- Text Area -->
+                <div class="mb-4">
+                    <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Selected prompts will appear here..." readonly></textarea>
+                </div>
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">GENERATE</button>
+            </form>
+        </div>
+    </div>
 </div>
+
+<!-- Link the external JavaScript -->
+<script src="~/js/script.js"></script>

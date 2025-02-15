@@ -10,18 +10,29 @@ a.navbar-brand[b-njvsipdyeh] {
 
 a[b-njvsipdyeh] {
   color: #ffffff;
+  font-family: 'Archivo';
 }
 
 .btn-primary[b-njvsipdyeh] {
   color: #ffffff;
-  background-color: #1b6ec2;
+  background-color: #ffffff;
   border-color: #1861ac;
+}
+
+.container[b-njvsipdyeh] {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn-login[b-njvsipdyeh] {
+  background-color: white;
+  border-radius: 15%;
 }
 
 .nav-pills .nav-link.active[b-njvsipdyeh],
 .nav-pills .show>.nav-link[b-njvsipdyeh] {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #ffffff;
   border-color: #1861ac;
 }
 

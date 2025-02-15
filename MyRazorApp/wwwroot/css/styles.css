@@ -1,0 +1,205 @@
+/* Flexbox Layout for the Left and Right Columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: black;
+    /* background: url('/Assets/background.png') no-repeat center center fixed; */
+
+}
+
+body::before {
+    background: url('/Assets/background.png') no-repeat center center fixed;
+}
+
+button.category-btn {
+    background-color: #2A3145;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button.category-btn:hover {
+    background-color: #d3a5ff !important;
+    color: black !important;
+}
+
+button.category-btn.active {
+    background-color: #d3a5ff !important;
+    color: rgb(0, 0, 0) !important;
+    transform: scale(0.95);
+}
+
+
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff, #d3a5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Heading Styling */
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Sparkle Image Styling */
+.sparkle-img {
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    position: absolute;
+}
+
+/* Positioning Sparkles */
+.sparkle-left {
+    top: 25%;
+    left: 33%;
+}
+
+.sparkle-right {
+    top: 32%;
+    right: 34%;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+}
+
+/* Get Started Text */
+.inline-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bold-text {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Wrapper for Flexbox Alignment */
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.square-img-upload {
+    width: 100%;
+    max-width: 350px;
+    /* Adjust width */
+    height: 15rem;
+    /* Set a fixed height */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    border: 1px solid #5B53FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for image upload to align them horizontally */
+.image-upload-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    /* Gap between squares */
+
+    /* Allow them to wrap if the screen is too small */
+}
+
+/* File input and preview image styling */
+.square-img-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.square-img-upload img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Form styling for the text area and buttons */
+textarea.form-control {
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #5B53FF;
+}
+
+/* Ensure proper spacing for the form container */
+.col-md-9 {
+    padding: 20px;
+    margin-top: 20px;
+    /* Adds space between the category selection and form */
+}
+
+/* Improve spacing between the upload section and text area */
+.image-upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Increase spacing between image upload sections */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    margin-bottom: 20px;
+    /* Space between the image upload and text area */
+}
+
+/* Ensuring the text area does not stick to other elements */
+textarea.form-control {
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #5B53FF;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    /* Add space before the text area */
+    margin-bottom: 20px;
+    /* Space before the submit button */
+}
