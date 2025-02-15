@@ -1,14 +1,22 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    var username = HttpContextAccessor.HttpContext?.Session.GetString("Username");
+    var isAuthenticated = HttpContextAccessor.HttpContext?.Session.GetString("IsAuthenticated") == "true";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] PAYPERWORKAI</title>
+    <title>@ViewData["Title"] - PAYPERWORKAI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body class="@ViewData["BodyClass"]">
    <header>
@@ -31,14 +39,29 @@
                     <li class="nav-item px-2">
                         <a class="nav-link text-light" asp-page="/Cinematic">FAQ</a>
                     </li>
-                    <!-- Sign In button -->
-                    <a asp-page="/SignIn" id="btn-login" class="btn px-4 mg-4">Sign In</a>
-            
+
+                    <!-- User Authentication Section -->
+                    <li class="nav-item px-2">
+                        @if (isAuthenticated)
+                        {
+                            <span class="nav-link text-light">Welcome, @username</span>
+                             <li class="nav-item px-2">
+                            <form method="post" asp-page="/Index" asp-page-handler="Logout" class="d-inline">
+                                <button type="submit" id="btn-login" class="btn px-4 mg-4">Logout</button>
+                            </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <a asp-page="/SignIn" id="btn-login" class="btn px-4 mg-4">Sign In</a>
+                        }
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -54,5 +77,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

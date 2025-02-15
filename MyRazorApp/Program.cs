@@ -23,6 +23,7 @@ builder.Services.AddSingleton<VideoGenerationService>();
 builder.Services.AddControllers();
 
 
+builder.Services.AddHttpContextAccessor();
 // Add session support
 builder.Services.AddSession(options =>
 {
@@ -32,6 +33,7 @@ builder.Services.AddSession(options =>
 });
 
 var app = builder.Build();
+builder.Services.AddHttpContextAccessor();
 
 app.UseRouting();
 
@@ -55,10 +57,13 @@ app.UseStaticFiles();
 app.MapControllers();
 app.UseStaticFiles();
 
+
+app.UseRouting();
+app.UseSession();
 app.UseAuthorization();
 
 // Enable session middleware
-app.UseSession();
+
 
 
 app.MapRazorPages();

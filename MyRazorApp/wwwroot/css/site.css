@@ -23,12 +23,17 @@ html {
 }
 
 #btn-login {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(170, 170, 170), white);
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+
 }
 
 #btn-login:hover {
-  color: rgb(73, 73, 73);
-  background-color: #d2d2d2;
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+  background: rgb(69, 69, 69);
+  ;
 }
 
 body {
@@ -39,24 +44,27 @@ body {
     url('/Assets/Background/Ellipse2.png'),
     url('/Assets/Background/Ellipse1.png'),
     url('/Assets/Background/Ellipse4.png'),
-    url('/Assets/Background/Ellipse5.png');
+    url('/Assets/Background/Ellipse5.png'),
+    url('/Assets/Background/Maskgroup.png');
   background-position:
-    top -10% left,
-    /* First image */
-    top -10% left,
-    /* Second image */
-    top -10% left,
-    /* Third image */
-    top -10% right,
 
-    top -10% right;
+    top left,
+    /* First image */
+    top left,
+    /* Second image */
+    top left,
+    /* Third image */
+    top right,
+
+    top right,
+    top center;
 
   /* Fourth image */
 
   background-repeat: no-repeat;
 
   background-size:
-    500px 300px,
+    600px 400px,
     /* First image */
     900px 300px,
     /* Second image */
@@ -64,7 +72,8 @@ body {
     /* Third image */
     1500px 400px,
 
-    1300px 300px;
+    1300px 300px,
+    100% auto;
   /* Fourth image */
 
 }

@@ -33,7 +33,15 @@
       "PackagePath": "staticwebassets/Assets/Background/Ellipse5.png"
     },
     {
+<<<<<<< HEAD
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
+=======
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
+      "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
+>>>>>>> 4587882dc49c99d7d1b4552655464d7a72a2c6e6
       "PackagePath": "staticwebassets/Assets/LogoMockup.png"
     },
     {
@@ -41,7 +49,15 @@
       "PackagePath": "staticwebassets/Assets/Rectangle (2).png"
     },
     {
+<<<<<<< HEAD
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/background.png",
+=======
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Vector.png",
+      "PackagePath": "staticwebassets/Assets/Vector.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/background.png",
+>>>>>>> 4587882dc49c99d7d1b4552655464d7a72a2c6e6
       "PackagePath": "staticwebassets/Assets/background.png"
     },
     {
