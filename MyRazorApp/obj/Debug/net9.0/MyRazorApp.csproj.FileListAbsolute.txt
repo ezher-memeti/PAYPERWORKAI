@@ -306,5 +306,5 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\refint\MyRazo
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.pdb
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.genruntimeconfig.cache
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\ref\MyRazorApp.dll
-C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\0vk2sd0hj0-mupx2vcfvl.gz
-C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\y5qnyiqosw-ljvtk46xpc.gz
+C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\y5qnyiqosw-7ibsbr6upu.gz
+C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\0vk2sd0hj0-yazs9ka5y3.gz
