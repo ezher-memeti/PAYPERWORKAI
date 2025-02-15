@@ -78,3 +78,25 @@ function updatePlaceholder(category) {
         textArea.value = selectedPrompts.join(", "); // Combine selected prompts
     });
 }
+
+
+function createSparkles() {
+    const sparkleContainer = document.getElementById("sparkle");
+    sparkleContainer.innerHTML = ""; // Clear existing sparkles
+
+    let numSparkles = window.innerWidth > 1024 ? 50 : window.innerWidth > 768 ? 30 : 15;
+
+    for (let i = 0; i < numSparkles; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.classList.add("sparkle");
+
+        sparkle.style.left = `${Math.random() * 100}%`;
+        sparkle.style.top = `${Math.random() * 100}%`;
+
+        sparkleContainer.appendChild(sparkle);
+    }
+}
+
+// Recreate sparkles on window resize
+window.addEventListener("resize", createSparkles);
+document.addEventListener("DOMContentLoaded", createSparkles);
