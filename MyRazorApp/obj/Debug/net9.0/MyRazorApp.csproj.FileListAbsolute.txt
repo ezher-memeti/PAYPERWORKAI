@@ -331,7 +331,6 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.so
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\scopedcss\bundle\MyRazorApp.styles.css
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\scopedcss\projectbundle\MyRazorApp.bundle.scp.css
-C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\zx871nmwpl-x99ql3d78j.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\y5qnyiqosw-y4ncykmrsk.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\dlkj7xg1ly-61n19gt1b8.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\0vk2sd0hj0-pzqk3spr1v.gz
@@ -411,3 +410,4 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\refint\MyRazo
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.pdb
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.genruntimeconfig.cache
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\ref\MyRazorApp.dll
+C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\zx871nmwpl-estmavhz95.gz

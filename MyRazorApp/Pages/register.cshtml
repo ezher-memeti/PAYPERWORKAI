@@ -1,0 +1,67 @@
+@page
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+    ViewData["BodyClass"] = "login-page";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<section class="text-center text-white mt-5">
+    <h2 class="subtitle mb-0">Start Creating Amazing Content with AI</h2>
+    <div class="hero-container">
+        <h1 class="hero-heading">
+            <span class="gradient-text d-block display-1">Join The Creative</span> 
+            <span class="gradient-text d-block display-1">Community</span>
+        </h1>
+    </div>
+</section>
+
+<div class="container mt-2 mb-5 d-flex flex-column align-items-center justify-content-center login-page">
+    <!-- Register Card -->
+    <div class="login-card">
+        <h2 class="text-center text-white mb-4">Create Account</h2>
+        
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label text-white">Email</label>
+                <input asp-for="Email" class="form-control bg-dark text-white border-0" />
+                <span asp-validation-for="Email" class="text-danger small d-block mt-1"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-white">Username</label>
+                <input asp-for="Username" class="form-control bg-dark text-white border-0" />
+                <span asp-validation-for="Username" class="text-danger small d-block mt-1"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-white">Password</label>
+                <input asp-for="Password" type="password" class="form-control bg-dark text-white border-0" />
+                <span asp-validation-for="Password" class="text-danger small d-block mt-1"></span>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-white">Confirm Password</label>
+                <input asp-for="ConfirmPassword" type="password" class="form-control bg-dark text-white border-0" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger small d-block mt-1"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+
+        <div class="text-center mt-4">
+            <p class="text-white mb-0">Already have an account? 
+                <a asp-page="/Index" class="text-primary text-decoration-none">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-info mt-3" style="max-width: 400px;">
+            @Model.Message
+        </div>
+    }
+</div>
