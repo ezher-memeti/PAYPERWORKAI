@@ -225,7 +225,10 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/MyRazorApp.so
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/scopedcss/bundle/MyRazorApp.styles.css
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/scopedcss/projectbundle/MyRazorApp.bundle.scp.css
+C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-wuc0niuevh.gz
+C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-ob9fdkpku1.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/dlkj7xg1ly-61n19gt1b8.gz
+C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-dsfm0kozce.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/uxmzg42c62-xtxxf3hu2r.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/dgwcrni30y-t1cqhe9u97.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/compressed/l7xfqyekqz-c2jlpeoesf.gz
@@ -303,6 +306,7 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/MyRazorApp.pd
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/MyRazorApp.genruntimeconfig.cache
 C:/Users/yasir/vscodeide/PAYPERWORKAI2/MyRazorApp/obj/Debug/net9.0/ref/MyRazorApp.dll
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/zx871nmwpl-x99ql3d78j.gz
+<<<<<<< HEAD
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-w5q3gax1q9.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-dayug1xbhx.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\bin\Debug\net9.0\out\web.config
@@ -411,3 +415,7 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.pd
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\MyRazorApp.genruntimeconfig.cache
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\ref\MyRazorApp.dll
 C:\Users\yasir\vscodeide\PAYPERWORKAI2\MyRazorApp\obj\Debug\net9.0\compressed\zx871nmwpl-estmavhz95.gz
+=======
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-9xl4kyh2w6.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-4dip0ons93.gz
+>>>>>>> b22c77a3eae15fe306c838e60d8a5b492c61f456

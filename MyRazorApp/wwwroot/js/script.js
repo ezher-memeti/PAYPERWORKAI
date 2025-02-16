@@ -1,72 +1,140 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png" },
+        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
         { name: "Fashion", image: "/Assets/Vector.png" },
-        { name: "Food", image: "/Assets/Vector.png" },
-        { name: "Architecture", image: "/Assets/Vector.png" },
-        { name: "Science Fiction", image: "/Assets/Vector.png" },
+        { name: "Food", image: "MyRazorApp/wwwroot/Assets/Bildschirmfoto 2025-02-01 um 17.14.24 2.png", video: "/Assets/Categories/videos/Food.mp4" },
+        { name: "Architecture", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Architecture.mp4" },
+        { name: "Science Fiction", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/SciFi.mp4" },
         { name: "Personal Video", image: "/Assets/Vector.png" },
-        { name: "Cars", image: "/Assets/Vector.png", video: "/Assets/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4" }
+        { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }
     ];
 
     const buttonContainer = document.getElementById("category-buttons");
 
     categories.forEach(category => {
-        // Create a button element
         const button = document.createElement("button");
         button.className = "category-btn text-white text-center p-3 rounded";
-        button.textContent = category.name;
-        button.style.backgroundImage = `url('${category.image}')`;
-        // button.style.hover.backgroundImage = `url('${category.hover}')`
+        // button.style.backgroundImage = `url('${category.image}')`;
 
-        // Create a video element (hidden initially)
-        const video = document.createElement("video");
-        video.className = "category-video";
-        video.src = category.video;
-        video.loop = true;
-        video.muted = true;
-        video.style.display = "none"; // Hide it initially
-        button.appendChild(video);
+        // Create the category text
+        const textSpan = document.createElement("span");
+        textSpan.className = "category-text";
+        textSpan.textContent = category.name;
 
-        // Change background on hover
+        // Create the "Select" text (hidden initially)
+        const selectSpan = document.createElement("span");
+        selectSpan.className = "select-text";
+        selectSpan.textContent = "Select";
+
+        // Create the "Select" text (hidden initially)
+        const selectIcn = document.createElement("img");
+        selectIcn.className = "select-icon";
+        selectIcn.src = "/Assets/Categories/Frame.png";
+
+        let video = null;
+        let canvas = null;
+        let ctx = null;
+
+
+        if (category.video) {
+            video = document.createElement("video");
+            video.className = "category-video";
+            video.src = category.video;
+            video.loop = true;
+            video.muted = true;
+            video.style.opacity = 0.6;
+
+            // Canvas only for extracting colors
+            canvas = document.createElement("canvas");
+            ctx = canvas.getContext("2d");
+
+            button.appendChild(video);
+        }
+
+
+        button.appendChild(textSpan);
+        // Create a "Select" text container
+        const selectContainer = document.createElement("div");
+        selectContainer.className = "select-container";
+
+        const selectText = document.createElement("span");
+        selectText.className = "select-text";
+        selectText.textContent = "Select";
+
+        // Create a small vector image (icon)
+        const selectIcon = document.createElement("img");
+        selectIcon.className = "select-icon";
+        selectIcon.src = "/Assets/Background/Vector.svg"; // Change to your vector image path
+
+        // Append "Select" text and icon to the container
+        selectContainer.appendChild(selectText);
+        selectContainer.appendChild(selectIcon);
+        button.appendChild(selectContainer); // Add "Select" text
+
         button.addEventListener("mouseenter", function () {
-            if (category.video) {
-                video.style.display = "block"; // Show the video
-                video.play(); // Play the video
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-container");
+
+            if (video) {
+                video.play();
+                video.style.opacity = "1";
+                video.parentElement.classList.remove("paused");
+                extractGlowColor(video, ctx, canvas, button);
             }
-            if (category.hover) {
-                this.style.backgroundImage = `url('${category.hover}')`;
-            }
+            selectText.style.opacity = "1"; // Show "Select"
         });
 
         button.addEventListener("mouseleave", function () {
-            video.style.display = "none"; // Hide the video
-            video.pause(); // Pause the video
-            video.currentTime = 0; // Reset video to the start
-            this.style.backgroundImage = `url('${category.image}')`; // Revert to the original background
-        });
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-container");
 
-        // Set the onclick handler to update the placeholder
-        button.onclick = () => updatePlaceholder(category.name.toLowerCase());
-
-        button.addEventListener("click", function () {
-            // Remove active class from all buttons
-            document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
-
-            // Add active class to the clicked button
-            this.classList.add("active");
-            if (category.hover) {
-                this.style.backgroundImage = `url('${category.hover}')`;
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+                video.parentElement.classList.add("paused");
+                button.style.boxShadow = "none";
+                video.style.opacity = 0.6;
             }
+            selectText.style.opacity = "0"; // Hide "Select"
         });
 
-        // Append the button to the container
         const colDiv = document.createElement("div");
-        colDiv.className = "col-md-3"; /* 3 buttons per row */
+        colDiv.className = "col-md-3";
         colDiv.appendChild(button);
         buttonContainer.appendChild(colDiv);
     });
+    function extractGlowColor(video, ctx, canvas, button) {
+        if (!ctx || !canvas) return;
+
+        canvas.width = video.videoWidth / 10;
+        canvas.height = video.videoHeight / 10;
+
+        const captureFrame = () => {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const frameData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+            let r = 0, g = 0, b = 0, count = 0;
+            for (let i = 0; i < frameData.length; i += 4) {
+                r += frameData[i];
+                g += frameData[i + 1];
+                b += frameData[i + 2];
+                count++;
+            }
+
+            r = Math.floor(r / count);
+            g = Math.floor(g / count);
+            b = Math.floor(b / count);
+
+            const glowColor = `rgba(${r}, ${g}, ${b}, 0.8)`;
+            button.style.boxShadow = `0px 0px 25px 10px ${glowColor}`;
+        };
+
+        video.addEventListener("play", () => setTimeout(captureFrame, 500));
+    }
 });
+
+
+
 
 function updatePlaceholder(category) {
     const textArea = document.getElementById("userText");
@@ -116,5 +184,6 @@ function updatePlaceholder(category) {
         textArea.value = selectedPrompts.join(", "); // Combine selected prompts
     });
 }
+
 
 
