@@ -1,72 +1,74 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png" },
+        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
         { name: "Fashion", image: "/Assets/Vector.png" },
         { name: "Food", image: "/Assets/Vector.png" },
         { name: "Architecture", image: "/Assets/Vector.png" },
         { name: "Science Fiction", image: "/Assets/Vector.png" },
         { name: "Personal Video", image: "/Assets/Vector.png" },
-        { name: "Cars", image: "/Assets/Vector.png", video: "/Assets/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4" }
+        { name: "Cars", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4" }
     ];
 
     const buttonContainer = document.getElementById("category-buttons");
 
     categories.forEach(category => {
-        // Create a button element
         const button = document.createElement("button");
         button.className = "category-btn text-white text-center p-3 rounded";
-        button.textContent = category.name;
         button.style.backgroundImage = `url('${category.image}')`;
-        // button.style.hover.backgroundImage = `url('${category.hover}')`
 
-        // Create a video element (hidden initially)
-        const video = document.createElement("video");
-        video.className = "category-video";
-        video.src = category.video;
-        video.loop = true;
-        video.muted = true;
-        video.style.display = "none"; // Hide it initially
-        button.appendChild(video);
+        // Create the category text
+        const textSpan = document.createElement("span");
+        textSpan.className = "category-text";
+        textSpan.textContent = category.name;
 
-        // Change background on hover
+        // Create the "Select" text (hidden initially)
+        const selectSpan = document.createElement("span");
+        selectSpan.className = "select-text";
+        selectSpan.textContent = "Select";
+
+        if (category.video) {
+            const video = document.createElement("video");
+            video.className = "category-video";
+            video.src = category.video;
+            video.loop = true;
+            video.muted = true;
+            video.autoplay = false;
+            button.appendChild(video);
+        }
+
+        button.appendChild(textSpan);
+        button.appendChild(selectSpan); // Add "Select" text
+
         button.addEventListener("mouseenter", function () {
-            if (category.video) {
-                video.style.display = "block"; // Show the video
-                video.play(); // Play the video
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-text");
+
+            if (video) {
+                video.style.opacity = "1";
+                video.play();
             }
-            if (category.hover) {
-                this.style.backgroundImage = `url('${category.hover}')`;
-            }
+            selectText.style.opacity = "1"; // Show "Select"
         });
 
         button.addEventListener("mouseleave", function () {
-            video.style.display = "none"; // Hide the video
-            video.pause(); // Pause the video
-            video.currentTime = 0; // Reset video to the start
-            this.style.backgroundImage = `url('${category.image}')`; // Revert to the original background
-        });
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-text");
 
-        // Set the onclick handler to update the placeholder
-        button.onclick = () => updatePlaceholder(category.name.toLowerCase());
-
-        button.addEventListener("click", function () {
-            // Remove active class from all buttons
-            document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
-
-            // Add active class to the clicked button
-            this.classList.add("active");
-            if (category.hover) {
-                this.style.backgroundImage = `url('${category.hover}')`;
+            if (video) {
+                video.style.opacity = "0";
+                video.pause();
+                video.currentTime = 0;
             }
+            selectText.style.opacity = "0"; // Hide "Select"
         });
 
-        // Append the button to the container
         const colDiv = document.createElement("div");
-        colDiv.className = "col-md-3"; /* 3 buttons per row */
+        colDiv.className = "col-md-3";
         colDiv.appendChild(button);
         buttonContainer.appendChild(colDiv);
     });
 });
+
 
 function updatePlaceholder(category) {
     const textArea = document.getElementById("userText");
