@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets/Assets/Background/imageBottom.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Frame.png",
+      "PackagePath": "staticwebassets/Assets/Categories/Frame.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
       "PackagePath": "staticwebassets/Assets/Categories/Hover/image7.png"
     },
