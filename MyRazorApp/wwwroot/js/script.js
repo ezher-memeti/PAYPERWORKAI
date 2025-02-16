@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Architecture", image: "/Assets/Vector.png" },
         { name: "Science Fiction", image: "/Assets/Vector.png" },
         { name: "Personal Video", image: "/Assets/Vector.png" },
-        { name: "Cars", image: "/Assets/Vector.png" }
+        { name: "Cars", image: "/Assets/Vector.png", video: "/Assets/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4" }
     ];
 
     const buttonContainer = document.getElementById("category-buttons");
@@ -19,15 +19,31 @@ document.addEventListener("DOMContentLoaded", function () {
         button.style.backgroundImage = `url('${category.image}')`;
         // button.style.hover.backgroundImage = `url('${category.hover}')`
 
+        // Create a video element (hidden initially)
+        const video = document.createElement("video");
+        video.className = "category-video";
+        video.src = category.video;
+        video.loop = true;
+        video.muted = true;
+        video.style.display = "none"; // Hide it initially
+        button.appendChild(video);
+
         // Change background on hover
         button.addEventListener("mouseenter", function () {
+            if (category.video) {
+                video.style.display = "block"; // Show the video
+                video.play(); // Play the video
+            }
             if (category.hover) {
                 this.style.backgroundImage = `url('${category.hover}')`;
             }
         });
 
         button.addEventListener("mouseleave", function () {
-            this.style.backgroundImage = `url('${category.image}')`;
+            video.style.display = "none"; // Hide the video
+            video.pause(); // Pause the video
+            video.currentTime = 0; // Reset video to the start
+            this.style.backgroundImage = `url('${category.image}')`; // Revert to the original background
         });
 
         // Set the onclick handler to update the placeholder

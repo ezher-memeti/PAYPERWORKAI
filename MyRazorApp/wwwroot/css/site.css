@@ -91,15 +91,11 @@ body {
     100% auto,
     100% auto;
   /* Fourth image */
-
 }
 
-/* Waterdrop effect using JavaScript */
-body:hover {
-  -webkit-mask-image: radial-gradient(circle 150px at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  mask-image: radial-gradient(circle 150px at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+body::before {
+  background-color: #c6bcbc7c;
 }
-
 
 .form-floating>.form-control-plaintext::placeholder,
 .form-floating>.form-control::placeholder {
