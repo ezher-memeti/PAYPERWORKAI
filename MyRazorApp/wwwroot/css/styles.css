@@ -46,17 +46,6 @@ button.category-btn {
     align-items: flex-end;
     /* Align text at the bottom */
     justify-content: flex-start;
-
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-}
-
-button.category-btn.paused {
-    /* The glass effect only when the video is paused */
-    backdrop-filter: blur(10px);
-    /* Frosted glass blur */
-    background: rgba(255, 255, 255, 0.3);
-    /* Slight transparency */
 }
 
 button.category-btn:hover {

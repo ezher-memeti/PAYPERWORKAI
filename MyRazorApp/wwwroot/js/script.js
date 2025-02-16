@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (video) {
                 video.play();
                 video.style.opacity = "1";
-                video.parentElement.classList.remove("paused");
                 extractGlowColor(video, ctx, canvas, button);
             }
             selectText.style.opacity = "1"; // Show "Select"
@@ -91,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (video) {
                 video.pause();
                 video.currentTime = 0;
-                video.parentElement.classList.add("paused");
                 button.style.boxShadow = "none";
                 video.style.opacity = 0.6;
             }
