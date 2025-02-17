@@ -298,3 +298,20 @@ textarea.form-control {
     margin-bottom: 20px;
     /* Space before the submit button */
 }
+
+.fixed-line-break {
+    white-space: pre-line; /* Satır başlarını korur */
+    line-height: 1.5; /* Satır yüksekliği */
+    word-wrap: break-word; /* Uzun kelimelerin bölünmesine izin verir */
+    display: block; /* Blok seviyesinde eleman olarak kalır */
+    width: fit-content; /* Genişliği içeriğe göre ayarlar */
+    max-width: 80%; /* Maksimum genişlik belirler, ayarlayabilirsiniz */
+    text-align: left; /* Sol hizalı yapar */
+}
+.col-md-6 {
+    max-width: 50%;
+}
+.login-card h2 {
+    font-size: 2.5rem; /* Daha büyük bir boyut */
+    font-weight: bold;
+}

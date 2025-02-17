@@ -244,4 +244,30 @@ function removeImage(containerId, imageId, inputId) {
     fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
 
 }
+document.getElementById("togglePassword").addEventListener("click", function () {
+    var passwordField = document.getElementById("password");
+    var icon = this.querySelector("i");
 
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        passwordField.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const togglePassword = document.querySelector("#togglePassword");
+    const passwordField = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // Şifreyi göster/gizle
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+
+        // İkonu değiştir
+        this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+    });
+});
