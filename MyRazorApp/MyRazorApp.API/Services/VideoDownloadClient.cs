@@ -1,4 +1,8 @@
+using System;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 public class VideoDownloadClient
 {
@@ -8,9 +12,10 @@ public class VideoDownloadClient
     {
         using (var client = new HttpClient())
         {
-            var jsonRequestBody = JsonContent.SerializeObject(videoUrl);
+            // Corrected line: Use JsonConvert instead of JsonContent
+            var jsonRequestBody = JsonConvert.SerializeObject(videoUrl);
+            
             var content = new StringContent(jsonRequestBody, Encoding.UTF8, "application/json");
-
             var response = await client.PostAsync(_apiUrl, content);
 
             if (response.IsSuccessStatusCode)

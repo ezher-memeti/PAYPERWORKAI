@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj": {}
+    "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj": {}
   },
   "projects": {
-    "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj": {
+    "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj",
+        "projectUniqueName": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj",
         "projectName": "MyRazorApp.UI",
-        "projectPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj",
-        "packagesPath": "/Users/emir/.nuget/packages/",
-        "outputPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/obj/",
+        "projectPath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/MyRazorApp.UI.csproj",
+        "packagesPath": "/Users/ezhermemeti/.nuget/packages/",
+        "outputPath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/emir/.nuget/NuGet/NuGet.Config"
+          "/Users/ezhermemeti/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -69,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
