@@ -1,4 +1,4 @@
-@page
+ @page
 @model CategorySelectionModel
 @{
     ViewData["Title"] = "Select Images for " + Model.SelectedCategory;
@@ -9,20 +9,33 @@
 
 <!-- Page Container -->
 <div class="container mt-4">
-    <h2 class="text-center">Upload Your Images</h2>
-    <p class="text-center text-muted">Two relevant images (e.g., futuristic elements)</p>
 
-    <!-- Category Selection -->
-    <div class="d-flex justify-content-end mb-3">
+    <div class="head-container d-flex justify-content-around align-items-cente mb-5 mt-5">
+    <!-- Title and Subtitle -->
+    <div class="d-flex justify-content-center text-center">
+             <span class="gradient-text fw-bold me-3 display-6">Upload Your Images</span>
+            <div class="text-start">
+               <span class="subtitle text-light fs-7">
+                    Two relevant images <br> (e.g., futuristic elements)
+                </span>
+            </div>
+        </div>
+
+    <!-- Category Selection (aligned to the right) -->
+    <div>
         <form method="get">
-            <select id="category" name="category" class="form-select w-auto" onchange="this.form.submit()">
-                @foreach (var category in Model.Categories)
-                {
-                    <option value="@category" selected="@(category == Model.SelectedCategory ? "selected" : null)">@category</option>
-                }
-            </select>
+            <div id="category-wrapper">
+                <select id="category" name="category" class="form-select" onchange="this.form.submit()">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category" selected="@(category == Model.SelectedCategory ? "selected" : null)">@category</option>
+                    }
+                </select>
+            </div>
         </form>
     </div>
+</div>
+
 
     <!-- Image Upload Section -->
     <!-- Image Upload Section -->
@@ -32,7 +45,7 @@
 <!-- Image #1 Upload Box -->
 <div class="col-md-5">
     <label for="imageUpload1" class="upload-box text-center">
-        <div class="upload-content">
+        <div class="upload-content mb-5 mt-5">
             <!-- Image Preview for Image #1 -->
             <div id="previewContainer1" class="preview-container" style="display:none;">
                 <img id="previewImage1" class="preview-image" src="" alt="Image Preview">
