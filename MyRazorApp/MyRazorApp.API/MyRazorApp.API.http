@@ -1,0 +1,6 @@
+@MyRazorApp.API_HostAddress = http://localhost:5123
+
+GET {{MyRazorApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
