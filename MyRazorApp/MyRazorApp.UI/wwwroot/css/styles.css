@@ -315,3 +315,50 @@ textarea.form-control {
     font-size: 2.5rem; /* Daha büyük bir boyut */
     font-weight: bold;
 }
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+
+.text-gradient {
+    background: linear-gradient(45deg, #00ff87, #60efff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03) !important; /* Daha şeffaf arkaplan */
+    backdrop-filter: blur(12px); /* Blur efektini artır */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Daha ince border */
+    box-shadow: none !important; /* Gölgeyi kaldır */
+}
+.login-section {
+    background: transparent !important; /* Arka plan rengini kaldır */
+}
+.border-light {
+    border-color: rgba(255, 255, 255, 0.15) !important; /* Daha şeffaf border */
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.15) !important; /* Daha şeffaf border */
+    color: rgba(255, 255, 255, 0.8) !important; /* Daha okunaklı metin */
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.05) !important; /* Hover efekti */
+}
+.text-white {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+}
+.text-light {
+    color: rgba(255, 255, 255, 0.9) !important; /* Metin kontrastını artır */
+}
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7) !important; /* Alt metin için */
+}
