@@ -362,3 +362,9 @@ textarea.form-control {
 .text-light-50 {
     color: rgba(255, 255, 255, 0.7) !important; /* Alt metin için */
 }
+.high-res-image {
+    image-rendering: crisp-edges;  /* Daha keskin görüntü */
+    image-rendering: -webkit-optimize-contrast; /* WebKit tarayıcılar için optimize */
+    transform: scale(1.1); /* Hafif büyütme */
+    filter: contrast(1.2) brightness(1.1); /* Kontrast ve parlaklık artırma */
+}
