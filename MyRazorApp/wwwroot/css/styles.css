@@ -27,6 +27,7 @@ button.category-btn {
 
     /* Cover the button with the image */
     background-color: #2A3145;
+
     /* Center the background image */
     color: white;
     width: 100%;
@@ -48,14 +49,15 @@ button.category-btn {
 }
 
 button.category-btn:hover {
-    box-shadow: 0px 0px 5px white;
+    cursor: pointer;
 }
 
-button.category-btn.active {
-    transform: scale(1);
-    border: 0.25px solid rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px white;
-    /* Highlight active button */
+/* Text inside button */
+.category-text {
+    position: relative;
+    z-index: 2;
+    /* Text stays on top */
+    font-weight: bold;
 }
 
 .category-video {
@@ -66,14 +68,21 @@ button.category-btn.active {
     height: 100%;
     object-fit: cover;
     /* Ensures the video fills the button */
-    display: none;
-    opacity: 0;
+    display: block;
     /* Hidden initially */
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+
+    transition: opacity 0.5s ease-in-out;
 }
 
 .category-btn:hover .category-video {
     display: block;
+    mix-blend-mode: normal;
     opacity: 1;
+
     /* Show the video when hovering over the button */
 }
 
@@ -85,11 +94,42 @@ button.category-btn.active {
     height: 100%;
     object-fit: cover;
     /* Makes the video cover the button space while maintaining aspect ratio */
-    opacity: 0;
     /* Start with opacity 0 for the fade effect */
-    transition: opacity 1s ease-in-out;
     /* Add transition for fade-in effect */
     /* Ensure the video is behind the button content */
+
+}
+
+.select-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Space between text and icon */
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    opacity: 0;
+    /* Hidden initially */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* "Select" text */
+.select-text {
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+
+/* Small vector icon next to "Select" */
+.select-icon {
+    width: 16px;
+    padding: 3px;
+    /* Adjust size */
+    height: 16px;
 }
 
 
@@ -257,4 +297,21 @@ textarea.form-control {
     /* Add space before the text area */
     margin-bottom: 20px;
     /* Space before the submit button */
+}
+
+.fixed-line-break {
+    white-space: pre-line; /* Satır başlarını korur */
+    line-height: 1.5; /* Satır yüksekliği */
+    word-wrap: break-word; /* Uzun kelimelerin bölünmesine izin verir */
+    display: block; /* Blok seviyesinde eleman olarak kalır */
+    width: fit-content; /* Genişliği içeriğe göre ayarlar */
+    max-width: 80%; /* Maksimum genişlik belirler, ayarlayabilirsiniz */
+    text-align: left; /* Sol hizalı yapar */
+}
+.col-md-6 {
+    max-width: 50%;
+}
+.login-card h2 {
+    font-size: 2.5rem; /* Daha büyük bir boyut */
+    font-weight: bold;
 }

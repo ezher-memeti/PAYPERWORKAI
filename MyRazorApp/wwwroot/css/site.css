@@ -125,3 +125,20 @@ body::before {
   text-align: center;
   border-radius: 15px;
 }
+.gradient-text {
+  background: linear-gradient(45deg, #00ff87, #60efff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-heading {
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 2rem 0;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}

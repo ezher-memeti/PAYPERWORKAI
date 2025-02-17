@@ -1,5 +1,5 @@
 @page
-@model IndexModel
+@model HomeModel
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -38,7 +38,7 @@
     </section>
 
     <!-- Categories Grid -->
-   <section class="container mt-5">
+   <section class="container mt-5 mb-5">
     <div class="row g-4 d-flex justify-content-center mt-5" id="category-buttons">
         <!-- Category buttons will be inserted here -->
     </div>
@@ -46,51 +46,7 @@
     </section>
 
 
-<div class="container mt-5">
-    <div class="row">
-        <!-- Left Column for Category Buttons -->
-        <!-- Right Column for Image Upload and Text Area -->
-        <div class="col-md-9">
-            @* <h2 class="text-center">Upload Your Photos & Text</h2> *@
-
-            <form method="post" enctype="multipart/form-data">
-                <!-- File Upload for Photos -->
-                <div>
-                    @* <label class="form-label">Upload Photos</label> *@
-                  <div class="image-upload-container">
-                    <!-- Image Upload Square 1 -->
-                    <div class="square-img-upload">
-                        <input type="file" class="form-control" name="photo1" accept="image/*" onchange="previewImage(this, 'imgPreview1', 'textOverlay1')" required>
-                        <img id="imgPreview1" src="" alt="Preview 1">
-                        <span id="textOverlay1" class="text-placeholder">Upload Image 1</span>
-                    </div>
-                    <!-- Image Upload Square 2 -->
-                    <div class="square-img-upload">
-                        <input type="file" class="form-control" name="photo2" accept="image/*" onchange="previewImage(this, 'imgPreview2', 'textOverlay2')" required>
-                        <img id="imgPreview2" src="" alt="Preview 2">
-                        <span id="textOverlay2" class="text-placeholder">Upload Image 2</span>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Text Area -->
-                <div class="mb-4">
-                <label class="form-label">Select Effect Style</label>
-                <select id="promptSelect" class="form-control" multiple style="display: none;"></select>
-                </div>
-
-                <!-- Text Area -->
-                <div class="mb-4">
-                    <textarea id="userText" name="userText" class="form-control" rows="4" placeholder="Selected prompts will appear here..." readonly></textarea>
-                </div>
-
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary w-100">GENERATE</button>
-            </form>
-        </div>
-    </div>
-</div>
-
 <!-- Link the external JavaScript -->
 <script src="~/js/script.js"></script>
+
+

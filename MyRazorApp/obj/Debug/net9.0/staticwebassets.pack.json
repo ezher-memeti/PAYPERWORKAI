@@ -37,8 +37,16 @@
       "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Vector.svg",
+      "PackagePath": "staticwebassets/Assets/Background/Vector.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/imageBottom.png",
       "PackagePath": "staticwebassets/Assets/Background/imageBottom.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Frame.png",
+      "PackagePath": "staticwebassets/Assets/Categories/Frame.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/Hover/image7.png",
@@ -49,8 +57,20 @@
       "PackagePath": "staticwebassets/Assets/Categories/Static/image8.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/videos/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4",
-      "PackagePath": "staticwebassets/Assets/Categories/videos/Professional_Mode_16x9_camera_moving_smooth_hand_held__.mp4"
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/videos/Architecture.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Architecture.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/videos/Car.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Car.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/videos/Food.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Food.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Categories/videos/SciFi.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/SciFi.mp4"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
@@ -59,6 +79,10 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Rectangle (2).png",
       "PackagePath": "staticwebassets/Assets/Rectangle (2).png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Upload.svg",
+      "PackagePath": "staticwebassets/Assets/Upload.svg"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Vector.png",
@@ -77,8 +101,20 @@
       "PackagePath": "staticwebassets/Assets/background2.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/generate.svg",
+      "PackagePath": "staticwebassets/Assets/generate.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/logo.png",
       "PackagePath": "staticwebassets/Assets/logo.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4",
+      "PackagePath": "staticwebassets/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/CategorySel.css",
+      "PackagePath": "staticwebassets/css/CategorySel.css"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css",
