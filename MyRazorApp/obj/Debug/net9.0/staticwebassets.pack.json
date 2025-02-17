@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets/Assets/Rectangle (2).png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Upload.svg",
+      "PackagePath": "staticwebassets/Assets/Upload.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Vector.png",
       "PackagePath": "staticwebassets/Assets/Vector.png"
     },
@@ -97,8 +101,16 @@
       "PackagePath": "staticwebassets/Assets/background2.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/generate.svg",
+      "PackagePath": "staticwebassets/Assets/generate.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/logo.png",
       "PackagePath": "staticwebassets/Assets/logo.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/CategorySel.css",
+      "PackagePath": "staticwebassets/css/CategorySel.css"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css",

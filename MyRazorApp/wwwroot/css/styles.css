@@ -70,7 +70,7 @@ button.category-btn:hover {
     /* Ensures the video fills the button */
     display: block;
     /* Hidden initially */
-    opacity: 0.5;
+    opacity: 1;
     z-index: 1;
     pointer-events: none;
     mix-blend-mode: overlay;

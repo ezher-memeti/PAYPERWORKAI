@@ -96,6 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
             selectText.style.opacity = "0"; // Hide "Select"
         });
 
+        button.addEventListener("click", function () {
+            console.log(`Navigating to:`)
+            window.location.href = `/CategorySelection?category=${encodeURIComponent(category.name)}`;
+        });
+
         const colDiv = document.createElement("div");
         colDiv.className = "col-md-3";
         colDiv.appendChild(button);
@@ -182,6 +187,61 @@ function updatePlaceholder(category) {
         textArea.value = selectedPrompts.join(", "); // Combine selected prompts
     });
 }
+// Image preview for Image #1
+document.getElementById('imageUpload1').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    const previewContainer = document.getElementById('previewContainer1');
+    const previewImage = document.getElementById('previewImage1');
+    const uploadInstructions = document.getElementById('uploadInstructions1');
 
+    if (file) {
+        const reader = new FileReader();
 
+        reader.onload = function (e) {
+            previewImage.src = e.target.result;
+            previewContainer.style.display = 'block'; // Show the preview container
+            uploadInstructions.style.display = 'none'; // Hide the instructions when image is uploaded
+        };
+
+        reader.readAsDataURL(file); // Read the uploaded file as a data URL
+    }
+});
+
+// Image preview for Image #2
+document.getElementById('imageUpload2').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    const previewContainer = document.getElementById('previewContainer2');
+    const previewImage = document.getElementById('previewImage2');
+    const uploadInstructions = document.getElementById('uploadInstructions2');
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            previewImage.src = e.target.result;
+            previewContainer.style.display = 'block'; // Show the preview container
+            uploadInstructions.style.display = 'none'; // Hide the instructions when image is uploaded
+        };
+
+        reader.readAsDataURL(file); // Read the uploaded file as a data URL
+    }
+});
+
+// Function to remove the image preview and restore the upload instructions
+function removeImage(containerId, imageId, inputId) {
+    const previewContainer = document.getElementById(containerId);
+    const previewImage = document.getElementById(imageId);
+    const uploadInstructions = document.getElementById('uploadInstructions' + containerId.replace('previewContainer', '').slice(-1));
+    const fileInput = document.getElementById(inputId);
+
+    // Hide the preview container and reset the image source
+    previewContainer.style.display = 'none';
+    previewImage.src = ''; // Reset the image source
+    uploadInstructions.style.display = 'block'; // Show the instructions again
+
+    // Clear the file input and remove the 'No file chosen' text
+    fileInput.value = ''; // This clears the file input
+    fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
+
+}
 
