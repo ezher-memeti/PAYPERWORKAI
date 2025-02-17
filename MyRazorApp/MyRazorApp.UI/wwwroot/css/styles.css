@@ -1,0 +1,317 @@
+/* Flexbox Layout for the Left and Right Columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: black;
+    /* background: url('/Assets/background.png') no-repeat center center fixed; */
+    font-family: 'Archivo', sans-serif;
+}
+
+body::before {
+    background: url('/Assets/background.png') no-repeat center center fixed;
+}
+
+button.category-btn {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    /* Ensure the button behaves like a block element */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents repetition */
+    background-size: none;
+
+    /* Cover the button with the image */
+    background-color: #2A3145;
+
+    /* Center the background image */
+    color: white;
+    width: 100%;
+    height: 197px;
+    /* Increased height */
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    /* Make text larger */
+    /* font-weight: bold; */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    /* Align text at the bottom */
+    justify-content: flex-start;
+}
+
+button.category-btn:hover {
+    cursor: pointer;
+}
+
+/* Text inside button */
+.category-text {
+    position: relative;
+    z-index: 2;
+    /* Text stays on top */
+    font-weight: bold;
+}
+
+.category-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video fills the button */
+    display: block;
+    /* Hidden initially */
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.category-btn:hover .category-video {
+    display: block;
+    mix-blend-mode: normal;
+    opacity: 1;
+
+    /* Show the video when hovering over the button */
+}
+
+.category-btn .category-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Makes the video cover the button space while maintaining aspect ratio */
+    /* Start with opacity 0 for the fade effect */
+    /* Add transition for fade-in effect */
+    /* Ensure the video is behind the button content */
+
+}
+
+.select-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Space between text and icon */
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    opacity: 0;
+    /* Hidden initially */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* "Select" text */
+.select-text {
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+
+/* Small vector icon next to "Select" */
+.select-icon {
+    width: 16px;
+    padding: 3px;
+    /* Adjust size */
+    height: 16px;
+}
+
+
+
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff, #AEA9DD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+/* Heading Styling */
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 3%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Sparkle Image Styling */
+.sparkle-img {
+    width: 70px;
+    /* Adjust size */
+    height: auto;
+    position: absolute;
+}
+
+/* Positioning Sparkles */
+.sparkle-left {
+    top: 20%;
+    left: 27%;
+}
+
+.sparkle-right {
+    top: 30%;
+    right: 28%;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+}
+
+/* Get Started Text */
+.inline-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bold-text {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Wrapper for Flexbox Alignment */
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.square-img-upload {
+    width: 100%;
+    max-width: 350px;
+    /* Adjust width */
+    height: 15rem;
+    /* Set a fixed height */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    border: 1px solid #5B53FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for image upload to align them horizontally */
+.image-upload-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    /* Gap between squares */
+
+    /* Allow them to wrap if the screen is too small */
+}
+
+/* File input and preview image styling */
+.square-img-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.square-img-upload img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Form styling for the text area and buttons */
+textarea.form-control {
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #5B53FF;
+}
+
+/* Ensure proper spacing for the form container */
+.col-md-9 {
+    padding: 20px;
+    margin-top: 20px;
+    /* Adds space between the category selection and form */
+}
+
+/* Improve spacing between the upload section and text area */
+.image-upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Increase spacing between image upload sections */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    margin-bottom: 20px;
+    /* Space between the image upload and text area */
+}
+
+/* Ensuring the text area does not stick to other elements */
+textarea.form-control {
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #5B53FF;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    /* Add space before the text area */
+    margin-bottom: 20px;
+    /* Space before the submit button */
+}
+
+.fixed-line-break {
+    white-space: pre-line; /* Satır başlarını korur */
+    line-height: 1.5; /* Satır yüksekliği */
+    word-wrap: break-word; /* Uzun kelimelerin bölünmesine izin verir */
+    display: block; /* Blok seviyesinde eleman olarak kalır */
+    width: fit-content; /* Genişliği içeriğe göre ayarlar */
+    max-width: 80%; /* Maksimum genişlik belirler, ayarlayabilirsiniz */
+    text-align: left; /* Sol hizalı yapar */
+}
+.col-md-6 {
+    max-width: 50%;
+}
+.login-card h2 {
+    font-size: 2.5rem; /* Daha büyük bir boyut */
+    font-weight: bold;
+}
