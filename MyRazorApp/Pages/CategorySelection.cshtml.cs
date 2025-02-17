@@ -57,4 +57,6 @@ public class CategorySelectionModel : PageModel
         ModelState.AddModelError(string.Empty, "Please upload two images and enter a description.");
         return Page();
     }
+
+    
 }

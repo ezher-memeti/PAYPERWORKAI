@@ -428,3 +428,16 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/compressed/0v
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/z0bi04tp70-9vvqwbsbet.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-0fd06yvf92.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-gi7wqx768w.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.csproj.AssemblyReference.cache
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.MvcApplicationPartsAssemblyInfo.cs
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.csproj.Up2Date

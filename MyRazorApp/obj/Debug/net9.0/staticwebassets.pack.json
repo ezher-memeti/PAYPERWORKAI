@@ -109,6 +109,10 @@
       "PackagePath": "staticwebassets/Assets/logo.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4",
+      "PackagePath": "staticwebassets/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/css/CategorySel.css",
       "PackagePath": "staticwebassets/css/CategorySel.css"
     },
@@ -371,14 +375,6 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
-    },
-    {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg",
-      "PackagePath": "staticwebassets/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg"
-    },
-    {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg",
-      "PackagePath": "staticwebassets/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

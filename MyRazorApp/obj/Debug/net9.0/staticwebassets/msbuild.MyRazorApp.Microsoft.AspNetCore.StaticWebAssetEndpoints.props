@@ -312,6 +312,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ue8piu7d23"},{"Name":"integrity","Value":"sha256-Ks/wTjdjaWi72ZNuZwTyEcPbTq/JmqmrgLdyfluQkeA="},{"Name":"label","Value":"_content/MyRazorApp/Assets/Vector.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"268"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Ks/wTjdjaWi72ZNuZwTyEcPbTq/JmqmrgLdyfluQkeA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MyRazorApp/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.dyjx8yibgw.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\created_videos\57f97435-4c25-4d46-b2e2-68e14e331709.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dyjx8yibgw"},{"Name":"integrity","Value":"sha256-u2xlu8/EOnz1bsNcjWiw97isxOVzDb5tBNuyZolFNxU="},{"Name":"label","Value":"_content/MyRazorApp/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10065325"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022u2xlu8/EOnz1bsNcjWiw97isxOVzDb5tBNuyZolFNxU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MyRazorApp/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\created_videos\57f97435-4c25-4d46-b2e2-68e14e331709.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-u2xlu8/EOnz1bsNcjWiw97isxOVzDb5tBNuyZolFNxU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10065325"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022u2xlu8/EOnz1bsNcjWiw97isxOVzDb5tBNuyZolFNxU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MyRazorApp/css/CategorySel.9vvqwbsbet.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CategorySel.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1115,30 +1127,6 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i3k3d08gti"},{"Name":"integrity","Value":"sha256-gsreWzD6LZu7TtMXLlyQ0lOGJer\u002B/ExO8Gp9K8Eq4Rs="},{"Name":"label","Value":"_content/MyRazorApp/MyRazorApp.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1267"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gsreWzD6LZu7TtMXLlyQ0lOGJer\u002B/ExO8Gp9K8Eq4Rs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:33:59 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eR2csTnxy063ZktN9zRZxKeDVJ1yoSoChh3ttTGCIq4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"232806"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eR2csTnxy063ZktN9zRZxKeDVJ1yoSoChh3ttTGCIq4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.vmpj2mcn8h.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vmpj2mcn8h"},{"Name":"integrity","Value":"sha256-eR2csTnxy063ZktN9zRZxKeDVJ1yoSoChh3ttTGCIq4="},{"Name":"label","Value":"_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"232806"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eR2csTnxy063ZktN9zRZxKeDVJ1yoSoChh3ttTGCIq4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bMKQ/0/MpEwcfYem7jk0sNEbQC2mQ8qZgAn7bLGzktU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"180076"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022bMKQ/0/MpEwcfYem7jk0sNEbQC2mQ8qZgAn7bLGzktU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.sci6k7t55g.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sci6k7t55g"},{"Name":"integrity","Value":"sha256-bMKQ/0/MpEwcfYem7jk0sNEbQC2mQ8qZgAn7bLGzktU="},{"Name":"label","Value":"_content/MyRazorApp/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"180076"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022bMKQ/0/MpEwcfYem7jk0sNEbQC2mQ8qZgAn7bLGzktU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Feb 2025 18:34:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
