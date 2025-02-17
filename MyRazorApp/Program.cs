@@ -1,7 +1,28 @@
+using MyRazorApp.Services;
+using MyRazorApp.Services.KlingAPI;
+
 var builder = WebApplication.CreateBuilder(args);
 
+ var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .Build();
+
+    
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddHttpClient("KlingAPI", client =>
+{
+    client.BaseAddress = new Uri("https://api.klingai.com"); 
+    client.DefaultRequestHeaders.Add("Accept", "application/json");
+});
+
+builder.Services.AddSingleton<JWTtoken>();
+builder.Services.AddSingleton<IConfiguration>(configuration);
+builder.Services.AddSingleton<VideoGenerationService>();
+builder.Services.AddControllers();
+builder.Services.AddScoped<VideoQueryService>();
+
 builder.Services.AddHttpContextAccessor();
 // Add session support
 builder.Services.AddSession(options =>
@@ -14,6 +35,9 @@ builder.Services.AddSession(options =>
 var app = builder.Build();
 builder.Services.AddHttpContextAccessor();
 
+app.UseRouting();
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -21,16 +45,32 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+/*app.MapGet("/token", (JWTtoken jwt) => 
+{
+    string token = jwt.Sign();
+    return Results.Ok(new { Token = token });
+});*/
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.MapControllers();
+app.UseStaticFiles();
+
 
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
 
+
 // Enable session middleware
 
 
+
 app.MapRazorPages();
+
+
+
+
 
 app.Run();
