@@ -21,7 +21,7 @@ builder.Services.AddSingleton<JWTtoken>();
 builder.Services.AddSingleton<IConfiguration>(configuration);
 builder.Services.AddSingleton<VideoGenerationService>();
 builder.Services.AddControllers();
-
+builder.Services.AddScoped<VideoQueryService>();
 
 builder.Services.AddHttpContextAccessor();
 // Add session support
@@ -61,6 +61,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
+
 
 // Enable session middleware
 

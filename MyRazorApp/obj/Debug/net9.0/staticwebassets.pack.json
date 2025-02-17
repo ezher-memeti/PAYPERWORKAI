@@ -33,15 +33,11 @@
       "PackagePath": "staticwebassets/Assets/Background/Ellipse5.png"
     },
     {
-<<<<<<< HEAD
-      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
-=======
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Background/Maskgroup.png",
       "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
->>>>>>> 4587882dc49c99d7d1b4552655464d7a72a2c6e6
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/LogoMockup.png",
       "PackagePath": "staticwebassets/Assets/LogoMockup.png"
     },
     {
@@ -49,15 +45,11 @@
       "PackagePath": "staticwebassets/Assets/Rectangle (2).png"
     },
     {
-<<<<<<< HEAD
-      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/background.png",
-=======
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Vector.png",
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/Vector.png",
       "PackagePath": "staticwebassets/Assets/Vector.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/background.png",
->>>>>>> 4587882dc49c99d7d1b4552655464d7a72a2c6e6
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/background.png",
       "PackagePath": "staticwebassets/Assets/background.png"
     },
     {
@@ -71,6 +63,10 @@
     {
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/Assets/logo.png",
       "PackagePath": "staticwebassets/Assets/logo.png"
+    },
+    {
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4",
+      "PackagePath": "staticwebassets/created_videos/57f97435-4c25-4d46-b2e2-68e14e331709.mp4"
     },
     {
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/css/site.css",
@@ -331,6 +327,14 @@
     {
       "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/eyywutym.mvh.jpg",
+      "PackagePath": "staticwebassets/uploads/eyywutym.mvh.jpg"
+    },
+    {
+      "Id": "/Users/emir/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/mvyzkie5.gmh.jpg",
+      "PackagePath": "staticwebassets/uploads/mvyzkie5.gmh.jpg"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

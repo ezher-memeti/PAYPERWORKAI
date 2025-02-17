@@ -53,20 +53,20 @@
         <div class="col-md-9">
             @* <h2 class="text-center">Upload Your Photos & Text</h2> *@
 
-            <form method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="UploadImages">
                 <!-- File Upload for Photos -->
                 <div>
                     @* <label class="form-label">Upload Photos</label> *@
                   <div class="image-upload-container">
                     <!-- Image Upload Square 1 -->
                     <div class="square-img-upload">
-                        <input type="file" class="form-control" name="photo1" accept="image/*" onchange="previewImage(this, 'imgPreview1', 'textOverlay1')" required>
+                        <input type="file" class="form-control" name="Photo1" accept="image/*" onchange="uploadOnSelect()" required>
                         <img id="imgPreview1" src="" alt="Preview 1">
                         <span id="textOverlay1" class="text-placeholder">Upload Image 1 </span>
                     </div>
                     <!-- Image Upload Square 2 -->
                     <div class="square-img-upload">
-                        <input type="file" class="form-control" name="photo2" accept="image/*" onchange="previewImage(this, 'imgPreview2', 'textOverlay2')" required>
+                        <input type="file" class="form-control" name="Photo2" accept="image/*" onchange=" uploadOnSelect()" required>
                         <img id="imgPreview2" src="" alt="Preview 2">
                         <span id="textOverlay2" class="text-placeholder">Upload Image 2</span>
                     </div>
@@ -101,3 +101,5 @@
 
 <!-- Link the external JavaScript -->
 <script src="~/js/script.js"></script>
+
+
