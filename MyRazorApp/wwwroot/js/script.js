@@ -1,41 +1,143 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
-        { name: "Cinematic", image: "/Assets/Vector.png" },
+        { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
         { name: "Fashion", image: "/Assets/Vector.png" },
-        { name: "Food", image: "/Assets/Vector.png" },
-        { name: "Architecture", image: "/Assets/Vector.png" },
-        { name: "Science Fiction", image: "/Assets/Vector.png" },
+        { name: "Food", image: "MyRazorApp/wwwroot/Assets/Bildschirmfoto 2025-02-01 um 17.14.24 2.png", video: "/Assets/Categories/videos/Food.mp4" },
+        { name: "Architecture", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Architecture.mp4" },
+        { name: "Science Fiction", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/SciFi.mp4" },
         { name: "Personal Video", image: "/Assets/Vector.png" },
-        { name: "Cars", image: "/Assets/Vector.png" }
+        { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }
     ];
 
     const buttonContainer = document.getElementById("category-buttons");
 
     categories.forEach(category => {
-        // Create a button element
         const button = document.createElement("button");
         button.className = "category-btn text-white text-center p-3 rounded";
-        button.textContent = category.name;
-        button.style.backgroundImage = `url('${category.image}')`;
+        // button.style.backgroundImage = `url('${category.image}')`;
 
-        // Set the onclick handler to update the placeholder
-        button.onclick = () => updatePlaceholder(category.name.toLowerCase());
+        // Create the category text
+        const textSpan = document.createElement("span");
+        textSpan.className = "category-text";
+        textSpan.textContent = category.name;
 
-        button.addEventListener("click", function () {
-            // Remove active class from all buttons
-            document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
+        // Create the "Select" text (hidden initially)
+        const selectSpan = document.createElement("span");
+        selectSpan.className = "select-text";
+        selectSpan.textContent = "Select";
 
-            // Add active class to the clicked button
-            this.classList.add("active");
+        // Create the "Select" text (hidden initially)
+        const selectIcn = document.createElement("img");
+        selectIcn.className = "select-icon";
+        selectIcn.src = "/Assets/Categories/Frame.png";
+
+        let video = null;
+        let canvas = null;
+        let ctx = null;
+
+
+        if (category.video) {
+            video = document.createElement("video");
+            video.className = "category-video";
+            video.src = category.video;
+            video.loop = true;
+            video.muted = true;
+            video.style.opacity = 0.6;
+
+            // Canvas only for extracting colors
+            canvas = document.createElement("canvas");
+            ctx = canvas.getContext("2d");
+
+            button.appendChild(video);
+        }
+
+
+        button.appendChild(textSpan);
+        // Create a "Select" text container
+        const selectContainer = document.createElement("div");
+        selectContainer.className = "select-container";
+
+        const selectText = document.createElement("span");
+        selectText.className = "select-text";
+        selectText.textContent = "Select";
+
+        // Create a small vector image (icon)
+        const selectIcon = document.createElement("img");
+        selectIcon.className = "select-icon";
+        selectIcon.src = "/Assets/Background/Vector.svg"; // Change to your vector image path
+
+        // Append "Select" text and icon to the container
+        selectContainer.appendChild(selectText);
+        selectContainer.appendChild(selectIcon);
+        button.appendChild(selectContainer); // Add "Select" text
+
+        button.addEventListener("mouseenter", function () {
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-container");
+
+            if (video) {
+                video.play();
+                video.style.opacity = "1";
+                extractGlowColor(video, ctx, canvas, button);
+            }
+            selectText.style.opacity = "1"; // Show "Select"
         });
 
-        // Append the button to the container
+        button.addEventListener("mouseleave", function () {
+            const video = this.querySelector(".category-video");
+            const selectText = this.querySelector(".select-container");
+
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+                button.style.boxShadow = "none";
+                video.style.opacity = 0.6;
+            }
+            selectText.style.opacity = "0"; // Hide "Select"
+        });
+
+        button.addEventListener("click", function () {
+            console.log(`Navigating to:`)
+            window.location.href = `/CategorySelection?category=${encodeURIComponent(category.name)}`;
+        });
+
         const colDiv = document.createElement("div");
-        colDiv.className = "col-md-3"; /* 3 buttons per row */
+        colDiv.className = "col-md-3";
         colDiv.appendChild(button);
         buttonContainer.appendChild(colDiv);
     });
+    function extractGlowColor(video, ctx, canvas, button) {
+        if (!ctx || !canvas) return;
+
+        canvas.width = video.videoWidth / 10;
+        canvas.height = video.videoHeight / 10;
+
+        const captureFrame = () => {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const frameData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+            let r = 0, g = 0, b = 0, count = 0;
+            for (let i = 0; i < frameData.length; i += 4) {
+                r += frameData[i];
+                g += frameData[i + 1];
+                b += frameData[i + 2];
+                count++;
+            }
+
+            r = Math.floor(r / count);
+            g = Math.floor(g / count);
+            b = Math.floor(b / count);
+
+            const glowColor = `rgba(${r}, ${g}, ${b}, 0.8)`;
+            button.style.boxShadow = `0px 0px 25px 10px ${glowColor}`;
+        };
+
+        video.addEventListener("play", () => setTimeout(captureFrame, 500));
+    }
 });
+
+
+
 
 function updatePlaceholder(category) {
     const textArea = document.getElementById("userText");
@@ -85,25 +187,87 @@ function updatePlaceholder(category) {
         textArea.value = selectedPrompts.join(", "); // Combine selected prompts
     });
 }
+// Image preview for Image #1
+document.getElementById('imageUpload1').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    const previewContainer = document.getElementById('previewContainer1');
+    const previewImage = document.getElementById('previewImage1');
+    const uploadInstructions = document.getElementById('uploadInstructions1');
 
+    if (file) {
+        const reader = new FileReader();
 
-function createSparkles() {
-    const sparkleContainer = document.getElementById("sparkle");
-    sparkleContainer.innerHTML = ""; // Clear existing sparkles
+        reader.onload = function (e) {
+            previewImage.src = e.target.result;
+            previewContainer.style.display = 'block'; // Show the preview container
+            uploadInstructions.style.display = 'none'; // Hide the instructions when image is uploaded
+        };
 
-    let numSparkles = window.innerWidth > 1024 ? 50 : window.innerWidth > 768 ? 30 : 15;
-
-    for (let i = 0; i < numSparkles; i++) {
-        const sparkle = document.createElement("div");
-        sparkle.classList.add("sparkle");
-
-        sparkle.style.left = `${Math.random() * 100}%`;
-        sparkle.style.top = `${Math.random() * 100}%`;
-
-        sparkleContainer.appendChild(sparkle);
+        reader.readAsDataURL(file); // Read the uploaded file as a data URL
     }
-}
+});
 
-// Recreate sparkles on window resize
-window.addEventListener("resize", createSparkles);
-document.addEventListener("DOMContentLoaded", createSparkles);
+// Image preview for Image #2
+document.getElementById('imageUpload2').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    const previewContainer = document.getElementById('previewContainer2');
+    const previewImage = document.getElementById('previewImage2');
+    const uploadInstructions = document.getElementById('uploadInstructions2');
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            previewImage.src = e.target.result;
+            previewContainer.style.display = 'block'; // Show the preview container
+            uploadInstructions.style.display = 'none'; // Hide the instructions when image is uploaded
+        };
+
+        reader.readAsDataURL(file); // Read the uploaded file as a data URL
+    }
+});
+
+// Function to remove the image preview and restore the upload instructions
+function removeImage(containerId, imageId, inputId) {
+    const previewContainer = document.getElementById(containerId);
+    const previewImage = document.getElementById(imageId);
+    const uploadInstructions = document.getElementById('uploadInstructions' + containerId.replace('previewContainer', '').slice(-1));
+    const fileInput = document.getElementById(inputId);
+
+    // Hide the preview container and reset the image source
+    previewContainer.style.display = 'none';
+    previewImage.src = ''; // Reset the image source
+    uploadInstructions.style.display = 'block'; // Show the instructions again
+
+    // Clear the file input and remove the 'No file chosen' text
+    fileInput.value = ''; // This clears the file input
+    fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
+
+}
+document.getElementById("togglePassword").addEventListener("click", function () {
+    var passwordField = document.getElementById("password");
+    var icon = this.querySelector("i");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        passwordField.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const togglePassword = document.querySelector("#togglePassword");
+    const passwordField = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // Şifreyi göster/gizle
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+
+        // İkonu değiştir
+        this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+    });
+});

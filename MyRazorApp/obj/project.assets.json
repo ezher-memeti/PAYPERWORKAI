@@ -814,25 +814,51 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/Users/emir/.nuget/packages/": {}
+=======
+    "C:\\Users\\yasir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> origin/HEAD
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.csproj",
       "projectName": "MyRazorApp",
       "projectPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.csproj",
       "packagesPath": "/Users/emir/.nuget/packages/",
       "outputPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/obj/",
+=======
+      "projectUniqueName": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI3\\MyRazorApp\\MyRazorApp.csproj",
+      "projectName": "MyRazorApp",
+      "projectPath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI3\\MyRazorApp\\MyRazorApp.csproj",
+      "packagesPath": "C:\\Users\\yasir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI3\\MyRazorApp\\obj\\",
+>>>>>>> origin/HEAD
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "/Users/emir/.nuget/NuGet/NuGet.Config"
+=======
+        "C:\\Users\\yasir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> origin/HEAD
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+<<<<<<< HEAD
         "/usr/local/share/dotnet/library-packs": {},
+=======
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> origin/HEAD
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -889,7 +915,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+>>>>>>> origin/HEAD
       }
     }
   }

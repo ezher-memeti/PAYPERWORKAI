@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     
 </head>
 <body class="@ViewData["BodyClass"]">
    <header>
@@ -31,29 +32,29 @@
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item px-2">
-                        <a class="nav-link text-light" asp-page="/Cinematic">How It Works</a>
+                        <a class="nav-link" asp-page="/Cinematic">How It Works</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-light" asp-page="/Cinematic">Explore Categories</a>
+                        <a class="nav-link" asp-page="/Cinematic">Explore Categories</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-light" asp-page="/Cinematic">FAQ</a>
+                        <a class="nav-link" asp-page="/Cinematic">FAQ</a>
                     </li>
 
                     <!-- User Authentication Section -->
-                    <li class="nav-item px-2">
+                    <li class="px-2">
                         @if (isAuthenticated)
                         {
                             <span class="nav-link text-light">Welcome, @username</span>
-                             <li class="nav-item px-2">
-                            <form method="post" asp-page="/Index" asp-page-handler="Logout" class="d-inline">
-                                <button type="submit" id="btn-login" class="btn px-4 mg-4">Logout</button>
-                            </form>
+                            <li class="px-2">
+                                <form method="post" asp-page="/Index" asp-page-handler="Logout" class="d-inline">
+                                    <button type="submit" id="btn-login" class="btn px-4 mg-4">Logout</button>
+                                </form>
                             </li>
                         }
                         else
                         {
-                            <a asp-page="/SignIn" id="btn-login" class="btn px-4 mg-4">Sign In</a>
+                            <a asp-page="/register" id="btn-login" class="btn px-4 mg-4">Sign Up</a>
                         }
                     </li>
                 </ul>
@@ -68,9 +69,50 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <!-- Custom Footer -->
+    <footer class="text-light py-4" style="background-color: black;">
         <div class="container">
-            &copy; 2025 - Payperwork
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-4">
+                     <img src="/Assets/logo.png" alt="Payperwork Logo" class="w-52 h-auto">
+                </div>
+
+                <!-- Pages Section -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/Cinematic" class="text-light text-decoration-none">How It Works</a></li>
+                        <li><a href="/Cinematic" class="text-light text-decoration-none">Explore Categories</a></li>
+                        <li><a href="/Cinematic" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Pages Section -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/Privacy" class="text-light text-decoration-none">Privacy</a></li>
+                        <li><a href="/Terms" class="text-light text-decoration-none">Terms</a></li>
+                        <li><a href="/Contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://instagram.com" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="https://facebook.com" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="https://linkedin.com" class="text-light text-decoration-none">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="text-center mt-3">
+                <p class="mb-0">Copyright © Payperwork 2025</p>
+            </div>
         </div>
     </footer>
 

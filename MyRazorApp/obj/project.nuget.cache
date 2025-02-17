@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ScNe8nRt8MA=",
   "success": true,
   "projectFilePath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.csproj",
@@ -19,5 +20,11 @@
     "/Users/emir/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",
     "/Users/emir/.nuget/packages/system.identitymodel.tokens.jwt/8.4.0/system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "eOvkj0yAA7o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI3\\MyRazorApp\\MyRazorApp.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> origin/HEAD
   "logs": []
 }
