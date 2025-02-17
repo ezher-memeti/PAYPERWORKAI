@@ -271,3 +271,33 @@ document.addEventListener("DOMContentLoaded", function () {
         this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var selectElement = document.getElementById("category");
+    var wrapperElement = document.getElementById("category-wrapper");
+
+    var categoryBackgrounds = {
+        "Cinematic": "/Assets/Categories/Static/image8.png",
+        "Fashion": "/images/fashion.jpg",
+        "Food": "/images/food.jpg",
+        "Architecture": "/images/architecture.jpg",
+        "Science Fiction": "/images/sci-fi.jpg",
+        "Personal Video": "/images/personal-video.jpg",
+        "Cars": "/images/cars.jpg"
+    };
+
+    function updateBackground() {
+        var selectedValue = selectElement.value;
+        var imageUrl = categoryBackgrounds[selectedValue] || "/Assets/logo.png"; // Default fallback
+
+        console.log("Selected Category:", selectedValue);  // Debugging
+        console.log("Background Image URL:", imageUrl);   // Debugging
+
+        wrapperElement.style.backgroundImage = `url('${imageUrl}')`;
+        wrapperElement.style.backgroundSize = "cover";
+        wrapperElement.style.backgroundPosition = "center";
+        wrapperElement.style.backgroundRepeat = "no-repeat";
+    }
+
+    selectElement.addEventListener("change", updateBackground);
+    updateBackground(); // Apply background on page load
+});

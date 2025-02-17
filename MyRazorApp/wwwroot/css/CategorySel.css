@@ -1,10 +1,18 @@
+.head-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+
+}
+
 .upload-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .upload-box {
@@ -23,6 +31,32 @@
     position: relative;
     /* Ensures positioning context for the gradient */
 }
+
+#category-wrapper {
+    width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-image 0.5s ease-in-out;
+    min-height: 50px;
+    /* Ensure it has height */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Temporary to see if it's applied */
+}
+
+#category {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    /* Remove default background */
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    appearance: none;
+}
+
+
+
 
 .upload-box::after {
     content: "";

@@ -425,9 +425,7 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/MyRazorApp.ge
 C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/ref/MyRazorApp.dll
 C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-9271fdf0zl.gz
 C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-ycagy83p0f.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/z0bi04tp70-9vvqwbsbet.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/y5qnyiqosw-0fd06yvf92.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-gi7wqx768w.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
@@ -441,3 +439,5 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI3/MyRazorApp/obj/Debug/net9.0/compressed/0v
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.csproj.AssemblyReference.cache
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.MvcApplicationPartsAssemblyInfo.cs
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/MyRazorApp.csproj.Up2Date
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/z0bi04tp70-skhdrke5pq.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/obj/Debug/net9.0/compressed/0vk2sd0hj0-e39jovxv90.gz

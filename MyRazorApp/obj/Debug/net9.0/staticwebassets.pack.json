@@ -377,6 +377,14 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/Frame (1).png",
+      "PackagePath": "staticwebassets/uploads/Frame (1).png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/wwwroot/uploads/Frame 22.png",
+      "PackagePath": "staticwebassets/uploads/Frame 22.png"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
