@@ -1685,7 +1685,6 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\plv3ryxqd8-pin3ur6fxw.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\0wykbv4fvm-ctnmol1csx.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\mcdsbxwrt8-xx5skignw0.gz
-C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\937cq4crjy-qixr4kq4h5.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\3blglndbps-estmavhz95.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\109l97elez-tu2vqp8618.gz
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\lievt5t7pk-61n19gt1b8.gz
@@ -1767,3 +1766,4 @@ C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\MyRazorApp.UI.pdb
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\MyRazorApp.UI.genruntimeconfig.cache
 C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\ref\MyRazorApp.UI.dll
+C:\Users\yasir\vscodeide\PAYPERWORKAI4\MyRazorApp\MyRazorApp.UI\obj\Debug\net9.0\compressed\937cq4crjy-5lorhmenr8.gz

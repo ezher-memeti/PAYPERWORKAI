@@ -24,29 +24,29 @@
         <!-- Details Row -->
         <div class="details-row">
             <!-- Category -->
-            <div class="detail-box">
+            <div class="category-box">
                 <span class="label">Category</span>
-                <div class="category-box">@Model.Category</div>
+                <div class="category-text">@Model.Category</div>
             </div>
 
             <!-- Images -->
-            <div class="detail-card compact"> 
-                <div class="card-header"> <i class="fas fa-images"></i>
-                 <h3>Source Images</h3>
-                  </div> 
-                  <div class="card-content image-grid"> 
-                <img src="@Model.Image1Url" alt="Input 1" class="image-thumbnail">
-                 <img src="@Model.Image2Url" alt="Input 2" class="image-thumbnail"> 
-                 </div> 
-                 </div>
-            <!-- Prompt -->
-            <div class="detail-box">
-                <span class="label">Prompt</span>
-                <div class="prompt-box gradient-text">@Model.Prompt</div>
+            <div class="images-box">
+                <span class="label">Images</span>
+                <div class="image-grid">
+                    <img src="@Model.Image1Url" alt="Input 1" class="image-thumbnail">
+                    <img src="@Model.Image2Url" alt="Input 2" class="image-thumbnail">
+                </div>
             </div>
+
+            <!-- Prompt -->
+            <div class="prompt-box">
+                <span class="label">Prompt</span>
+                <div class="prompt-text">@Model.Prompt</div>
+            </div>
+
             <!-- Buttons -->
             <div class="buttons">
-                <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
+                <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn">
                     Download Video <img src="/Assets/Download.svg">
                 </a>
                 <a asp-page="/CategorySelection" class="btn generate-btn">
@@ -58,4 +58,17 @@
 </div>
 
 <!-- JavaScript for Handling Loading -->
-<script src="~/js/site.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loadingContainer = document.getElementById('loadingContainer');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        // Simulate video loading
+        setTimeout(() => {
+            loadingContainer.classList.add('hidden');
+            videoPlayer.classList.remove('hidden');
+            downloadBtn.classList.remove('hidden'); // Download butonunu göster
+        }, 2500); // 2.5 saniye sonra video yüklendi varsayalım
+    });
+</script>
