@@ -1,415 +1,407 @@
 {
   "Files": [
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/obj/Debug/net9.0/scopedcss/projectbundle/MyRazorApp.UI.bundle.scp.css",
-      "PackagePath": "staticwebassets/MyRazorApp.UI.z9wuol4gkx.bundle.scp.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyRazorApp.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyRazorApp.UI.3xny921xy2.bundle.scp.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/2.png",
-      "PackagePath": "staticwebassets/Assets/2.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\2.png",
+      "PackagePath": "staticwebassets\\Assets\\2.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/3.png",
-      "PackagePath": "staticwebassets/Assets/3.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\3.png",
+      "PackagePath": "staticwebassets\\Assets\\3.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse1.png",
-      "PackagePath": "staticwebassets/Assets/Background/Ellipse1.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Ellipse1.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Ellipse1.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse2.png",
-      "PackagePath": "staticwebassets/Assets/Background/Ellipse2.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Ellipse2.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Ellipse2.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse3.png",
-      "PackagePath": "staticwebassets/Assets/Background/Ellipse3.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Ellipse3.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Ellipse3.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse4.png",
-      "PackagePath": "staticwebassets/Assets/Background/Ellipse4.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Ellipse4.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Ellipse4.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse5.png",
-      "PackagePath": "staticwebassets/Assets/Background/Ellipse5.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Ellipse5.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Ellipse5.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Maskgroup.png",
-      "PackagePath": "staticwebassets/Assets/Background/Maskgroup.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Maskgroup.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Maskgroup.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Vector.svg",
-      "PackagePath": "staticwebassets/Assets/Background/Vector.svg"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\Vector.svg",
+      "PackagePath": "staticwebassets\\Assets\\Background\\Vector.svg"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/imageBottom.png",
-      "PackagePath": "staticwebassets/Assets/Background/imageBottom.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Background\\imageBottom.png",
+      "PackagePath": "staticwebassets\\Assets\\Background\\imageBottom.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/Frame.png",
-      "PackagePath": "staticwebassets/Assets/Categories/Frame.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\Frame.png",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\Frame.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/Hover/image7.png",
-      "PackagePath": "staticwebassets/Assets/Categories/Hover/image7.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\Hover\\image7.png",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\Hover\\image7.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/Static/image8.png",
-      "PackagePath": "staticwebassets/Assets/Categories/Static/image8.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\Static\\image8.png",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\Static\\image8.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Architecture.mp4",
-      "PackagePath": "staticwebassets/Assets/Categories/videos/Architecture.mp4"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\videos\\Architecture.mp4",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\videos\\Architecture.mp4"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Car.mp4",
-      "PackagePath": "staticwebassets/Assets/Categories/videos/Car.mp4"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\videos\\Car.mp4",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\videos\\Car.mp4"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Food.mp4",
-      "PackagePath": "staticwebassets/Assets/Categories/videos/Food.mp4"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\videos\\Food.mp4",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\videos\\Food.mp4"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/SciFi.mp4",
-      "PackagePath": "staticwebassets/Assets/Categories/videos/SciFi.mp4"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Categories\\videos\\SciFi.mp4",
+      "PackagePath": "staticwebassets\\Assets\\Categories\\videos\\SciFi.mp4"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/LogoMockup.png",
-      "PackagePath": "staticwebassets/Assets/LogoMockup.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\LogoMockup.png",
+      "PackagePath": "staticwebassets\\Assets\\LogoMockup.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Rectangle (2).png",
-      "PackagePath": "staticwebassets/Assets/Rectangle (2).png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Rectangle (2).png",
+      "PackagePath": "staticwebassets\\Assets\\Rectangle (2).png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Upload.svg",
-      "PackagePath": "staticwebassets/Assets/Upload.svg"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Upload.svg",
+      "PackagePath": "staticwebassets\\Assets\\Upload.svg"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Vector.png",
-      "PackagePath": "staticwebassets/Assets/Vector.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\Vector.png",
+      "PackagePath": "staticwebassets\\Assets\\Vector.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/background.png",
-      "PackagePath": "staticwebassets/Assets/background.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\background.png",
+      "PackagePath": "staticwebassets\\Assets\\background.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/background1.png",
-      "PackagePath": "staticwebassets/Assets/background1.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\background1.png",
+      "PackagePath": "staticwebassets\\Assets\\background1.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/background2.png",
-      "PackagePath": "staticwebassets/Assets/background2.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\background2.png",
+      "PackagePath": "staticwebassets\\Assets\\background2.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/generate.svg",
-      "PackagePath": "staticwebassets/Assets/generate.svg"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\generate.svg",
+      "PackagePath": "staticwebassets\\Assets\\generate.svg"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/logo.png",
-      "PackagePath": "staticwebassets/Assets/logo.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\Assets\\logo.png",
+      "PackagePath": "staticwebassets\\Assets\\logo.png"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/CategorySel.css",
-      "PackagePath": "staticwebassets/css/CategorySel.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\css\\CategorySel.css",
+      "PackagePath": "staticwebassets\\css\\CategorySel.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/Download.css",
-      "PackagePath": "staticwebassets/css/Download.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\css\\Download.css",
+      "PackagePath": "staticwebassets\\css\\Download.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/styles.css",
-      "PackagePath": "staticwebassets/css/styles.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/js/script.js",
-      "PackagePath": "staticwebassets/js/script.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/LICENSE",
-      "PackagePath": "staticwebassets/lib/bootstrap"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation/LICENSE.md",
-      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.slim.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.slim.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/lib/jquery/dist/jquery.slim.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Frame (1).png",
-      "PackagePath": "staticwebassets/uploads/Frame (1).png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\5c1ae536-3526-470e-9937-528fe1319000.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5c1ae536-3526-470e-9937-528fe1319000.jpg"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Frame 22.png",
-      "PackagePath": "staticwebassets/uploads/Frame 22.png"
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\91b98ee4-9cff-41ee-b46d-d20409d43fb4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\91b98ee4-9cff-41ee-b46d-d20409d43fb4.jpg"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg",
-      "PackagePath": "staticwebassets/uploads/WhatsApp Image 2025-02-13 at 12.51.26_6bb0e4a0.jpg"
-    },
-    {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg",
-      "PackagePath": "staticwebassets/uploads/WhatsApp Image 2025-02-13 at 12.51.59_57be5ab7.jpg"
-    },
-    {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.MyRazorApp.UI.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MyRazorApp.UI.props",
       "PackagePath": "build\\MyRazorApp.UI.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.MyRazorApp.UI.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MyRazorApp.UI.props",
       "PackagePath": "buildMultiTargeting\\MyRazorApp.UI.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.MyRazorApp.UI.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MyRazorApp.UI.props",
       "PackagePath": "buildTransitive\\MyRazorApp.UI.props"
     }
   ],

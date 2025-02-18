@@ -12,7 +12,7 @@
     <!-- Video Preview Section with Loading GIF -->
     <div class="video-preview">
         <div id="loadingContainer">
-            <img src="/Assets/loading.gif" alt="Loading..." class="loading-gif">
+            <img src="~/Assets/loading.gif" alt="Loading..." class="loading-gif">
         </div>
         <video id="videoPlayer" controls class="video-player hidden">
             <source src="@Model.VideoUrl" type="video/mp4">
@@ -28,12 +28,12 @@
         </div>
 
         <div class="images-section">
-            <span class="label">Images</span>
-            <div class="images-box">
-                <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
-                <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
-            </div>
-        </div>
+    <span class="label">Images</span>
+    <div class="images-box">
+        <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
+        <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
+    </div>
+</div>
 
         <div class="prompt-section">
             <span class="label">Prompt</span>
