@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.API\\MyRazorApp.API.csproj": {}
+    "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.API/MyRazorApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.API\\MyRazorApp.API.csproj": {
+    "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.API/MyRazorApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.API\\MyRazorApp.API.csproj",
+        "projectUniqueName": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.API/MyRazorApp.API.csproj",
         "projectName": "MyRazorApp.API",
-        "projectPath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.API\\MyRazorApp.API.csproj",
-        "packagesPath": "C:\\Users\\yasir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.API\\obj\\",
+        "projectPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.API/MyRazorApp.API.csproj",
+        "packagesPath": "/Users/emir/.nuget/packages/",
+        "outputPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/MyRazorApp.API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yasir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/emir/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -53,6 +48,10 @@
             "IdentityModel": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -90,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

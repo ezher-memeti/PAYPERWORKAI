@@ -11,10 +11,22 @@ builder.Services.AddHttpClient("KlingAPI", client =>
     client.DefaultRequestHeaders.Add("Accept", "application/json");
 });
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddSingleton<JWTtoken>();
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 builder.Services.AddSingleton<VideoGenerationService>();
 builder.Services.AddScoped<VideoQueryService>();
+
 
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
@@ -40,8 +52,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.MapControllers();
 app.UseRouting();
+app.UseCors();
 app.UseSession();
 app.UseAuthorization();
+
 
 // Map Razor Pages
 app.MapRazorPages();

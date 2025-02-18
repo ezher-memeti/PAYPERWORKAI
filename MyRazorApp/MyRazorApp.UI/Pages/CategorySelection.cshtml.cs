@@ -1,15 +1,13 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 
 public class CategorySelectionModel : PageModel
 {
     [BindProperty(SupportsGet = true)]
     public string SelectedCategory { get; set; } = "Cinematic"; // Default category
-
-    public List<string> Categories { get; set; } = new()
-    {
-        "Cinematic", "Fashion", "Food", "Architecture", "Science Fiction", "Personal Video", "Cars"
-    };
+    
+    private readonly IHttpClientFactory _httpClientFactory;
 
     [BindProperty]
     public IFormFile Image1 { get; set; }
@@ -18,7 +16,20 @@ public class CategorySelectionModel : PageModel
     public IFormFile Image2 { get; set; }
 
     [BindProperty]
-    public string Description { get; set; }
+    public string Prompt{ get; set; }
+
+
+
+    public CategorySelectionModel(IHttpClientFactory httpClientFactory)
+    {
+        _httpClientFactory = httpClientFactory;
+    }
+
+    public List<string> Categories { get; set; } = new()
+    {
+        "Cinematic", "Fashion", "Food", "Architecture", "Science Fiction", "Personal Video", "Cars"
+    };
+
 
     public void OnGet()
     {
@@ -28,35 +39,53 @@ public class CategorySelectionModel : PageModel
             SelectedCategory = categoryQuery;
         }
     }
+    
+    
     public async Task<IActionResult> OnPostAsync()
+{
+    // Validate both images
+    if (Image1 == null || Image1.Length == 0)
     {
-        if (Image1 != null && Image2 != null && !string.IsNullOrEmpty(Description))
-        {
-            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-
-            if (!Directory.Exists(uploadsFolder))
-                Directory.CreateDirectory(uploadsFolder);
-
-            var image1Path = Path.Combine(uploadsFolder, Image1.FileName);
-            var image2Path = Path.Combine(uploadsFolder, Image2.FileName);
-
-            using (var stream = new FileStream(image1Path, FileMode.Create))
-            {
-                await Image1.CopyToAsync(stream);
-            }
-
-            using (var stream = new FileStream(image2Path, FileMode.Create))
-            {
-                await Image2.CopyToAsync(stream);
-            }
-
-            TempData["SuccessMessage"] = "Images and description successfully submitted!";
-            return RedirectToPage("./CategorySelection");
-        }
-
-        ModelState.AddModelError(string.Empty, "Please upload two images and enter a description.");
+        ModelState.AddModelError("", "Please select an image.");
         return Page();
     }
 
-    
+    if (Image2 == null || Image2.Length == 0)
+    {
+        ModelState.AddModelError("", "Please select a tail image.");
+        return Page();
+    }
+
+    var client = _httpClientFactory.CreateClient("server");
+    using (var formData = new MultipartFormDataContent())
+    {
+        // Add first image
+        var fileStreamContent1 = new StreamContent(Image1.OpenReadStream());
+        fileStreamContent1.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        formData.Add(fileStreamContent1, "file1", Image1.FileName);
+
+        // Add second image
+        var fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
+        fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        formData.Add(fileStreamContent2, "file2", Image2.FileName);
+
+        // Add additional string parameters
+        formData.Add(new StringContent(Prompt), "prompt");
+
+        // Send the POST request
+        var response = await client.PostAsync("/api/server/upload", formData);
+
+        // Check response
+        if (response.IsSuccessStatusCode)
+        {
+            ViewData["Message"] = "Files uploaded successfully.";
+        }
+        else
+        {
+            ViewData["Message"] = "File upload failed.";
+        }
+    }
+
+    return Page();
+}
 }

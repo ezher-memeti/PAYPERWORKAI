@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using MyRazorApp.Services.KlingAPI;
 
-namespace MyRazorApp.Controllers
+namespace MyRazorApp.MyRazorApp.API.VideoController
 {
-    [Route("api/[controller]")]
+    [Route("api/video")]
     [ApiController]
     public class VideoController : ControllerBase
     {

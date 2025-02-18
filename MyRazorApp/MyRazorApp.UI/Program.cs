@@ -6,6 +6,13 @@ builder.Services.AddRazorPages();
 // Register IHttpContextAccessor to enable accessing HttpContext
 builder.Services.AddHttpContextAccessor();
 
+
+builder.Services.AddHttpClient("server", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5123"); // Adjust port if different
+    client.DefaultRequestHeaders.Add("Accept", "application/json");
+});
+
 // Add session support
 builder.Services.AddSession(options =>
 {
