@@ -241,7 +241,7 @@ button.category-btn:hover {
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -369,18 +369,6 @@ textarea.form-control {
 .btn-outline-light:hover {
     background: rgba(255, 255, 255, 0.05) !important;
     /* Hover efekti */
-}
-
-.text-white {
-    color: #ffffff !important;
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    background-clip: initial !important;
-}
-
-.text-light {
-    color: rgba(255, 255, 255, 0.9) !important;
-    /* Metin kontrastını artır */
 }
 
 .text-light-50 {
