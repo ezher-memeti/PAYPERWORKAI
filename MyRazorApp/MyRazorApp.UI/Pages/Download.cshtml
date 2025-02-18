@@ -39,59 +39,20 @@
             <span class="label">Prompt</span>
             <div class="prompt-box">@Model.Prompt</div>
         </div>
-    </div>
-
-    <!-- Buttons Section -->
+        <!-- Buttons Section -->
     <div class="buttons">
         <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
-            Download Video <i class="fas fa-download"></i>
+            Download Video <img src="/Assets/Download.svg"></img>
         </a>
         <a asp-page="/CategorySelection" class="btn generate-btn">
-            Generate New AI Video <i class="fas fa-magic"></i>
+            Generate New AI Video <img src="/Assets/generate.svg"></img>
         </a>
     </div>
+    </div>
+
+    
 </div>
 
 <!-- JavaScript for Handling Loading -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function () {
-            document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
-            document.getElementById("videoPlayer").classList.remove("hidden"); // Show video
-            document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
-        }, 3000); // Simulated 3 seconds delay
-    });
-</script>
+<script src="~/js/site.js"></script>
 
-<!-- CSS for Styling -->
-<style>
-    .hidden {
-        display: none;
-    }
-
-    .video-preview {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        position: relative;
-    }
-
-    .loading-gif {
-        width: 100px;
-        display: block;
-        margin: auto;
-    }
-
-    .image-thumbnail {
-        width: 120px;
-        height: auto;
-        margin: 5px;
-        border-radius: 10px;
-    }
-
-    .category-box, .prompt-box {
-        padding: 10px;
-        background-color: #f3f3f3;
-        border-radius: 5px;
-    }
-</style>
