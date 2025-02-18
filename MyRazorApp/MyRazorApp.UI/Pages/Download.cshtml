@@ -30,15 +30,15 @@
             </div>
 
             <!-- Images -->
-            <div class="detail-box">
-                <span class="label">Images</span>
-                <div class="images-box">
-                    @* <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail"> *@
-                    <img src="/Assets/Categories/Hover/image7.png" alt="Uploaded Image 1" class="image-thumbnail">
-                    @* <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail"> *@
-                    <img src="/Assets/Categories/Hover/image7.png" alt="Uploaded Image 2" class="image-thumbnail">
-                </div>
-            </div>
+            <div class="detail-card compact"> 
+                <div class="card-header"> <i class="fas fa-images"></i>
+                 <h3>Source Images</h3>
+                  </div> 
+                  <div class="card-content image-grid"> 
+                <img src="@Model.Image1Url" alt="Input 1" class="image-thumbnail">
+                 <img src="@Model.Image2Url" alt="Input 2" class="image-thumbnail"> 
+                 </div> 
+                 </div>
             <!-- Prompt -->
             <div class="detail-box">
                 <span class="label">Prompt</span>
@@ -59,4 +59,3 @@
 
 <!-- JavaScript for Handling Loading -->
 <script src="~/js/site.js"></script>
-

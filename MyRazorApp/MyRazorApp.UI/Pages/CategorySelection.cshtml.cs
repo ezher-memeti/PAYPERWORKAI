@@ -29,41 +29,40 @@ public class CategorySelectionModel : PageModel
         }
     }
 
-    public async Task<IActionResult> OnPostAsync()
+  public async Task<IActionResult> OnPostAsync()
+{
+    if (Image1 != null && Image2 != null && !string.IsNullOrEmpty(Description))
     {
-        if (Image1 != null && Image2 != null && !string.IsNullOrEmpty(Description))
+        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+        Directory.CreateDirectory(uploadsFolder);
+
+        // Dosya isimlerini GUID ile değiştir
+        var image1Name = $"{Guid.NewGuid()}{Path.GetExtension(Image1.FileName)}";
+        var image2Name = $"{Guid.NewGuid()}{Path.GetExtension(Image2.FileName)}";
+
+        var image1Path = Path.Combine(uploadsFolder, image1Name);
+        var image2Path = Path.Combine(uploadsFolder, image2Name);
+
+        using (var stream = new FileStream(image1Path, FileMode.Create))
         {
-            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-
-            if (!Directory.Exists(uploadsFolder))
-                Directory.CreateDirectory(uploadsFolder);
-
-            var image1Path = Path.Combine(uploadsFolder, Image1.FileName);
-            var image2Path = Path.Combine(uploadsFolder, Image2.FileName);
-
-            using (var stream = new FileStream(image1Path, FileMode.Create))
-            {
-                await Image1.CopyToAsync(stream);
-            }
-
-            using (var stream = new FileStream(image2Path, FileMode.Create))
-            {
-                await Image2.CopyToAsync(stream);
-            }
-
-            TempData["SuccessMessage"] = "Images and description successfully submitted!";
-
-            // ✅ Return statement must be inside a method
-            return RedirectToPage("/Download", new
-            {
-                category = SelectedCategory,
-                image1 = "/uploads/" + Image1.FileName,
-                image2 = "/uploads/" + Image2.FileName,
-                prompt = Description
-            });
+            await Image1.CopyToAsync(stream);
         }
 
-        ModelState.AddModelError(string.Empty, "Please upload two images and enter a description.");
-        return Page();
+        using (var stream = new FileStream(image2Path, FileMode.Create))
+        {
+            await Image2.CopyToAsync(stream);
+        }
+
+        return RedirectToPage("/Download", new
+        {
+            category = SelectedCategory,
+            image1Url = $"/uploads/{image1Name}", // Parametre isimlerini düzelt
+            image2Url = $"/uploads/{image2Name}",
+            prompt = Description
+        });
     }
+
+    ModelState.AddModelError(string.Empty, "Please upload two images and enter a description.");
+    return Page();
+}
 }
