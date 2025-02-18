@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets/css/CategorySel.css"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/Download.css",
+      "PackagePath": "staticwebassets/css/Download.css"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

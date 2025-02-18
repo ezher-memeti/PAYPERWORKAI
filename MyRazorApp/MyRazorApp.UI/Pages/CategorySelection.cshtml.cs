@@ -28,6 +28,7 @@ public class CategorySelectionModel : PageModel
             SelectedCategory = categoryQuery;
         }
     }
+
     public async Task<IActionResult> OnPostAsync()
     {
         if (Image1 != null && Image2 != null && !string.IsNullOrEmpty(Description))
@@ -51,12 +52,18 @@ public class CategorySelectionModel : PageModel
             }
 
             TempData["SuccessMessage"] = "Images and description successfully submitted!";
-            return RedirectToPage("./CategorySelection");
+
+            // ✅ Return statement must be inside a method
+            return RedirectToPage("/Download", new
+            {
+                category = SelectedCategory,
+                image1 = "/uploads/" + Image1.FileName,
+                image2 = "/uploads/" + Image2.FileName,
+                prompt = Description
+            });
         }
 
         ModelState.AddModelError(string.Empty, "Please upload two images and enter a description.");
         return Page();
     }
-
-    
 }

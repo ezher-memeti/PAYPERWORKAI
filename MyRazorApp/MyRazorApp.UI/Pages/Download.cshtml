@@ -1,0 +1,97 @@
+@page
+@model DownloadModel
+@{
+    ViewData["Title"] = "Review Your Video";
+}
+
+<link rel="stylesheet" href="~/css/Download.css" />
+
+<div class="video-review-container">
+    <h2 class="page-title">Review Your Video</h2>
+
+    <!-- Video Preview Section with Loading GIF -->
+    <div class="video-preview">
+        <div id="loadingContainer">
+            <img src="/Assets/loading.gif" alt="Loading..." class="loading-gif">
+        </div>
+        <video id="videoPlayer" controls class="video-player hidden">
+            <source src="@Model.VideoUrl" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Video Details Section -->
+    <div class="video-details">
+        <div class="category-section">
+            <span class="label">Category</span>
+            <div class="category-box">@Model.Category</div>
+        </div>
+
+        <div class="images-section">
+            <span class="label">Images</span>
+            <div class="images-box">
+                <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
+                <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
+            </div>
+        </div>
+
+        <div class="prompt-section">
+            <span class="label">Prompt</span>
+            <div class="prompt-box">@Model.Prompt</div>
+        </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="buttons">
+        <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
+            Download Video <i class="fas fa-download"></i>
+        </a>
+        <a asp-page="/CategorySelection" class="btn generate-btn">
+            Generate New AI Video <i class="fas fa-magic"></i>
+        </a>
+    </div>
+</div>
+
+<!-- JavaScript for Handling Loading -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
+            document.getElementById("videoPlayer").classList.remove("hidden"); // Show video
+            document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
+        }, 3000); // Simulated 3 seconds delay
+    });
+</script>
+
+<!-- CSS for Styling -->
+<style>
+    .hidden {
+        display: none;
+    }
+
+    .video-preview {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+    }
+
+    .loading-gif {
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .image-thumbnail {
+        width: 120px;
+        height: auto;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .category-box, .prompt-box {
+        padding: 10px;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+    }
+</style>
