@@ -1,0 +1,97 @@
+.video-review-container {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.video-preview {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-player {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.download-btn,
+.generate-btn {
+    width: 47%;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #AEA9DD, #FFFFFF);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-box,
+.prompt-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.images-box {
+    display: flex;
+    gap: 10px;
+}
+
+.image-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.video-preview {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.loading-gif {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.image-thumbnail {
+    width: 120px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.category-box,
+.prompt-box {
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
