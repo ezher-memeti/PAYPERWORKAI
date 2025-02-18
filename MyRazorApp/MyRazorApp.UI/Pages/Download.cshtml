@@ -9,48 +9,52 @@
 <div class="video-review-container">
     <h2 class="page-title">Review Your Video</h2>
 
-    <!-- Video Preview Section with Loading GIF -->
-    <div class="video-preview">
+    <!-- Video Card Container -->
+    <div class="video-card">
         <div id="loadingContainer">
-            <img src="/Assets/loading.gif" alt="Loading..." class="loading-gif">
+            <img src="/Assets/loading.gif" alt="Generating..." class="loading-gif">
         </div>
         <video id="videoPlayer" controls class="video-player hidden">
             <source src="@Model.VideoUrl" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    
+    <div class="details-cont">
+        <!-- Details Row -->
+        <div class="details-row">
+            <!-- Category -->
+            <div class="detail-box">
+                <span class="label">Category</span>
+                <div class="category-box">@Model.Category</div>
+            </div>
 
-    <!-- Video Details Section -->
-    <div class="video-details">
-        <div class="category-section">
-            <span class="label">Category</span>
-            <div class="category-box">@Model.Category</div>
-        </div>
-
-        <div class="images-section">
-            <span class="label">Images</span>
-            <div class="images-box">
-                <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
-                <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
+            <!-- Images -->
+            <div class="detail-box">
+                <span class="label">Images</span>
+                <div class="images-box">
+                    @* <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail"> *@
+                    <img src="/Assets/Categories/Hover/image7.png" alt="Uploaded Image 1" class="image-thumbnail">
+                    @* <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail"> *@
+                    <img src="/Assets/Categories/Hover/image7.png" alt="Uploaded Image 2" class="image-thumbnail">
+                </div>
+            </div>
+            <!-- Prompt -->
+            <div class="detail-box">
+                <span class="label">Prompt</span>
+                <div class="prompt-box gradient-text">@Model.Prompt</div>
+            </div>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
+                    Download Video <img src="/Assets/Download.svg">
+                </a>
+                <a asp-page="/CategorySelection" class="btn generate-btn">
+                    Generate New AI Video <img src="/Assets/generate.svg">
+                </a>
             </div>
         </div>
-
-        <div class="prompt-section">
-            <span class="label">Prompt</span>
-            <div class="prompt-box">@Model.Prompt</div>
-        </div>
-        <!-- Buttons Section -->
-    <div class="buttons">
-        <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
-            Download Video <img src="/Assets/Download.svg"></img>
-        </a>
-        <a asp-page="/CategorySelection" class="btn generate-btn">
-            Generate New AI Video <img src="/Assets/generate.svg"></img>
-        </a>
     </div>
-    </div>
-
-    
 </div>
 
 <!-- JavaScript for Handling Loading -->

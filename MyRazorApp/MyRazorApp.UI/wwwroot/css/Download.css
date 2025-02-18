@@ -4,94 +4,139 @@
     color: white;
 }
 
-.video-preview {
-    width: 100%;
-    max-width: 800px;
+/* Centered Video Card */
+.video-card {
+    width: 988px;
+    height: 504px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.05);
+    /* Existing background */
+    backdrop-filter: blur(19.5px);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Video Player (hidden initially) */
 .video-player {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-.video-details {
+/* Loading GIF */
+.loading-gif {
+    width: 100px;
+    display: block;
+}
+
+.details-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Layout for category, images, and prompt in a single row */
+.details-row {
+    min-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     margin-top: 20px;
 }
 
-.label {
-    font-size: 14px;
-    color: #ccc;
-}
-
-.download-btn,
-.generate-btn {
-    width: 47%;
-    padding: 12px 30px;
-    background: linear-gradient(to right, #AEA9DD, #FFFFFF);
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    border-radius: 8px;
-    transition: 0.3s;
-    justify-content: center;
+/* Each section in the row */
+.detail-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
+/* Category and Prompt styling */
 .category-box,
 .prompt-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.prompt-box {
+    border: 0.1px solid white;
+    color: linear-gradient(0deg, #FFFFFF, #00000029);
+}
+
+.gradient-text {
+    text-align: start;
+    background: linear-gradient(45deg, #FFFFFF, #00000029);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Image Thumbnails */
 .images-box {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
 .image-thumbnail {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     object-fit: cover;
 }
 
+/* Buttons Section */
 .buttons {
-    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    margin-top: 22px;
 }
 
+/* Button Styles */
+.download-btn,
+.generate-btn {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #AEA9DD, #FFFFFF);
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.download-btn img,
+.generate-btn img {
+    width: 20px;
+}
 
 .hidden {
     display: none;
 }
 
-.video-preview {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
-}
-
-.loading-gif {
-    width: 100px;
-    display: block;
-    margin: auto;
-}
-
-.image-thumbnail {
-    width: 120px;
-    height: auto;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.category-box,
-.prompt-box {
-    padding: 10px;
-    background-color: #f3f3f3;
-    border-radius: 5px;
+/* Disabled button styling */
+.disabled-btn {
+    opacity: 1;
+    /* Makes it look inactive */
+    cursor: not-allowed;
+    pointer-events: none;
+    /* Prevents clicking */
 }

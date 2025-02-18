@@ -381,8 +381,16 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Bildschirmfoto 2025-02-01 um 17.14.24 2.png",
+      "PackagePath": "staticwebassets/uploads/Bildschirmfoto 2025-02-01 um 17.14.24 2.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Frame (1).png",
       "PackagePath": "staticwebassets/uploads/Frame (1).png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Frame (2).svg",
+      "PackagePath": "staticwebassets/uploads/Frame (2).svg"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/Frame 22.png",
