@@ -242,12 +242,61 @@ function removeImage(containerId, imageId, inputId) {
     // Clear the file input and remove the 'No file chosen' text
     fileInput.value = ''; // This clears the file input
     fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
-
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Checking if JavaScript is running...");
+    var selectElement = document.getElementById("category");
+    var wrapperElement = document.getElementById("category-wrapper");
+    var subtitleElement = document.getElementById("subtitle");
+
+    var categoryBackgrounds = {
+        "Cinematic": "/Assets/Categories/Hover/image7.png",
+        "Fashion": "/Assets/Categories/Static/image8.png",
+        "Food": "/Assets/Categories/Static/image8.png",
+        "Architecture": "/Assets/Categories/Static/image8.png",
+        "Science Fiction": "/Assets/Categories/Static/image8.png",
+        "Personal Video": "/Assets/Categories/Static/image8.png",
+        "Cars": "/images/cars.jpg"
+    };
+
+    var categoryDescriptions = {
+        "Cinematic": "Two relevant images <br> (e.g., cinematic aesthetics)",
+        "Fashion": "Two relevant images <br> (e.g., trendy outfits)",
+        "Food": "Two relevant images <br> (e.g., delicious dishes)",
+        "Architecture": "Two relevant images <br> (e.g., modern buildings)",
+        "Science Fiction": "Two relevant images <br> (e.g., futuristic elements)",
+        "Personal Video": "Two relevant images <br> (e.g., daily moments)",
+        "Cars": "Two relevant images <br> (e.g., high-speed vehicles)"
+    };
+
+    function updateBackground() {
+        var selectedValue = selectElement.value;
+        var imageUrl = categoryBackgrounds[selectedValue] || "/Assets/logo.png"; // Default fallback
+
+        console.log("Selected Category:", selectedValue);  // Debugging
+        console.log("Background Image URL:", imageUrl);   // Debugging
+
+        wrapperElement.style.backgroundImage = `url('${imageUrl}')`;
+        wrapperElement.style.backgroundSize = "cover";
+        wrapperElement.style.backgroundPosition = "center";
+        wrapperElement.style.backgroundRepeat = "no-repeat";
+    }
+    function updateSubtitle() {
+        var selectedValue = selectElement.value;
+        subtitleElement.innerHTML = categoryDescriptions[selectedValue] || "Two relevant images <br> (e.g., futuristic elements)";
+    }
+
+    selectElement.addEventListener("change", updateSubtitle);
+    updateSubtitle();
+    selectElement.addEventListener("change", updateBackground);
+    updateBackground(); // Apply background on page load
+});
+
+
 document.getElementById("togglePassword").addEventListener("click", function () {
     var passwordField = document.getElementById("password");
     var icon = this.querySelector("i");
-
     if (passwordField.type === "password") {
         passwordField.type = "text";
         icon.classList.remove("fa-eye");
@@ -258,6 +307,7 @@ document.getElementById("togglePassword").addEventListener("click", function () 
         icon.classList.add("fa-eye");
     }
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const togglePassword = document.querySelector("#togglePassword");
     const passwordField = document.querySelector("#password");
@@ -271,3 +321,4 @@ document.addEventListener("DOMContentLoaded", function () {
         this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
     });
 });
+
