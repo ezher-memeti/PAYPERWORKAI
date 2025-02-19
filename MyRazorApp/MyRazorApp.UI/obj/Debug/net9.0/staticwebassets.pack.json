@@ -381,62 +381,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\0f0be172-a4aa-4058-8e0c-0525a6dc296d.png",
-      "PackagePath": "staticwebassets\\uploads\\0f0be172-a4aa-4058-8e0c-0525a6dc296d.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\24a6f254-0f7a-4e13-bc91-336d8a166047.png",
-      "PackagePath": "staticwebassets\\uploads\\24a6f254-0f7a-4e13-bc91-336d8a166047.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\295acf80-d6ec-4e04-9c4e-28924d97fc64.jpg",
-      "PackagePath": "staticwebassets\\uploads\\295acf80-d6ec-4e04-9c4e-28924d97fc64.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\2d4dea25-b098-4c23-a55e-0558c9c6f72c.jpg",
-      "PackagePath": "staticwebassets\\uploads\\2d4dea25-b098-4c23-a55e-0558c9c6f72c.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\41882032-d952-4a47-9cbd-0e483c645450.PNG",
-      "PackagePath": "staticwebassets\\uploads\\41882032-d952-4a47-9cbd-0e483c645450.PNG"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\a0c2cfb6-a530-4a95-b3b6-1e5fd93a3ad8.jpg",
-      "PackagePath": "staticwebassets\\uploads\\a0c2cfb6-a530-4a95-b3b6-1e5fd93a3ad8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\b6e8bbde-9802-47bd-a739-e7678b7d5039.png",
-      "PackagePath": "staticwebassets\\uploads\\b6e8bbde-9802-47bd-a739-e7678b7d5039.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\bec29413-6b54-46bf-83d7-8af448e0f716.png",
-      "PackagePath": "staticwebassets\\uploads\\bec29413-6b54-46bf-83d7-8af448e0f716.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\c721e2f6-79c0-4d59-8cdf-0fc6bddd6175.jpg",
-      "PackagePath": "staticwebassets\\uploads\\c721e2f6-79c0-4d59-8cdf-0fc6bddd6175.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\ca9b8eba-aed4-4ac4-a4a7-f9d4c00b5d69.png",
-      "PackagePath": "staticwebassets\\uploads\\ca9b8eba-aed4-4ac4-a4a7-f9d4c00b5d69.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\d88bcacb-ccf9-4fa7-a4b9-74a1e776f9d3.jpg",
-      "PackagePath": "staticwebassets\\uploads\\d88bcacb-ccf9-4fa7-a4b9-74a1e776f9d3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\e09b2d51-179e-48cd-9b37-19d1563a5c37.png",
-      "PackagePath": "staticwebassets\\uploads\\e09b2d51-179e-48cd-9b37-19d1563a5c37.png"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\ee88472c-01a1-435c-a9b9-763de663b456.jpg",
-      "PackagePath": "staticwebassets\\uploads\\ee88472c-01a1-435c-a9b9-763de663b456.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\fb49e6c1-76c0-4a5a-afff-99c3af7f9e83.png",
-      "PackagePath": "staticwebassets\\uploads\\fb49e6c1-76c0-4a5a-afff-99c3af7f9e83.png"
-    },
-    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
