@@ -16,16 +16,21 @@ public class DownloadModel : PageModel
     public string Prompt { get; set; }
 
     public string VideoUrl { get; set; } = "/Assets/sample-video.mp4";
-
-    public void OnGet()
+public void OnGet()
+{
+    // Debug için ekstra kontroller
+    if (string.IsNullOrEmpty(Image1Url) || string.IsNullOrEmpty(Image2Url))
     {
-        // Debug için ekstra kontroller
-        if (string.IsNullOrEmpty(Image1Url) || string.IsNullOrEmpty(Image2Url))
-        {
-            // Hata durumunda loglama
-            Console.WriteLine($"Missing images: {Image1Url ?? "null"}, {Image2Url ?? "null"}");
-            // Kullanıcıya hata mesajı
-            TempData["Error"] = "Image URLs are missing. Please upload images again.";
-        }
+        // Hata durumunda loglama
+        Console.WriteLine($"Missing images: {Image1Url ?? "null"}, {Image2Url ?? "null"}");
+        // Kullanıcıya hata mesajı
+        TempData["Error"] = "Image URLs are missing. Please upload images again.";
     }
+
+    if (string.IsNullOrEmpty(Category))
+    {
+        // Kategori bilgisi eksikse hata mesajı
+        TempData["Error"] = "Category is missing. Please select a category.";
+    }
+}
 }

@@ -381,6 +381,46 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\0278d3fb-a908-4bcb-b01f-4b48aa8cdd76.png",
+      "PackagePath": "staticwebassets\\uploads\\0278d3fb-a908-4bcb-b01f-4b48aa8cdd76.png"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\11391b58-b416-443e-903e-073859f89ee7.png",
+      "PackagePath": "staticwebassets\\uploads\\11391b58-b416-443e-903e-073859f89ee7.png"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\1cf88c97-afb6-4753-b3f7-3bf0bf0c12f2.PNG",
+      "PackagePath": "staticwebassets\\uploads\\1cf88c97-afb6-4753-b3f7-3bf0bf0c12f2.PNG"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\31fddb76-d3b1-4c9f-9c4d-b52ae9ce3870.PNG",
+      "PackagePath": "staticwebassets\\uploads\\31fddb76-d3b1-4c9f-9c4d-b52ae9ce3870.PNG"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\6775c702-b905-4930-bb29-1d4cc01e56ef.png",
+      "PackagePath": "staticwebassets\\uploads\\6775c702-b905-4930-bb29-1d4cc01e56ef.png"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\71dc4d2c-efd4-4b44-a8f3-fcc7c23ccf54.png",
+      "PackagePath": "staticwebassets\\uploads\\71dc4d2c-efd4-4b44-a8f3-fcc7c23ccf54.png"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\8f558830-2dfd-4ed4-9eb4-491ec8feff59.png",
+      "PackagePath": "staticwebassets\\uploads\\8f558830-2dfd-4ed4-9eb4-491ec8feff59.png"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\97ef2a70-903f-440f-a9fd-6e4f5c8d4e07.jpg",
+      "PackagePath": "staticwebassets\\uploads\\97ef2a70-903f-440f-a9fd-6e4f5c8d4e07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\e91ec226-a4ea-4412-b283-0846eba67b3f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e91ec226-a4ea-4412-b283-0846eba67b3f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI4\\MyRazorApp\\MyRazorApp.UI\\wwwroot\\uploads\\f79c34dc-c1a5-4b87-bcd0-bc23fa9a9a1e.png",
+      "PackagePath": "staticwebassets\\uploads\\f79c34dc-c1a5-4b87-bcd0-bc23fa9a9a1e.png"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

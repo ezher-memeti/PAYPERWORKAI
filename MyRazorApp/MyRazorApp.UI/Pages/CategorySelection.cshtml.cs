@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 public class CategorySelectionModel : PageModel
 {
     [BindProperty(SupportsGet = true)]
-    public string SelectedCategory { get; set; } = "Cinematic"; // Default category
+    public string SelectedCategory { get; set; }// Default category
 
     public List<string> Categories { get; set; } = new()
     {
