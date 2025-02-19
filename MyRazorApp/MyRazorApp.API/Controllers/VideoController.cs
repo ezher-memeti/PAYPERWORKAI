@@ -21,7 +21,7 @@ namespace MyRazorApp.MyRazorApp.API.VideoController
             _videoQueryService = videoQueryService;
             _jwtService = jwtService;
             _logger = logger;
-            _uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+            _uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Media", "UploadedPhotos");
         }
 
         [HttpPost("generate")]
@@ -171,7 +171,11 @@ namespace MyRazorApp.MyRazorApp.API.VideoController
         }
     }
 
-    
+
+    public class VideoUrl{
+        public string videoUrl { get; set; } = "";
+    }
+
     public class VideoGenerationRequest
     {
         
@@ -186,10 +190,6 @@ namespace MyRazorApp.MyRazorApp.API.VideoController
         public string Duration { get; set; } = "5";
         public string CallbackUrl { get; set; } ="";
         public string ExternalTaskId { get; set; } ="";
-    }
-
-    public class VideoUrl{
-        public string videoUrl { get; set; } = "";
     }
 }
 

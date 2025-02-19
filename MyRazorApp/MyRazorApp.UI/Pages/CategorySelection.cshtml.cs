@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Text;
 
 public class CategorySelectionModel : PageModel
 {
@@ -76,16 +78,65 @@ public class CategorySelectionModel : PageModel
         var response = await client.PostAsync("/api/server/upload", formData);
 
         // Check response
-        if (response.IsSuccessStatusCode)
-        {
-            ViewData["Message"] = "Files uploaded successfully.";
-        }
-        else
+        if (!response.IsSuccessStatusCode)
         {
             ViewData["Message"] = "File upload failed.";
+            return Page();
         }
     }
 
+    // Step 2: Trigger video generation
+    var videoGenerationRequest = new VideoGenerationRequest
+    {
+        Prompt = Prompt,
+        Image = Image1.FileName, // Send only the filenames of the uploaded images
+        ImageTail = Image2.FileName,
+        NegativePrompt = "",  // Set if you have a negative prompt
+        CfgScale = 0.5f,      // Adjust as necessary
+        Mode = "std",         // Adjust as necessary
+        StaticMask= "",
+        DynamicMasks= [],
+        Duration = "5",       // Adjust as necessary
+        CallbackUrl = "",     // Set if you have a callback URL
+        ExternalTaskId = ""   // Set if you need to include an external task ID
+    };
+
+    var jsonContent = JsonConvert.SerializeObject(videoGenerationRequest); // Serializing the object
+    var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+    // Step 3: Send the video generation request
+    var videoResponse = await client.PostAsync("/api/video/generate", content);
+
+    // Check if video generation was successful
+    if (videoResponse.IsSuccessStatusCode)
+    {
+        var result = await videoResponse.Content.ReadAsStringAsync();
+        ViewData["Message"] = "Video generated successfully. " + result;
+    }
+    else
+    {
+        var errorResult = await videoResponse.Content.ReadAsStringAsync();
+        ViewData["Message"] = "Video generation failed. " + errorResult;
+    }
+
     return Page();
+
+
+    
 }
+public class VideoGenerationRequest
+    {
+        
+        public string Prompt { get; set; } = "";
+        public string Image { get; set; } =""; // Only the filename, e.g., "myImage.jpg"
+        public string ImageTail { get; set; } ="";
+        public string NegativePrompt { get; set; } ="";
+        public float CfgScale { get; set; } = 0.5f; 
+        public string Mode { get; set; } = "std";
+        public string StaticMask { get; set; } ="";
+        public dynamic[] DynamicMasks { get; set; } = [];
+        public string Duration { get; set; } = "5";
+        public string CallbackUrl { get; set; } ="";
+        public string ExternalTaskId { get; set; } ="";
+    }
 }

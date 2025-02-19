@@ -10,6 +10,14 @@
 <!-- Page Container -->
 <div class="container mt-4">
 
+     <!-- Display message if exists -->
+    @if (ViewData["Message"] != null)
+    {
+        <div class="alert alert-info">
+            @ViewData["Message"]
+        </div>
+    }
+
     <div class="head-container d-flex justify-content-evenly align-items-center mb-5 mt-5">
     <!-- Title and Subtitle -->
     <div class="d-flex justify-content-center text-center">
