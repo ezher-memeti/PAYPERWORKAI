@@ -11,6 +11,7 @@ namespace MyRazorApp.Website.API.ServerController
     [EnableCors]
     public class ServerController : ControllerBase
     {
+
         [HttpPost("upload")]
         public async Task<IActionResult> UploadImagesAsync([FromForm] IFormFile file1, [FromForm] IFormFile file2, [FromForm] string prompt)
         {
@@ -57,7 +58,7 @@ namespace MyRazorApp.Website.API.ServerController
         [HttpGet("stream/{fileName}")]
         public IActionResult StreamVideo(string fileName)
         {
-            var filePath = Path.Combine(_env.ContentRootPath, "Website.API", "Media", "CreatedVideos", fileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Media/CreatedVideos", fileName);
 
             if (!System.IO.File.Exists(filePath))
                 return NotFound(new { message = "Video not found." });
@@ -69,7 +70,7 @@ namespace MyRazorApp.Website.API.ServerController
         [HttpGet("download/{fileName}")]
         public IActionResult DownloadVideo(string fileName)
         {
-            var filePath = Path.Combine(_env.ContentRootPath, "Website.API", "Media", "CreatedVideos", fileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Media/CreatedVideos", fileName);
 
             if (!System.IO.File.Exists(filePath))
                 return NotFound(new { message = "Video not found." });
@@ -81,20 +82,21 @@ namespace MyRazorApp.Website.API.ServerController
         [HttpGet("latest-video")]
         public IActionResult GetLatestVideo()
         {
-            var videoDirectory = Path.Combine(_env.ContentRootPath, "Website.API", "Media", "CreatedVideos");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Media/CreatedVideos");
 
-            if (!Directory.Exists(videoDirectory))
+            if (!Directory.Exists(filePath))
                 return NotFound(new { message = "No videos found." });
 
-            var videoFiles = Directory.GetFiles(videoDirectory, "*.mp4")
-                                      .OrderByDescending(File.GetCreationTime)
-                                      .ToList();
+            var latestVideo = new DirectoryInfo(filePath)
+                      .GetFiles("*.mp4")
+                      .OrderByDescending(f => f.CreationTime)
+                      .FirstOrDefault(); // Get the latest file
 
-            if (!videoFiles.Any())
-                return NotFound(new { message = "No videos found." });
-
-            var latestVideo = Path.GetFileName(videoFiles.First());
-            return Ok(new { fileName = latestVideo });
+if (latestVideo == null)
+{
+    return NotFound("No video files found.");
+}
+            return Ok(new { fileName = latestVideo.Name });
         }
     }
 }

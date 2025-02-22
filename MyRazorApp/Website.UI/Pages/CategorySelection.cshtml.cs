@@ -94,7 +94,7 @@ public class CategorySelectionModel : PageModel
         Prompt = Prompt,
         Image = Image1.FileName, // Send only the filenames of the uploaded images
         ImageTail = Image2.FileName,
-        NegativePrompt = "",  // Set if you have a negative prompt
+        NegativePrompt = "animation, blur, low quality, glitches, low resolution, low quality, grainy textures, grainy, pixelation, overexposure, underexposure, noise, blurry focus, motion blur, blur, distortion, poor lighting, shimmering, washed-out colors, inconsistent frame rates, artifacts, visual distortions, morphing,",  // Set if you have a negative prompt
         CfgScale = 0.5f,      // Adjust as necessary
         Mode = "std",         // Adjust as necessary
         StaticMask= "",
@@ -234,7 +234,13 @@ public class CategorySelectionModel : PageModel
         ViewData["Message"] = "Download URL not found.";
     }
 
-    return Page();
+    return RedirectToPage("/Download", new
+        {
+            category = SelectedCategory,
+            image1Url = Image1, // Parametre isimlerini düzelt
+            image2Url = Image2,
+            prompt = Prompt
+        }); 
 }
 
 }}
