@@ -9,8 +9,7 @@
         document.getElementById("loadingContainer").style.display = "none";
         document.getElementById("videoPlayer").classList.remove("hidden");
 
-        // Enable the download button
-        downloadBtn.removeAttribute("disabled");
+
         downloadBtn.classList.remove("disabled-btn");
     }, 3000);
 });

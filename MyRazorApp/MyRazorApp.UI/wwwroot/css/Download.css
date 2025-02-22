@@ -2,23 +2,59 @@
     text-align: center;
     padding: 40px;
     color: white;
+    padding-bottom: 120px;
+}
+
+.header-container {
+    width: 100%;
+    width: 988px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.gradient-header {
+    font-weight: 900;
+    line-height: 39px;
+    font-size: 36px;
+    background: linear-gradient(to right, #FFFFFF, #AEA9DD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.return-btn {
+    width: 85px;
+    height: 22px;
+    gap: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16.32px;
 }
 
 /* Centered Video Card */
 .video-card {
+    width: 100%;
     width: 988px;
     height: 504px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
-    border: 1px solid white;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(19.5px);
-    transition: 0.3s;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
+    border: 0.1px solid white;
+    color: white;
 }
 
 /* Video Player (hidden initially) */
@@ -35,148 +71,152 @@
     display: block;
 }
 
-.details-cont {
+#loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #aea9dd6d;
+    border-top: 5px solid #AEA9DD;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.details-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    height: auto;
 }
 
 /* Layout for category, images, and prompt in a single row */
 .details-row {
-    min-width: 900px;
+    color: #FFFFFF;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     margin-top: 20px;
-}
-
-/* Category Box Styling */
-.category-box {
-    background-image: url('/assets/background/maskgroup.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; /* Metni üstte hizala */
-    width: 200px;
-    height: 50px;
-    position: relative; /* Metni görselin üstüne yerleştirmek için */
-}
-
-.category-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 5px; /* Metin ile kategori arasına boşluk */
-}
-
-.category-box .category-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    position: relative; /* Metni görselin üstüne yerleştir */
-    z-index: 2; /* Metni ön plana çıkar */
+    width: 988px;
 }
 
 /* Each section in the row */
 .detail-box {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    text-align: start;
+    row-gap: 5px;
+}
+
+/* Category and Prompt styling */
+.category-box {
+    padding: 12px;
+    border-radius: 12px;
+    width: 171px;
+    height: 47px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.32px;
+    border: 0.4px solid white;
+    display: flex;
     align-items: center;
     text-align: center;
-    margin-right: 30px;
 }
 
 .prompt-box {
+    height: 47px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    justify-content: start;
+    padding: 13px;
+    background-color: #b8b8b8;
+    border-radius: 12px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 100;
+    border: 0.4px solid white;
 
-.prompt-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 10px;
-}
-
-.prompt-box .prompt-text {
-    font-size: 16px;
-    font-weight: bold;
-    color: white; /* Metin rengi beyaz */
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: black; /* Arka plan rengi siyah */
-}
-
-.gradient-text {
-    text-align: start;
-    background: linear-gradient(45deg, #FFFFFF, #00000029);
+    /* Gradient Text */
+    background: linear-gradient(to right, #ffffff, #00000033);
     -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Images Box Styling */
+/* Image Thumbnails */
 .images-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.images-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 10px;
-}
-
-.image-grid {
     display: flex;
     gap: 10px;
 }
 
-.image-thumbnail {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-/* Buttons Section */
-.buttons {
+.label {
     display: flex;
-    gap: 15px;
-    margin-top: 22px;
-    margin-left: 30px;
+    justify-self: start;
+    align-items: start;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.image-thumbnail {
+    width: 52px;
+    height: 47px;
+    border-radius: 12px;
+    border: 0.5px solid white;
+    object-fit: cover;
 }
 
 /* Button Styles */
 .download-btn,
 .generate-btn {
-    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 47px;
+    width: 230px;
     background: linear-gradient(to right, #AEA9DD, #FFFFFF);
     border: none;
     color: black;
-    font-size: 16px;
-    border-radius: 8px;
+    font-size: 12px;
+    border-radius: 12px;
     transition: 0.3s;
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 16px;
+    margin-top: 23px;
+    border: 0.4px solid white;
+}
+
+.download-btn {
+    width: 212px;
+}
+
+.download-btn:hover,
+.generate-btn:hover {
+    color: black;
+    box-shadow: 0 0 10px 0px white;
 }
 
 .download-btn img,
 .generate-btn img {
-    width: 20px;
+    width: 22px;
+    height: 22px;
 }
 
 .hidden {
@@ -185,7 +225,10 @@
 
 /* Disabled button styling */
 .disabled-btn {
-    opacity: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
 }

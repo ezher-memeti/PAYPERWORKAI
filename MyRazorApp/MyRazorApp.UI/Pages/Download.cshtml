@@ -7,48 +7,58 @@
 <link rel="stylesheet" href="~/css/Download.css" />
 
 <div class="video-review-container">
-    <h2 class="page-title">Review Your Video</h2>
+
+    <div class="header-container">
+             <span class="gradient-header">Review Your Video</span> 
+             <a asp-page="/CategorySelection" class="btn return-btn">
+                    <img src="/Assets/Return.svg">Return
+                </a>
+    </div>
 
     <!-- Video Card Container -->
     <div class="video-card">
         <div id="loadingContainer">
-            <img src="/Assets/loading.gif" alt="Generating..." class="loading-gif">
+            @* <img src="/Assets/Loading.gif" alt="Generating... it may take a while" class="loading-gif"> *@
+            <div class="loading-spinner"></div>
+            <h4>Generating... It May Take a While</h4>
         </div>
         <video id="videoPlayer" controls class="video-player hidden">
             <source src="@Model.VideoUrl" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
-    <div class="details-cont">
+
+    <div class="details-container">
         <!-- Details Row -->
         <div class="details-row">
             <!-- Category -->
-            <div class="category-box">
+            <div class="detail-box">
                 <span class="label">Category</span>
-                <div class="category-text">@Model.Category</div>
+                <div class="category-box">@Model.Category</div>
             </div>
 
             <!-- Images -->
-            <div class="images-box">
+            <div class="detail-box">
                 <span class="label">Images</span>
-                <div class="image-grid">
-                    <img src="@Model.Image1Url" alt="Input 1" class="image-thumbnail">
-                    <img src="@Model.Image2Url" alt="Input 2" class="image-thumbnail">
+                <div class="images-box">
+                    <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
+                    <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
                 </div>
             </div>
 
             <!-- Prompt -->
-            <div class="prompt-box">
+            <div class="detail-box">
                 <span class="label">Prompt</span>
-                <div class="prompt-text">@Model.Prompt</div>
+                <div class="prompt-box">@Model.Prompt</div>
             </div>
 
             <!-- Buttons -->
-            <div class="buttons">
+            <div class="detail-box">
                 <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn">
                     Download Video <img src="/Assets/Download.svg">
                 </a>
+            </div>
+            <div class="detail-box">
                 <a asp-page="/CategorySelection" class="btn generate-btn">
                     Generate New AI Video <img src="/Assets/generate.svg">
                 </a>
@@ -58,17 +68,4 @@
 </div>
 
 <!-- JavaScript for Handling Loading -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const loadingContainer = document.getElementById('loadingContainer');
-        const videoPlayer = document.getElementById('videoPlayer');
-        const downloadBtn = document.getElementById('downloadBtn');
-
-        // Simulate video loading
-        setTimeout(() => {
-            loadingContainer.classList.add('hidden');
-            videoPlayer.classList.remove('hidden');
-            downloadBtn.classList.remove('hidden'); // Download butonunu göster
-        }, 2500); // 2.5 saniye sonra video yüklendi varsayalım
-    });
-</script>
+<script src="~/js/site.js"></script>
