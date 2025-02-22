@@ -65,8 +65,20 @@
       "PackagePath": "staticwebassets/Assets/Categories/videos/Car.mp4"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Cinematic.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Cinematic.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Fashion.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Fashion.mp4"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Food.mp4",
       "PackagePath": "staticwebassets/Assets/Categories/videos/Food.mp4"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/Personal-Video.mp4",
+      "PackagePath": "staticwebassets/Assets/Categories/videos/Personal-Video.mp4"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Categories/videos/SciFi.mp4",
@@ -397,6 +409,10 @@
       "PackagePath": "staticwebassets/uploads/072f841b-6dda-40ce-807d-2ca721497b3b.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/0b6ce20e-8690-4d5d-ab36-e5e46bd492d2.png",
+      "PackagePath": "staticwebassets/uploads/0b6ce20e-8690-4d5d-ab36-e5e46bd492d2.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/0fa7be68-7ad2-4ffd-9a36-39c036d25c2d.png",
       "PackagePath": "staticwebassets/uploads/0fa7be68-7ad2-4ffd-9a36-39c036d25c2d.png"
     },
@@ -413,12 +429,20 @@
       "PackagePath": "staticwebassets/uploads/251a366f-3278-406c-8208-247d72f2d178.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/2dc29f67-c097-4d1a-a6b5-2476c59a0aec.jpg",
+      "PackagePath": "staticwebassets/uploads/2dc29f67-c097-4d1a-a6b5-2476c59a0aec.jpg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/31fddb76-d3b1-4c9f-9c4d-b52ae9ce3870.PNG",
       "PackagePath": "staticwebassets/uploads/31fddb76-d3b1-4c9f-9c4d-b52ae9ce3870.PNG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/3479cf97-ed89-4d27-8aba-73dd231f63fa.png",
       "PackagePath": "staticwebassets/uploads/3479cf97-ed89-4d27-8aba-73dd231f63fa.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/373ceb80-ba12-41d7-aa3a-5e60e3e6034f.png",
+      "PackagePath": "staticwebassets/uploads/373ceb80-ba12-41d7-aa3a-5e60e3e6034f.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/38181077-4bca-4fba-a479-7d72bc8edc74.png",
@@ -431,6 +455,14 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/71dc4d2c-efd4-4b44-a8f3-fcc7c23ccf54.png",
       "PackagePath": "staticwebassets/uploads/71dc4d2c-efd4-4b44-a8f3-fcc7c23ccf54.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/797b64f5-0f3e-458d-9cfb-9938f664178e.jpg",
+      "PackagePath": "staticwebassets/uploads/797b64f5-0f3e-458d-9cfb-9938f664178e.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/88a93453-c84f-4339-8d24-b97f6148e720.jpg",
+      "PackagePath": "staticwebassets/uploads/88a93453-c84f-4339-8d24-b97f6148e720.jpg"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/8f558830-2dfd-4ed4-9eb4-491ec8feff59.png",
@@ -453,12 +485,24 @@
       "PackagePath": "staticwebassets/uploads/c6468e03-9e0a-4348-9923-6e478a9f9cf2.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/ce229a88-b4e0-4a54-b956-5a003731ecd1.jpg",
+      "PackagePath": "staticwebassets/uploads/ce229a88-b4e0-4a54-b956-5a003731ecd1.jpg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/e91ec226-a4ea-4412-b283-0846eba67b3f.jpg",
       "PackagePath": "staticwebassets/uploads/e91ec226-a4ea-4412-b283-0846eba67b3f.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f1ae4cfd-f8c2-4a1e-8e5c-b3fe4e4c2e97.jpg",
+      "PackagePath": "staticwebassets/uploads/f1ae4cfd-f8c2-4a1e-8e5c-b3fe4e4c2e97.jpg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f79c34dc-c1a5-4b87-bcd0-bc23fa9a9a1e.png",
       "PackagePath": "staticwebassets/uploads/f79c34dc-c1a5-4b87-bcd0-bc23fa9a9a1e.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/fa6c2399-38d3-486c-a543-5c5601ac11f7.jpg",
+      "PackagePath": "staticwebassets/uploads/fa6c2399-38d3-486c-a543-5c5601ac11f7.jpg"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

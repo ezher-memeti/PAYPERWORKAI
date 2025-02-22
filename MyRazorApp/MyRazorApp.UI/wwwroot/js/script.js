@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categories = [
         { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
-        { name: "Fashion", image: "/Assets/Vector.png" },
+        { name: "Fashion", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Fashion.mp4" },
         { name: "Food", image: "MyRazorApp/wwwroot/Assets/Bildschirmfoto 2025-02-01 um 17.14.24 2.png", video: "/Assets/Categories/videos/Food.mp4" },
         { name: "Architecture", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Architecture.mp4" },
         { name: "Science Fiction", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/SciFi.mp4" },
-        { name: "Personal Video", image: "/Assets/Vector.png" },
+        { name: "Personal Video", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Personal-Video.mp4" },
         { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }
     ];
 
