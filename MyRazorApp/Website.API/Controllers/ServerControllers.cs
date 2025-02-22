@@ -77,5 +77,24 @@ namespace MyRazorApp.Website.API.ServerController
             var fileBytes = System.IO.File.ReadAllBytes(filePath);
             return File(fileBytes, "video/mp4", fileName);
         }
+
+        [HttpGet("latest-video")]
+        public IActionResult GetLatestVideo()
+        {
+            var videoDirectory = Path.Combine(_env.ContentRootPath, "Website.API", "Media", "CreatedVideos");
+
+            if (!Directory.Exists(videoDirectory))
+                return NotFound(new { message = "No videos found." });
+
+            var videoFiles = Directory.GetFiles(videoDirectory, "*.mp4")
+                                      .OrderByDescending(File.GetCreationTime)
+                                      .ToList();
+
+            if (!videoFiles.Any())
+                return NotFound(new { message = "No videos found." });
+
+            var latestVideo = Path.GetFileName(videoFiles.First());
+            return Ok(new { fileName = latestVideo });
+        }
     }
 }
