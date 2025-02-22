@@ -6,17 +6,15 @@
 
 /* Centered Video Card */
 .video-card {
-    width: 988px;
-    height: 504px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
-    border: 1px solid white;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(19.5px);
-    transition: 0.3s;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -35,55 +33,20 @@
     display: block;
 }
 
-.details-cont {
+.details-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    height: auto;
 }
 
 /* Layout for category, images, and prompt in a single row */
 .details-row {
-    min-width: 900px;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     margin-top: 20px;
-}
-
-/* Category Box Styling */
-.category-box {
-    background-image: url('/assets/background/maskgroup.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; /* Metni üstte hizala */
-    width: 200px;
-    height: 50px;
-    position: relative; /* Metni görselin üstüne yerleştirmek için */
-}
-
-.category-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 5px; /* Metin ile kategori arasına boşluk */
-}
-
-.category-box .category-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    position: relative; /* Metni görselin üstüne yerleştir */
-    z-index: 2; /* Metni ön plana çıkar */
+    width: 70%;
 }
 
 /* Each section in the row */
@@ -92,71 +55,39 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-right: 30px;
 }
 
+/* Category and Prompt styling */
+.category-box,
 .prompt-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.prompt-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 10px;
-}
-
-.prompt-box .prompt-text {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 150px;
     font-size: 16px;
     font-weight: bold;
-    color: white; /* Metin rengi beyaz */
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: black; /* Arka plan rengi siyah */
 }
 
-.gradient-text {
-    text-align: start;
-    background: linear-gradient(45deg, #FFFFFF, #00000029);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-/* Images Box Styling */
+/* Image Thumbnails */
 .images-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.images-box .label {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 10px;
-}
-
-.image-grid {
     display: flex;
     gap: 10px;
 }
 
 .image-thumbnail {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
+    padding: 5px;
+    border: 0.4px solid white;
     object-fit: cover;
 }
+
 /* Buttons Section */
 .buttons {
     display: flex;
     gap: 15px;
-    margin-top: 22px;
-    margin-left: 30px;
+    margin-top: 20px;
 }
 
 /* Button Styles */
@@ -185,7 +116,7 @@
 
 /* Disabled button styling */
 .disabled-btn {
-    opacity: 1;
+    opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
 }

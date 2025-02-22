@@ -12,41 +12,41 @@
     <!-- Video Card Container -->
     <div class="video-card">
         <div id="loadingContainer">
-            <img src="/Assets/loading.gif" alt="Generating..." class="loading-gif">
+            <img src="/Assets/loading.gif" alt="Loading..." class="loading-gif">
         </div>
         <video id="videoPlayer" controls class="video-player hidden">
             <source src="@Model.VideoUrl" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
-    <div class="details-cont">
+
+    <div class="details-container">
         <!-- Details Row -->
         <div class="details-row">
             <!-- Category -->
-            <div class="category-box">
+            <div class="detail-box">
                 <span class="label">Category</span>
-                <div class="category-text">@Model.Category</div>
+                <div class="category-box">@Model.Category</div>
             </div>
 
             <!-- Images -->
-            <div class="images-box">
+            <div class="detail-box">
                 <span class="label">Images</span>
-                <div class="image-grid">
-                    <img src="@Model.Image1Url" alt="Input 1" class="image-thumbnail">
-                    <img src="@Model.Image2Url" alt="Input 2" class="image-thumbnail">
+                <div class="images-box">
+                    <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
+                    <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
                 </div>
             </div>
 
             <!-- Prompt -->
-            <div class="prompt-box">
+            <div class="detail-box">
                 <span class="label">Prompt</span>
-                <div class="prompt-text">@Model.Prompt</div>
+                <div class="prompt-box">@Model.Prompt</div>
             </div>
 
             <!-- Buttons -->
             <div class="buttons">
-                <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn">
+                <a id="downloadBtn" href="@Model.VideoUrl" download class="btn download-btn hidden">
                     Download Video <img src="/Assets/Download.svg">
                 </a>
                 <a asp-page="/CategorySelection" class="btn generate-btn">
