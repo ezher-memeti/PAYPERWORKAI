@@ -244,6 +244,39 @@ function removeImage(containerId, imageId, inputId) {
     fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
 }
 
+///DROPDOWNS UPDATE
+document.addEventListener("DOMContentLoaded", function () {
+    function updateURLParams(param, value, reload = false) {
+        let url = new URL(window.location.href);
+        url.searchParams.set(param, value); // Update query parameters
+        window.history.pushState({}, '', url); // Push new URL state
+
+        if (reload) {
+            location.reload(); // Reload page only for category
+        }
+    }
+
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Restore dropdown selections from query parameters
+    document.querySelectorAll("select").forEach(dropdown => {
+        const dropdownId = dropdown.id;
+        let savedValue = getQueryParam(dropdownId);
+
+        if (savedValue) {
+            dropdown.value = savedValue;
+        }
+
+        dropdown.addEventListener("change", function () {
+            updateURLParams(dropdownId, this.value, dropdownId === "category");
+        });
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Checking if JavaScript is running...");
     var selectElement = document.getElementById("category");
@@ -321,4 +354,6 @@ document.addEventListener("DOMContentLoaded", function () {
         this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
     });
 });
+
+
 

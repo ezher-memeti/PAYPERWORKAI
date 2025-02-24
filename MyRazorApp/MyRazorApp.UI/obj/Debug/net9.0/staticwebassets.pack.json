@@ -125,6 +125,10 @@
       "PackagePath": "staticwebassets/Assets/background2.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/dropdown.svg",
+      "PackagePath": "staticwebassets/Assets/dropdown.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/generate.svg",
       "PackagePath": "staticwebassets/Assets/generate.svg"
     },
@@ -405,8 +409,20 @@
       "PackagePath": "staticwebassets/uploads/0278d3fb-a908-4bcb-b01f-4b48aa8cdd76.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/05598f9a-2ac0-42fd-8c32-6fb915c9c6f7.JPG",
+      "PackagePath": "staticwebassets/uploads/05598f9a-2ac0-42fd-8c32-6fb915c9c6f7.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/06e27f1f-f970-4899-9ac4-d3ba9c8d80ee.png",
+      "PackagePath": "staticwebassets/uploads/06e27f1f-f970-4899-9ac4-d3ba9c8d80ee.png"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/072f841b-6dda-40ce-807d-2ca721497b3b.png",
       "PackagePath": "staticwebassets/uploads/072f841b-6dda-40ce-807d-2ca721497b3b.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/09da0efe-806a-403b-a8b2-68fd6d60d443.JPG",
+      "PackagePath": "staticwebassets/uploads/09da0efe-806a-403b-a8b2-68fd6d60d443.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/0b6ce20e-8690-4d5d-ab36-e5e46bd492d2.png",
@@ -421,12 +437,20 @@
       "PackagePath": "staticwebassets/uploads/11391b58-b416-443e-903e-073859f89ee7.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/1780e957-9991-460e-aa55-497e968111d6.JPG",
+      "PackagePath": "staticwebassets/uploads/1780e957-9991-460e-aa55-497e968111d6.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/1cf88c97-afb6-4753-b3f7-3bf0bf0c12f2.PNG",
       "PackagePath": "staticwebassets/uploads/1cf88c97-afb6-4753-b3f7-3bf0bf0c12f2.PNG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/251a366f-3278-406c-8208-247d72f2d178.png",
       "PackagePath": "staticwebassets/uploads/251a366f-3278-406c-8208-247d72f2d178.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/27476d3f-3009-4780-8a87-d2abf7e19064.JPG",
+      "PackagePath": "staticwebassets/uploads/27476d3f-3009-4780-8a87-d2abf7e19064.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/2dc29f67-c097-4d1a-a6b5-2476c59a0aec.jpg",
@@ -441,12 +465,44 @@
       "PackagePath": "staticwebassets/uploads/3479cf97-ed89-4d27-8aba-73dd231f63fa.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/347ae184-4e98-4593-bafb-8724d0dc5f41.JPG",
+      "PackagePath": "staticwebassets/uploads/347ae184-4e98-4593-bafb-8724d0dc5f41.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/373ceb80-ba12-41d7-aa3a-5e60e3e6034f.png",
       "PackagePath": "staticwebassets/uploads/373ceb80-ba12-41d7-aa3a-5e60e3e6034f.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/38181077-4bca-4fba-a479-7d72bc8edc74.png",
       "PackagePath": "staticwebassets/uploads/38181077-4bca-4fba-a479-7d72bc8edc74.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/39c300b0-25f5-446a-a69e-d5f197371d6d.JPG",
+      "PackagePath": "staticwebassets/uploads/39c300b0-25f5-446a-a69e-d5f197371d6d.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/3a5b07cf-9529-423d-b617-964fe8e7e5c7.JPG",
+      "PackagePath": "staticwebassets/uploads/3a5b07cf-9529-423d-b617-964fe8e7e5c7.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/3e128d14-778f-4513-bb94-d999c1e1880c.JPG",
+      "PackagePath": "staticwebassets/uploads/3e128d14-778f-4513-bb94-d999c1e1880c.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/40579493-5baf-4306-9cd3-4847140620db.JPG",
+      "PackagePath": "staticwebassets/uploads/40579493-5baf-4306-9cd3-4847140620db.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/434bd097-c97b-43ab-b635-69232bdc6d0d.JPG",
+      "PackagePath": "staticwebassets/uploads/434bd097-c97b-43ab-b635-69232bdc6d0d.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/63858397-a440-4a04-9d28-1e5e2cd2ad06.JPG",
+      "PackagePath": "staticwebassets/uploads/63858397-a440-4a04-9d28-1e5e2cd2ad06.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/66cf57fc-4dc8-4db5-b2bd-469b423c80c2.JPG",
+      "PackagePath": "staticwebassets/uploads/66cf57fc-4dc8-4db5-b2bd-469b423c80c2.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/6775c702-b905-4930-bb29-1d4cc01e56ef.png",
@@ -457,24 +513,80 @@
       "PackagePath": "staticwebassets/uploads/71dc4d2c-efd4-4b44-a8f3-fcc7c23ccf54.png"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/747d13e8-aa82-49d5-a835-d703c60774b3.JPG",
+      "PackagePath": "staticwebassets/uploads/747d13e8-aa82-49d5-a835-d703c60774b3.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/797b64f5-0f3e-458d-9cfb-9938f664178e.jpg",
       "PackagePath": "staticwebassets/uploads/797b64f5-0f3e-458d-9cfb-9938f664178e.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/7bc2c877-8431-4be2-a914-9152c5915996.JPG",
+      "PackagePath": "staticwebassets/uploads/7bc2c877-8431-4be2-a914-9152c5915996.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/7e91c4bd-d796-448d-82af-649db54dbd65.JPG",
+      "PackagePath": "staticwebassets/uploads/7e91c4bd-d796-448d-82af-649db54dbd65.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/82aa14d7-24ed-4d12-86b7-eba2c435b9e4.JPG",
+      "PackagePath": "staticwebassets/uploads/82aa14d7-24ed-4d12-86b7-eba2c435b9e4.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/88a93453-c84f-4339-8d24-b97f6148e720.jpg",
       "PackagePath": "staticwebassets/uploads/88a93453-c84f-4339-8d24-b97f6148e720.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/8a69f6e8-ffb1-49de-a670-f998a075d62e.JPG",
+      "PackagePath": "staticwebassets/uploads/8a69f6e8-ffb1-49de-a670-f998a075d62e.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/8f558830-2dfd-4ed4-9eb4-491ec8feff59.png",
       "PackagePath": "staticwebassets/uploads/8f558830-2dfd-4ed4-9eb4-491ec8feff59.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/96eca531-0365-4bbe-8755-0b673b25fe49.png",
+      "PackagePath": "staticwebassets/uploads/96eca531-0365-4bbe-8755-0b673b25fe49.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/97ef2a70-903f-440f-a9fd-6e4f5c8d4e07.jpg",
       "PackagePath": "staticwebassets/uploads/97ef2a70-903f-440f-a9fd-6e4f5c8d4e07.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/99785ffd-9cbd-4937-8d67-2930f6e14a58.JPG",
+      "PackagePath": "staticwebassets/uploads/99785ffd-9cbd-4937-8d67-2930f6e14a58.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/9cc305d7-5647-4c94-95f6-497bdea8e593.png",
       "PackagePath": "staticwebassets/uploads/9cc305d7-5647-4c94-95f6-497bdea8e593.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/9d023159-2c8f-4979-8ee5-4f4e1d698619.JPG",
+      "PackagePath": "staticwebassets/uploads/9d023159-2c8f-4979-8ee5-4f4e1d698619.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/9f07e434-cbd8-48c1-8e54-3651b10ad1fb.JPG",
+      "PackagePath": "staticwebassets/uploads/9f07e434-cbd8-48c1-8e54-3651b10ad1fb.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/aa68440a-fa11-4d2b-821c-656761bca2ce.JPG",
+      "PackagePath": "staticwebassets/uploads/aa68440a-fa11-4d2b-821c-656761bca2ce.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/af5cbaa9-47d2-47a8-8d0d-4f7e080b74eb.JPG",
+      "PackagePath": "staticwebassets/uploads/af5cbaa9-47d2-47a8-8d0d-4f7e080b74eb.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/b393e00a-5a29-4d95-b93a-170e9e9c5126.JPG",
+      "PackagePath": "staticwebassets/uploads/b393e00a-5a29-4d95-b93a-170e9e9c5126.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/bb2b41d0-7009-4851-9c23-8f187cbcd4bf.JPG",
+      "PackagePath": "staticwebassets/uploads/bb2b41d0-7009-4851-9c23-8f187cbcd4bf.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/c16b5afc-7ec2-4f5f-8601-c8a517d965a2.JPG",
+      "PackagePath": "staticwebassets/uploads/c16b5afc-7ec2-4f5f-8601-c8a517d965a2.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/c46d507c-f1c6-4303-a808-32eb96da7d11.png",
@@ -489,12 +601,36 @@
       "PackagePath": "staticwebassets/uploads/ce229a88-b4e0-4a54-b956-5a003731ecd1.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/cf71058d-27f7-448e-ae9b-b8702f351439.JPG",
+      "PackagePath": "staticwebassets/uploads/cf71058d-27f7-448e-ae9b-b8702f351439.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/dfd256b2-90fd-4377-8ce7-d57ff76ae586.JPG",
+      "PackagePath": "staticwebassets/uploads/dfd256b2-90fd-4377-8ce7-d57ff76ae586.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/e91ec226-a4ea-4412-b283-0846eba67b3f.jpg",
       "PackagePath": "staticwebassets/uploads/e91ec226-a4ea-4412-b283-0846eba67b3f.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/ef25eae0-3d5c-4069-85ee-f5f0df67ec55.JPG",
+      "PackagePath": "staticwebassets/uploads/ef25eae0-3d5c-4069-85ee-f5f0df67ec55.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/efe51bc4-56ec-4b8d-80a3-0af58e1ec464.JPG",
+      "PackagePath": "staticwebassets/uploads/efe51bc4-56ec-4b8d-80a3-0af58e1ec464.JPG"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f1ae4cfd-f8c2-4a1e-8e5c-b3fe4e4c2e97.jpg",
       "PackagePath": "staticwebassets/uploads/f1ae4cfd-f8c2-4a1e-8e5c-b3fe4e4c2e97.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f1b8f5d2-b565-4951-a4e6-8405e8df4c3c.JPG",
+      "PackagePath": "staticwebassets/uploads/f1b8f5d2-b565-4951-a4e6-8405e8df4c3c.JPG"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f78b7021-7325-4e96-9276-020775d7691d.JPG",
+      "PackagePath": "staticwebassets/uploads/f78b7021-7325-4e96-9276-020775d7691d.JPG"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/f79c34dc-c1a5-4b87-bcd0-bc23fa9a9a1e.png",
@@ -503,6 +639,10 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/fa6c2399-38d3-486c-a543-5c5601ac11f7.jpg",
       "PackagePath": "staticwebassets/uploads/fa6c2399-38d3-486c-a543-5c5601ac11f7.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/uploads/fd79fb00-8db5-44d1-9d27-808e823a2729.JPG",
+      "PackagePath": "staticwebassets/uploads/fd79fb00-8db5-44d1-9d27-808e823a2729.JPG"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
