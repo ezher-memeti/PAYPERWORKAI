@@ -47,7 +47,7 @@ public class CategorySelectionModel : PageModel
     
     public async Task<IActionResult> OnPostAsync()
     {
-    // Validate both images
+    /* Validate both images
     if (Image1 == null || Image1.Length == 0)
     {
         ModelState.AddModelError("", "Please select an image.");
@@ -58,11 +58,14 @@ public class CategorySelectionModel : PageModel
     {
         ModelState.AddModelError("", "Please select a tail image.");
         return Page();
-    }
+    }*/
     
+
+    //COMMENTED FOR TESTING PURPOSES
+
     var client = _httpClientFactory.CreateClient("server");
     
-    using (var formData = new MultipartFormDataContent())
+    /*using (var formData = new MultipartFormDataContent())
     {
         // Add first image
         var fileStreamContent1 = new StreamContent(Image1.OpenReadStream());
@@ -131,6 +134,7 @@ public class CategorySelectionModel : PageModel
     {
         ViewData["Message"] = "Video submission failed. Invalid response.";
     }
+    */
      
 
    
@@ -144,7 +148,7 @@ public class CategorySelectionModel : PageModel
     {
         try
         {
-            var queryResponse = await client.GetAsync($"/api/video/query/{taskId}");
+            var queryResponse = await client.GetAsync($"/api/video/query/CjJi7me0aekAAAAAAEzMSA");
             if (!queryResponse.IsSuccessStatusCode)
             {
                 ViewData["Message"] = "Failed to query video status.";
