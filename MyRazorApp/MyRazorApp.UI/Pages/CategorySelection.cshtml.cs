@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 public class CategorySelectionModel : PageModel
 {
+    //UPDATE
      [BindProperty(SupportsGet = true)]
     public string SelectedCategory { get; set; }
 
@@ -18,7 +19,7 @@ public class CategorySelectionModel : PageModel
     [BindProperty(SupportsGet = true)]
     public string SelectedFormat { get; set; }
 
-    [BindProperty(SupportsGet = true)]
+    [BindProperty]
     public string SelectedDuration { get; set; }
 
     [BindProperty(SupportsGet = true)]
@@ -55,7 +56,7 @@ public class CategorySelectionModel : PageModel
 
     public List<string> Durations { get; set; } = new()
     {
-        "5 seconds", "10 seconds"
+        "5s", "10s"
     };
 
     public List<string> Styles { get; set; } = new()
@@ -67,6 +68,7 @@ public class CategorySelectionModel : PageModel
     {
         "Black & White", "RAW", "Cool Blue", "Warm-toned", "Neon", "Pastel"
     };
+    ///////////
 
     [BindProperty]
     public IFormFile Image1 { get; set; }
@@ -84,23 +86,14 @@ public class CategorySelectionModel : PageModel
 
     // Extract query parameters safely
     SelectedCategory = Request.Query["category"].ToString();
-    SelectedPerspective = Request.Query["perspective"].ToString();
-    SelectedShotType = Request.Query["shotType"].ToString();
-    SelectedCameraMovement = Request.Query["cameraMovement"].ToString();
-    SelectedFormat = Request.Query["format"].ToString();
-    SelectedDuration = Request.Query["duration"].ToString();
-    SelectedStyle = Request.Query["style"].ToString();
-    SelectedLightColor = Request.Query["lightColor"].ToString();
+    // SelectedPerspective = Request.Query["perspective"].ToString();
+    // SelectedShotType = Request.Query["shotType"].ToString();
+    // // SelectedCameraMovement = Request.Query["cameraMovement"].ToString();
+    // SelectedFormat = Request.Query["format"].ToString();
+    // SelectedDuration = Request.Query["duration"].ToString();
+    // SelectedStyle = Request.Query["style"].ToString();
+    // SelectedLightColor = Request.Query["lightColor"].ToString();
 
-    // Debugging: Log extracted values
-    Console.WriteLine($"SelectedCategory: {SelectedCategory}");
-    Console.WriteLine($"SelectedPerspective: {SelectedPerspective}");
-    Console.WriteLine($"SelectedShotType: {SelectedShotType}");
-    Console.WriteLine($"SelectedCameraMovement: {SelectedCameraMovement}");
-    Console.WriteLine($"SelectedFormat: {SelectedFormat}");
-    Console.WriteLine($"SelectedDuration: {SelectedDuration}");
-    Console.WriteLine($"SelectedStyle: {SelectedStyle}");
-    Console.WriteLine($"SelectedLightColor: {SelectedLightColor}");
 }
 
 
@@ -129,6 +122,7 @@ public class CategorySelectionModel : PageModel
 
         // Build the dynamic prompt based on selected dropdowns
         string prompt = $"{Description}. ";
+        prompt += GetCategoryPrompt(SelectedCategory);
         prompt += GetPerspectivePrompt(SelectedPerspective);
         prompt += GetShotTypePrompt(SelectedShotType);
         prompt += GetCameraMovementPrompt(SelectedCameraMovement);
@@ -137,10 +131,22 @@ public class CategorySelectionModel : PageModel
         prompt += GetStylePrompt(SelectedStyle);
         prompt += GetLightColorPrompt(SelectedLightColor);
 
+
+        string negativePrompt = $"{GetNegativeCategoryPrompt(SelectedCategory)}";
+
            // Log the generated prompt
         Console.WriteLine("Generated Prompt: " + prompt);
-        Console.WriteLine("SelectedPerspective: " + SelectedPerspective);
-        Console.WriteLine("SelectedPerspective: " + SelectedCategory);
+        Console.WriteLine("SelectedCategory last: " + GetCategoryPrompt(SelectedCategory));
+
+        // Debugging: Log extracted values
+        Console.WriteLine($"SelectedCategory: {SelectedCategory}");
+        Console.WriteLine($"SelectedPerspective: {SelectedPerspective}");
+        Console.WriteLine($"SelectedShotType: {SelectedShotType}");
+        Console.WriteLine($"SelectedCameraMovement: {SelectedCameraMovement}");
+        Console.WriteLine($"SelectedFormat: {SelectedFormat}");
+        Console.WriteLine($"SelectedDuration: {SelectedDuration}");
+        Console.WriteLine($"SelectedStyle: {SelectedStyle}");
+        Console.WriteLine($"SelectedLightColor: {SelectedLightColor}");
 
 
         // Redirect to the download page with all the parameters including the prompt
@@ -159,6 +165,35 @@ public class CategorySelectionModel : PageModel
 
 
 ///UPDATE
+private string GetCategoryPrompt(string category)
+{
+    return category switch
+    {
+        "Cinematic" => "High quality, ultra-detailed cinematic scene with balanced, dynamic lighting, rich color grading, cinematic depth, 8K resolution, and sharp textures. The image should exude a filmic atmosphere with smooth transitions and natural tonal balance.",
+        "Fashion" => "High quality, ultra-detailed fashion scene with crisp, elegant textures, precise color accuracy, and 8K resolution. Emphasize refined details, consistent logo integrity, and a stylish composition with luxurious ambient lighting.",
+        "Food" => "High quality, ultra-detailed food scene with vibrant, appetizing colors, crisp textures, and 8K resolution. Emphasize natural lighting, freshness, and meticulous detail in every ingredient for a mouth-watering presentation.",
+        "Architecture" =>  "High quality, ultra-detailed architectural scene with clear, precise structures, balanced natural lighting, cinematic depth, 8K resolution, and refined textures. Emphasize clean lines, geometric precision, and realistic details that showcase the design.",
+        "Science Fiction" => "High quality, ultra-detailed futuristic scene with glowing neon accents, deep atmospheric lighting, cinematic depth, 8K resolution, and clear textures. The image should exude a sense of futuristic realism with immersive ambient effects.",
+        "Personal Video" => "High quality, ultra-detailed personal video with natural, flattering lighting, 8K resolution, and crisp, clear textures. Emphasize authentic details, balanced color grading, and smooth transitions to capture a genuine and polished look.",
+        "Cars" => "High quality, ultra-detailed automotive scene with shiny, reflective surfaces, crisp textures, cinematic depth, and 8K resolution. Emphasize realistic materials, dynamic lighting, and a polished, high-gloss finish for a visually striking presentation.",
+        _ => ""
+    };
+}
+
+private string GetNegativeCategoryPrompt(string category){
+    return category switch
+    {
+        "Cinematic" => "Exclude low resolution, blur, oversaturated colors, harsh lighting, digital noise, and any artifacts that disrupt the cinematic quality.",
+        "Fashion" => "Exclude low detail, blurry textures, logo distortions, inconsistent colors, and any artifacts that compromise the fashion aesthetic.",
+        "Food" => "Exclude blur, low resolution, dull colors, poor texture definition, and any artifacts that diminish the food's appeal.",
+        "Architecture" =>  "Exclude distortions, blur, low resolution, lack of detail, and any digital artifacts that compromise structural integrity.",
+        "Science Fiction" => "Exclude glitches, blur, low resolution, low texture, artifacts, pixelation, oversaturation, and any unwanted digital noise.",
+        "Personal Video" => "Exclude low resolution, blur, overexposure, digital noise, and any artifacts that detract from the personal authenticity.",
+        "Cars" => "Exclude glitches, low texture, blur, low resolution, digital artifacts, and any imperfections that reduce the vehicle's visual appeal.",
+        _ => ""
+    };
+}
+
 private string GetPerspectivePrompt(string perspective)
 {
     return perspective switch
@@ -226,8 +261,8 @@ private string GetDurationPrompt(string duration)
 {
     return duration switch
     {
-        "5 seconds" => "Set the video duration to 5 seconds.",
-        "10 seconds" => "Set the video duration to 10 seconds.",
+        "5s" => "Set the video duration to 5 seconds.",
+        "10s" => "Set the video duration to 10 seconds.",
         _ => ""
     };
 }

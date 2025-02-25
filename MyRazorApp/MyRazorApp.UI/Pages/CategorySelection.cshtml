@@ -33,6 +33,7 @@
                             @category
                         </option>
                     }
+                    <img src="/Assets/dropdown.svg" class="dropdown-icon"></img>
                 </select>
             </div>
         </form>
@@ -95,50 +96,74 @@
 
     </div>
     <div class="dropdowns-container">
-        <div class="dropdown-inner-container">
-            <select id="perspective" name="perspective" class="dropdown-item">
-                <option value="" disabled selected>Perspective</option>
-                @foreach (var perspective in Model.Perspectives)
-                {   
-                    <option value="@perspective" selected="@(perspective == Model.SelectedPerspective ? "selected" : null)">
-                        @perspective
-                    </option>
-                }
-            </select>
+            <div class="dropdown-inner-container">
+                    <div class="camera-settings settings">
+                        <select asp-for="SelectedPerspective" class="dropdown-item">
+                            <option value="" disabled selected>Perspective</option>
+                            @foreach (var perspective in Model.Perspectives)
+                            {
+                                <option value="@perspective">@perspective</option>
+                            }
+                        </select>
 
-            <select id="shotType" name="shotType" class="dropdown-item">
-                <option value="" disabled selected>Shot Type</option>
-                @foreach (var shot in Model.ShotTypes)
-                {
-                    <option value="@shot" selected="@(shot == Model.SelectedShotType ? "selected" : null)">
-                        @shot
-                    </option>
-                }
-            </select>
-        
-            <select id="cameraMovement" name="cameraMovement" class="dropdown-item">
-                <option value="" disabled selected>Camera Movement</option>
-                @foreach (var movement in Model.CameraMovements)
-                {
-                    <option value="@movement" selected="@(movement == Model.SelectedCameraMovement ? "selected" : null)">
-                        @movement
-                    </option>
-                }
-            </select>
+                        <select asp-for="SelectedShotType" class="dropdown-item">
+                            <option value="" disabled selected>Shot Type</option>
+                            @foreach (var shot in Model.ShotTypes)
+                            {
+                                <option value="@shot">@shot</option>
+                            }
+                        </select>
 
-            <select id="format" name="format" class="dropdown-item">
-                <option value="" disabled selected>Format</option>
-                @foreach (var format in Model.Formats)
-                {
-                    <option value="@format" selected="@(format == Model.SelectedFormat ? "selected" : null)">
-                        @format
-                    </option>
-                }
-            </select>
+                        <select asp-for="SelectedCameraMovement" class="dropdown-item">
+                            <option value="" disabled selected>Movement</option>
+                            @foreach (var movement in Model.CameraMovements)
+                            {
+                                <option value="@movement">@movement</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="style-settings settings">
+
+                        <select asp-for="SelectedStyle" class="dropdown-item" style="max-width=110px;">
+                            <option value="" disabled selected>Style</option>
+                            @foreach (var style in Model.Styles)
+                            {
+                                <option value="@style">@style</option>
+                            }
+                        </select>
+
+                        <select asp-for="SelectedLightColor" class="dropdown-item">
+                            <option value="" disabled selected>Light & Color</option>
+                            @foreach (var light in Model.LightColors)
+                            {
+                                <option value="@light">@light</option>
+                            }
+                        </select>
+                </div>
+                <div class="general-settings settings ">
+                    <select asp-for="SelectedDuration" class="dropdown-item">
+                        <option value="" disabled selected>Duration</option>
+                        @foreach (var duration in Model.Durations)
+                        {
+                            <option value="@duration">@duration</option>
+                        }
+                    </select>
+                    <select asp-for="SelectedFormat" class="dropdown-item">
+                        <option value="" disabled selected>Format</option>
+                        @foreach (var format in Model.Formats)
+                        {
+                            <option value="@format">@format</option>
+                        }
+                    </select>
+
+                    
+                </div>
+
+            
         </div>
 
-        <div class="dropdown-inner-container">
-            <select id="duration" name="duration" class="dropdown-item">
+        @* <div class="dropdown-inner-container">
+            <select id="duration" name="duration" asp-for="SelectedDuration" class="dropdown-item">
                 <option value="" disabled selected>Duration</option>
                 @foreach (var duration in Model.Durations)
                 {
@@ -166,8 +191,8 @@
                         @light
                     </option>
                 }
-            </select>
-        </div>
+            </select> *@
+        @* </div> *@
     </div>
 
 
@@ -177,7 +202,7 @@
 
     <!-- Generate Button -->
     <div class="text-center mt-3">
-        <button type="submit" class="btn btn-generate">
+        <button id="generateBtn" type="submit" class="btn btn-generate">
             Generate AI Video <img src="/Assets/generate.svg"></img>
         </button>
     </div>

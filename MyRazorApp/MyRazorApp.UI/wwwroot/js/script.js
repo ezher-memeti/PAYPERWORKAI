@@ -245,36 +245,22 @@ function removeImage(containerId, imageId, inputId) {
 }
 
 ///DROPDOWNS UPDATE
-document.addEventListener("DOMContentLoaded", function () {
-    function updateURLParams(param, value, reload = false) {
-        let url = new URL(window.location.href);
-        url.searchParams.set(param, value); // Update query parameters
-        window.history.pushState({}, '', url); // Push new URL state
+// document.getElementById("generateBtn").addEventListener("click", function () {
+//     console.log("test: ");
+//     var selectedPerspective = document.getElementById("perspective").value;
+//     var selectedShotType = document.getElementById("shotType").value;
+//     var selectedCameraMovement = document.getElementById("cameraMovement").value;
+//     var selectedFormat = document.getElementById("format").value;
+//     var selectedDuration = document.getElementById("duration").value;
+//     var selectedStyle = document.getElementById("style").value;
+//     console.log(selectedCameraMovement);
 
-        if (reload) {
-            location.reload(); // Reload page only for category
-        }
-    }
-
-    function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-    }
-
-    // Restore dropdown selections from query parameters
-    document.querySelectorAll("select").forEach(dropdown => {
-        const dropdownId = dropdown.id;
-        let savedValue = getQueryParam(dropdownId);
-
-        if (savedValue) {
-            dropdown.value = savedValue;
-        }
-
-        dropdown.addEventListener("change", function () {
-            updateURLParams(dropdownId, this.value, dropdownId === "category");
-        });
-    });
-});
+//     fetch(`/CategorySelection?handler=FetchSelection&perspective=${selectedPerspective}&shotType=${selectedShotType}&cameraMovement=${selectedCameraMovement}`)
+//         .then(response => response.text())
+//         .then(data => {
+//             document.getElementById("responseMessage").innerText = data;
+//         });
+// });
 
 
 document.addEventListener("DOMContentLoaded", function () {

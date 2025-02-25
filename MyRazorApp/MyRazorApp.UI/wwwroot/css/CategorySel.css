@@ -77,12 +77,15 @@ body {
 
 .dropdown-icon {
     position: absolute;
+    width: 100%;
+    height: auto;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     color: white;
     pointer-events: none;
     font-size: 18px;
+    z-index: 10;
 }
 
 
@@ -241,9 +244,11 @@ body {
 /* Container for all dropdowns */
 .dropdowns-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 15px;
+    justify-content: space-evenly;
+    gap: 20px;
+    /* Adjust this value to control the overall gap between the sections */
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -251,43 +256,77 @@ body {
 
 /* Inner container to align dropdowns */
 .dropdown-inner-container {
-    width: 100%;
+    width: 83.4%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 20px;
+    /* Controls the gap between dropdown containers */
     margin-top: 20px;
-    flex-wrap: wrap;
+}
+
+/* Settings for dropdown containers */
+.settings {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    /* Controls the gap between dropdowns inside each container */
+    width: 100%;
+    /* Makes containers take equal space */
+    justify-content: flex-start;
+}
+
+/* Width adjustments for each section */
+.camera-settings,
+.style-settings,
+.general-settings {
+    width: 30%;
+    /* Adjust as needed for equal width */
+}
+
+.general-settings {
+    justify-content: end;
+    width: 21%;
 }
 
 /* Dropdown styling */
 .dropdown-item {
     display: flex;
     text-align: start;
-    justify-content: space-around;
-    width: 200px;
-    /* More space for text */
+    min-width: 130px;
     height: 47px;
-    padding: 10px 15px;
+    padding: 11px 12px;
     font-size: 15px;
     font-weight: 400;
     color: white;
     background-color: #2A3145;
     border: 0.4px solid white;
-    border-radius: 8px;
+    border-radius: 12px;
+    gap: 8px;
     cursor: pointer;
     appearance: none;
     position: relative;
     transition: all 0.3s ease-in-out;
+
+    background-image: url('/Assets/dropdown.svg');
+    /* Set the SVG as background */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    /* Position the icon on the right */
+    background-size: 16px 16px;
+    /* Adjust the size of the icon */
 }
 
-/* Custom arrow icon */
-.dropdown-item::after {
-    content: "▼";
-    font-size: 14px;
-    position: absolute;
-    right: 15px;
-    color: white;
-    pointer-events: none;
+.general-settings .dropdown-item {
+    min-width: 110px;
+}
+
+.style-settings .dropdown-item {
+    min-width: 140px;
+}
+
+.style-settings {
+    max-width: 23%;
 }
 
 /* Hover effect */
@@ -303,6 +342,7 @@ body {
     color: white;
     padding: 10px;
 }
+
 
 /* Responsive: Stack dropdowns on small screens */
 @media (max-width: 768px) {
