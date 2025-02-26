@@ -420,17 +420,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ue8piu7d23"},{"Name":"integrity","Value":"sha256-Ks/wTjdjaWi72ZNuZwTyEcPbTq/JmqmrgLdyfluQkeA="},{"Name":"label","Value":"_content/MyRazorApp.UI/Assets/Vector.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"268"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Ks/wTjdjaWi72ZNuZwTyEcPbTq/JmqmrgLdyfluQkeA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Feb 2025 15:02:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MyRazorApp.UI/css/CategorySel.2avffs4pu3.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CategorySel.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2avffs4pu3"},{"Name":"integrity","Value":"sha256-5tQPKdUqOrm57IZ2eG8fkueEl/mN/m2HMjLe3s62Ajw="},{"Name":"label","Value":"_content/MyRazorApp.UI/css/CategorySel.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9293"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225tQPKdUqOrm57IZ2eG8fkueEl/mN/m2HMjLe3s62Ajw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Feb 2025 19:38:04 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MyRazorApp.UI/css/CategorySel.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CategorySel.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5tQPKdUqOrm57IZ2eG8fkueEl/mN/m2HMjLe3s62Ajw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9293"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225tQPKdUqOrm57IZ2eG8fkueEl/mN/m2HMjLe3s62Ajw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Feb 2025 19:38:04 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JF9GYK0loruysKIDO6R3/4j8WA0qtQb8BIiMdnoAtSI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9726"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JF9GYK0loruysKIDO6R3/4j8WA0qtQb8BIiMdnoAtSI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Feb 2025 20:12:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MyRazorApp.UI/css/CategorySel.wngikefsue.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CategorySel.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wngikefsue"},{"Name":"integrity","Value":"sha256-JF9GYK0loruysKIDO6R3/4j8WA0qtQb8BIiMdnoAtSI="},{"Name":"label","Value":"_content/MyRazorApp.UI/css/CategorySel.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9726"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JF9GYK0loruysKIDO6R3/4j8WA0qtQb8BIiMdnoAtSI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Feb 2025 20:12:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MyRazorApp.UI/css/Download.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Download.css'))</AssetFile>

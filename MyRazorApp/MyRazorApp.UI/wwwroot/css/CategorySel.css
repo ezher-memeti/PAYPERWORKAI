@@ -317,6 +317,30 @@ body {
     /* Adjust the size of the icon */
 }
 
+/* Customize when the dropdown is active (when clicked or selected) */
+.dropdown-item:focus {
+    background-color: #3b4453;
+    /* Darker color when focused */
+    border-color: #ffffff;
+    /* Change border color */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Option styling */
+.dropdown-item option {
+    background-color: #2A3145;
+    color: white;
+    padding: 10px;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: #3b4453;
+    /* Darker color on hover */
+    box-shadow: 0 0 10px 1px white;
+}
+
 .general-settings .dropdown-item {
     min-width: 110px;
 }
@@ -334,13 +358,6 @@ body {
     background-color: #2A3145;
     color: white;
     box-shadow: 0 0 10px 1px white;
-}
-
-/* Option styling */
-.dropdown-item option {
-    background-color: #2A3145;
-    color: white;
-    padding: 10px;
 }
 
 

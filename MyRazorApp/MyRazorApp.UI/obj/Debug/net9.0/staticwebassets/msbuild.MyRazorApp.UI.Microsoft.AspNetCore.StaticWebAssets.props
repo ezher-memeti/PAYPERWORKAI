@@ -642,8 +642,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2avffs4pu3</Fingerprint>
-      <Integrity>5tQPKdUqOrm57IZ2eG8fkueEl/mN/m2HMjLe3s62Ajw=</Integrity>
+      <Fingerprint>wngikefsue</Fingerprint>
+      <Integrity>JF9GYK0loruysKIDO6R3/4j8WA0qtQb8BIiMdnoAtSI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CategorySel.css'))</OriginalItemSpec>
