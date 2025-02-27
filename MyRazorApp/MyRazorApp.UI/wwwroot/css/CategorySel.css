@@ -76,15 +76,11 @@ body {
 
 
 .dropdown-icon {
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 16px;
     height: auto;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
     color: white;
     pointer-events: none;
-    font-size: 18px;
     z-index: 10;
 }
 
@@ -260,7 +256,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
     /* Controls the gap between dropdown containers */
     margin-top: 20px;
 }
@@ -269,61 +265,72 @@ body {
 .settings {
     display: flex;
     flex-direction: row;
-    gap: 13px;
+    gap: 10px;
     /* Controls the gap between dropdowns inside each container */
-    width: 100%;
+    /* width: 100%; */
     /* Makes containers take equal space */
     justify-content: flex-start;
 }
 
 /* Width adjustments for each section */
-.camera-settings,
-.style-settings,
-.general-settings {
-    width: 30%;
+.camera-settings {
+    width: 46%;
     /* Adjust as needed for equal width */
+}
+
+.style-settings {
+    width: 30%;
 }
 
 .general-settings {
     justify-content: end;
-    width: 21%;
+    width: 25%;
+}
+
+#StyleDropdownButton {
+    width: 120px;
 }
 
 /* Dropdown styling */
 .dropdown-item {
     display: flex;
     text-align: start;
-    min-width: 130px;
+    /* min-width: 120px;
+    max-width: 180px; */
     height: 47px;
     padding: 11px 12px;
     font-size: 15px;
     font-weight: 400;
     color: white;
     background-color: #2A3145;
-    border: 0.4px solid white;
+    border: 0.1px solid white;
     border-radius: 12px;
     gap: 8px;
     cursor: pointer;
     appearance: none;
     position: relative;
     transition: all 0.3s ease-in-out;
+    justify-content: space-between;
 
-    background-image: url('/Assets/dropdown.svg');
+    /* background-image: url('/Assets/dropdown.svg'); */
     /* Set the SVG as background */
-    background-repeat: no-repeat;
-    background-position: right 15px center;
+    /* background-repeat: no-repeat; */
+    /* background-position: right 15px center; */
     /* Position the icon on the right */
-    background-size: 16px 16px;
+    /* background-size: 16px 16px; */
     /* Adjust the size of the icon */
 }
 
 /* Customize when the dropdown is active (when clicked or selected) */
 .dropdown-item:focus {
-    background-color: #3b4453;
+    box-shadow: 0 0 10px 1px white;
+    background-color: #2A3145;
     /* Darker color when focused */
     border-color: #ffffff;
     /* Change border color */
     outline: none;
+    color: white;
+    font-weight: bold;
     /* Remove default outline */
 }
 
@@ -341,17 +348,18 @@ body {
     box-shadow: 0 0 10px 1px white;
 }
 
-.general-settings .dropdown-item {
-    min-width: 110px;
+
+/* .general-settings .dropdown-item {
+    min-width: 120px;
 }
 
 .style-settings .dropdown-item {
-    min-width: 140px;
+    min-width: 120px;
 }
 
 .style-settings {
     max-width: 23%;
-}
+} */
 
 /* Hover effect */
 .dropdown-item:hover {
@@ -457,4 +465,154 @@ body {
     border: 0.4px solid white;
     border-radius: 8px;
     padding: 8px 28px;
+}
+
+
+/* Dropdown container */
+.custom-dropdown {
+    position: relative;
+    /* width: 700px; */
+    max-width: 100%;
+    min-width: 120px;
+    display: inline-block;
+}
+
+/* Dropdown button
+.dropdown-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #23283D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* Dropdown options initially hidden */
+.dropdown-options {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    width: 625px;
+    height: 168px;
+    background-color: #2A3145;
+    border: 0.4px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    /* Responsive columns */
+    grid-template-rows: repeat(2, 1fr);
+    /* Limit to max 2 rows */
+    gap: 7px;
+    margin-top: 7px;
+}
+
+
+/* Individual dropdown item */
+.dropdown-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 4px;
+    width: 145px;
+    height: 52px;
+    /* Set fixed height */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    /* Ensure text visibility */
+
+    border: 0.4px solid white;
+}
+
+/* Ensure text stays on top */
+.dropdown-items span {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+}
+
+/* Hover effect */
+.dropdown-items:hover {
+    box-shadow: 0px 0px 4px white;
+    border: radius 5px;
+    /* Lighter overlay on hover */
+}
+
+
+/* SHOT TYPE SETTINGS */
+.s-type .dropdown-options {
+    width: 656px;
+    height: 248px;
+    border: 0.5px solid white;
+}
+
+.s-type .dropdown-items {
+    width: 148px;
+    height: 90px;
+    font-size: 10px;
+    font-weight: 600;
+    text-shadow: 0px 2px 4px black;
+    justify-content: space-between;
+    align-items: end;
+    text-align: left;
+    border: 0px;
+    padding: 0px;
+}
+
+.select-container {
+    position: relative;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+/* "Select" text */
+.select-text {
+    font-size: 8px;
+    font-weight: 100;
+    color: white;
+    min-width: 24px;
+}
+
+/* Small vector icon next to "Select" */
+.select-icon {
+    width: 10px;
+    padding: 3px;
+    /* Adjust size */
+    height: 10px;
+}
+
+
+/* Show dropdown when active */
+.custom-dropdown.active .dropdown-options {
+    display: grid;
+    /* Shows in grid format when clicked */
+}
+
+.hidden {
+    display: none;
 }

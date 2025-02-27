@@ -1,4 +1,60 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".custom-dropdown");
+
+    // Toggle dropdown visibility
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector(".dropdown-btn");
+        const options = dropdown.querySelector(".dropdown-options");
+
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Close all other dropdowns before opening this one
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove("active");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("active");
+        });
+    });
+
+    // Select an item and update UI
+    window.selectDropdownItem = function (element, dropdownType) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Find the corresponding dropdown
+        const dropdown = element.closest(".custom-dropdown");
+        const dropdownButton = dropdown.querySelector(".dropdown-btn");
+        const hiddenSelect = document.getElementById("selected" + dropdownType);
+
+        // Update button text
+        dropdownButton.innerHTML = `${element.querySelector("span").innerText}<img class="dropdown-icon" src="/Assets/dropdown.svg">`;
+
+        // Update hidden select field
+        hiddenSelect.value = element.getAttribute("data-value");
+
+        // Close the dropdown
+        dropdown.classList.remove("active");
+    };
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function (event) {
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove("active");
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const categories = [
         { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
         { name: "Fashion", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Fashion.mp4" },
