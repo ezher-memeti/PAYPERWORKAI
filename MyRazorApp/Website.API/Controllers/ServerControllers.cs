@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
+using MyRazorApp.Website.API.Models;
+using Newtonsoft.Json;
+using System.Text;
 
 
 namespace MyRazorApp.Website.API.ServerController
@@ -63,8 +66,9 @@ namespace MyRazorApp.Website.API.ServerController
             if (!System.IO.File.Exists(filePath))
                 return NotFound(new { message = "Video not found." });
 
-            var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            return File(stream, "video/mp4", enableRangeProcessing: true);
+            var streamUrl = $"{Request.Scheme}://{Request.Host}/api/server/stream-file/{fileName}";
+
+            return Ok(new { url = streamUrl });
         }
 
         [HttpGet("download/{fileName}")]
@@ -75,8 +79,8 @@ namespace MyRazorApp.Website.API.ServerController
             if (!System.IO.File.Exists(filePath))
                 return NotFound(new { message = "Video not found." });
 
-            var fileBytes = System.IO.File.ReadAllBytes(filePath);
-            return File(fileBytes, "video/mp4", fileName);
+            var downloadUrl = $"{Request.Scheme}://{Request.Host}/api/server/download-file/{fileName}";
+            return Ok(new { url = downloadUrl });
         }
 
         [HttpGet("latest-video")]
@@ -92,11 +96,39 @@ namespace MyRazorApp.Website.API.ServerController
                       .OrderByDescending(f => f.CreationTime)
                       .FirstOrDefault(); // Get the latest file
 
-if (latestVideo == null)
-{
-    return NotFound("No video files found.");
-}
-            return Ok(new { fileName = latestVideo.Name });
+            if (latestVideo == null)
+            {
+                return NotFound("No video files found.");
+            }
+                return Ok(new { fileName = latestVideo.Name });
         }
+
+
+
+        [HttpGet("download-file/{fileName}")]
+        public IActionResult DownloadVideoFile(string fileName)
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Media/CreatedVideos", fileName);
+
+            if (!System.IO.File.Exists(filePath))
+                return NotFound(new { message = "Video not found." });
+
+            var fileBytes = System.IO.File.ReadAllBytes(filePath);
+            return File(fileBytes, "video/mp4", fileName);
+        }
+
+        [HttpGet("stream-file/{fileName}")]
+        public IActionResult StreamVideoFile(string fileName)
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Media/CreatedVideos", fileName);
+
+            if (!System.IO.File.Exists(filePath))
+                return NotFound(new { message = "Video not found." });
+
+            var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            return File(stream, "video/mp4", enableRangeProcessing: true);
+        }
+                
+
     }
 }
