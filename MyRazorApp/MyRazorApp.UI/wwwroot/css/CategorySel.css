@@ -287,6 +287,25 @@ body {
     width: 25%;
 }
 
+.settings-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    color: white;
+    line-height: 13px;
+}
+
+
+
 #StyleDropdownButton {
     width: 120px;
 }
@@ -518,6 +537,30 @@ body {
     /* Limit to max 2 rows */
     gap: 7px;
     margin-top: 7px;
+}
+
+#lightColorOptions {
+    position: absolute;
+    left: auto;
+    right: 0px;
+}
+
+#durationOptions {
+    width: 120px;
+    justify-content: space-around;
+
+}
+
+#durationOptions .dropdown-items {
+    width: 70%;
+    /* height: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cm-mov {
+    min-height: 200px;
 }
 
 

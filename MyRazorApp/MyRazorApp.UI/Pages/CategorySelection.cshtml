@@ -97,7 +97,9 @@
     </div>
     <div class="dropdowns-container">
                 <div class="dropdown-inner-container">
-                    <div class="camera-settings settings">
+                <div class="settings-group camera-settings">
+                    <label class="section-label">Camera Settings</label>
+                    <div class="settings">
                     @* Perspective dropdown *@
                         <!-- Perspective Dropdown -->
                         <div class="custom-dropdown">
@@ -152,16 +154,16 @@
 
 
          @* Camera Movement *@
-                        <div class="custom-dropdown s-type">
+                        <div class="custom-dropdown">
                             <button id="CameraMovementDropdownButton" class="dropdown-btn dropdown-item">Camera Movement<img class="dropdown-icon" src="/Assets/dropdown.svg"></button>
-                            <div id="cameraMovementOptions" class="dropdown-options">
+                            <div id="cameraMovementOptions" class="dropdown-options cm-mov">
                                 @foreach (var cameraMovement in Model.CameraMovements)
                                 {
                                     <div class="dropdown-items" data-value="@cameraMovement"
                                         style="background-image: url('/Assets/Dropdown/@(cameraMovement.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'CameraMovement')">
                                         <span>@cameraMovement</span>
-                                        <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>                        
+                                        @* <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>                         *@
                                     </div>
                                 }
                             </div>
@@ -183,69 +185,125 @@
                                 }
                             </select> *@
                     </div>
-                    <div class="style-settings settings">
-
-                        @* Style Dropdown *@
-                        <!-- Shot Type Dropdown -->
-                    <div class="custom-dropdown s-type">
-                        <button id="StyleDropdownButton" class="dropdown-btn dropdown-item">Style<img class="dropdown-icon" src="/Assets/dropdown.svg"></button>
-                        <div id="styleOptions" class="dropdown-options">
-                            @foreach (var style in Model.Styles)
-                            {
-                                <div class="dropdown-items" data-value="@style"
-                                    style="background-image: url('/Assets/Dropdown/@(style.ToLower().Replace(" ", "-")).jpg');"
-                                    onclick="selectDropdownItem(this, 'Style')">
-                                    <span>@style</span>
-                                        
-                                        <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>
-                                        
-                                </div>
-                            }
-                        </div>
                     </div>
+                    <div class="settings-group style-settings ">
+                        <label class="section-label">Style Settings</label>
+                        
+                        <div class="settings">
+                            @* Style Dropdown *@
+                            <!-- Shot Type Dropdown -->
+                        <div class="custom-dropdown s-type">
+                            <button id="StyleDropdownButton" class="dropdown-btn dropdown-item">Style<img class="dropdown-icon" src="/Assets/dropdown.svg"></button>
+                            <div id="styleOptions" class="dropdown-options">
+                                @foreach (var style in Model.Styles)
+                                {
+                                    <div class="dropdown-items" data-value="@style"
+                                        style="background-image: url('/Assets/Dropdown/@(style.ToLower().Replace(" ", "-")).jpg');"
+                                        onclick="selectDropdownItem(this, 'Style')">
+                                        <span>@style</span>
+                                            
+                                            <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>
+                                            
+                                    </div>
+                                }
+                            </div>
+                        </div>
 
-                        <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
-                    <select asp-for="SelectedStyle" id="selectedStyle" style="display: none; max-width:100px">
-                        <option value="" disabled selected>Style</option>
-                        @foreach (var style in Model.Styles)
-                        {
-                            <option value="@style">@style</option>
-                        }
-                    </select>
-
-                        @* <select asp-for="SelectedStyle" class="dropdown-item" style="max-width=110px;">
+                            <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
+                        <select asp-for="SelectedStyle" id="selectedStyle" style="display: none; max-width:100px">
                             <option value="" disabled selected>Style</option>
                             @foreach (var style in Model.Styles)
                             {
                                 <option value="@style">@style</option>
                             }
-                        </select> *@
+                        </select>
 
-                    <select asp-for="SelectedLightColor" class="dropdown-item">
-                        <option value="" disabled selected>Light & Color</option>
-                        @foreach (var light in Model.LightColors)
-                        {
-                            <option value="@light">@light</option>
-                        }
-                    </select>
+                            @* <select asp-for="SelectedStyle" class="dropdown-item" style="max-width=110px;">
+                                <option value="" disabled selected>Style</option>
+                                @foreach (var style in Model.Styles)
+                                {
+                                    <option value="@style">@style</option>
+                                }
+                            </select> *@
+
+                        @* Light-color dropdown *@
+                        <div class="custom-dropdown s-type">
+                            <button id="LightColorDropdownButton" class="dropdown-btn dropdown-item">Light & Color<img class="dropdown-icon" src="/Assets/dropdown.svg"></button>
+                            <div id="lightColorOptions" class="dropdown-options">
+                                @foreach (var lightColor in Model.LightColors)
+                                {
+                                    <div class="dropdown-items" data-value="@lightColor"
+                                        style="background-image: url('/Assets/Dropdown/@(lightColor.ToLower().Replace(" ", "-")).jpg');"
+                                        onclick="selectDropdownItem(this, 'LightColor')">
+                                        <span>@lightColor</span>
+                                            
+                                            <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>
+                                            
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                            <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
+                        <select asp-for="SelectedLightColor" id="selectedLightColor" style="display: none; max-width:100px">
+                            <option value="" disabled selected>Light-Color</option>
+                            @foreach (var lightColor in Model.LightColors)
+                            {
+                                <option value="@lightColor">@lightColor</option>
+                            }
+                        </select>
+
+                    </div>
                 </div>
-                <div class="general-settings settings ">
-                    <select asp-for="SelectedDuration" class="dropdown-item">
-                        <option value="" disabled selected>Duration</option>
-                        @foreach (var duration in Model.Durations)
-                        {
-                            <option value="@duration">@duration</option>
-                        }
-                    </select>
-                    <select asp-for="SelectedFormat" class="dropdown-item">
-                        <option value="" disabled selected>Format</option>
-                        @foreach (var format in Model.Formats)
-                        {
-                            <option value="@format">@format</option>
-                        }
-                    </select>
 
-                    
+                <div class="settings-group general-settings ">
+                    <label class="section-label">General Settings</label>
+                    <div class="settings ">
+
+                    @* duration dropdown *@
+                      <div class="custom-dropdown">
+                            <button id="DurationDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/clock.svg">Duration</button>
+                            <div id="durationOptions" class="dropdown-options">
+                                @foreach (var duration in Model.Durations)
+                                {
+                                    <div class="dropdown-items" data-value="@duration"
+                                        style="background-image: url('/Assets/Dropdown/@(duration.ToLower().Replace(" ", "-")).jpg');"
+                                        onclick="selectDropdownItem(this, 'Duration')">
+                                        <span>@duration</span>
+                                            
+                                            @* <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span> *@
+                                            
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                            <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
+                        <select asp-for="SelectedDuration" id="selectedDuration" style="display: none; max-width:100px">
+                            <option value="" disabled selected>Duration</option>
+                            @foreach (var duration in Model.Durations)
+                            {
+                                <option value="@duration">@duration</option>
+                            }
+                        </select>
+
+                        @* <select asp-for="SelectedDuration" class="dropdown-item">
+                            <option value="" disabled selected>Duration</option>
+                            @foreach (var duration in Model.Durations)
+                            {
+                                <option value="@duration">@duration</option>
+                            }
+                        </select> *@
+                        <select asp-for="SelectedFormat" class="dropdown-item">
+                            <option value="" disabled selected>Format</option>
+                            @foreach (var format in Model.Formats)
+                            {
+                                <option value="@format">@format</option>
+                            }
+                        </select>
+
+                        
+                    </div>
                 </div>
 
             
