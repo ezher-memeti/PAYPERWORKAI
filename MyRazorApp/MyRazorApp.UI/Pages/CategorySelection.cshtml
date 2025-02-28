@@ -286,6 +286,7 @@
                                 <option value="@duration">@duration</option>
                             }
                         </select>
+                        @* </div> *@
 
                         @* <select asp-for="SelectedDuration" class="dropdown-item">
                             <option value="" disabled selected>Duration</option>
@@ -294,13 +295,40 @@
                                 <option value="@duration">@duration</option>
                             }
                         </select> *@
-                        <select asp-for="SelectedFormat" class="dropdown-item">
+
+                        <div class="custom-dropdown s-type">
+                            <button id="FormatDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/aspect-ratio.svg">Format</button>
+                            <div id="formatOptions" class="dropdown-options">
+                                @foreach (var format in Model.Formats)
+                                {
+                                    <div class="dropdown-items" data-value="@format"
+                                        style="background-image: url('/Assets/Dropdown/@(format.ToLower().Replace(" ", "-")).jpg');"
+                                        onclick="selectDropdownItem(this, 'Format')">
+                                        <span>@format</span>
+                                            
+                                            <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>
+                                            
+                                    </div>
+                                }
+                            </div>
+                        @* </div> *@
+
+                            <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
+                        <select asp-for="SelectedFormat" id="selectedFormat" style="display: none; max-width:100px">
                             <option value="" disabled selected>Format</option>
                             @foreach (var format in Model.Formats)
                             {
                                 <option value="@format">@format</option>
                             }
                         </select>
+                    </div>
+                        @* <select asp-for="SelectedFormat" class="dropdown-item">
+                            <option value="" disabled selected>Format</option>
+                            @foreach (var format in Model.Formats)
+                            {
+                                <option value="@format">@format</option>
+                            }
+                        </select> *@
 
                         
                     </div>

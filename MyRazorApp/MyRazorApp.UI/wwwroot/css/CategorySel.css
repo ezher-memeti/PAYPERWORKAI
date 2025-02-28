@@ -539,7 +539,8 @@ body {
     margin-top: 7px;
 }
 
-#lightColorOptions {
+#lightColorOptions,
+#formatOptions {
     position: absolute;
     left: auto;
     right: 0px;
@@ -548,7 +549,6 @@ body {
 #durationOptions {
     width: 120px;
     justify-content: space-around;
-
 }
 
 #durationOptions .dropdown-items {
@@ -557,6 +557,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#DurationDropdownButton,
+#FormatDropdownButton {
+    justify-content: space-around;
 }
 
 .cm-mov {
