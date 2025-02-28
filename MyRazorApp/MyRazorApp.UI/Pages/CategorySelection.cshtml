@@ -266,13 +266,14 @@
                             <div id="durationOptions" class="dropdown-options">
                                 @foreach (var duration in Model.Durations)
                                 {
-                                    <div class="dropdown-items" data-value="@duration"
+                                    <div class="dropdown-items d-type  d-flex justify-between" data-value="@duration"
                                         style="background-image: url('/Assets/Dropdown/@(duration.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Duration')">
-                                        <span>@duration</span>
-                                            
-                                            @* <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span> *@
-                                            
+                                        <div class="d-type-text-area">
+                                            <img class="dropdown-icon" src="/Assets/clock.svg">
+                                            <span>@duration</span>
+                                        </div>
+                                        <div class="d-box"></div>  
                                     </div>
                                 }
                             </div>
@@ -286,15 +287,6 @@
                                 <option value="@duration">@duration</option>
                             }
                         </select>
-                        @* </div> *@
-
-                        @* <select asp-for="SelectedDuration" class="dropdown-item">
-                            <option value="" disabled selected>Duration</option>
-                            @foreach (var duration in Model.Durations)
-                            {
-                                <option value="@duration">@duration</option>
-                            }
-                        </select> *@
 
                         <div class="custom-dropdown s-type">
                             <button id="FormatDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/aspect-ratio.svg">Format</button>

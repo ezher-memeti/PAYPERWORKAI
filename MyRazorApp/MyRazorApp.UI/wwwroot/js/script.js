@@ -33,7 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const hiddenSelect = document.getElementById("selected" + dropdownType);
 
         // Update button text
-        dropdownButton.innerHTML = `${element.querySelector("span").innerText}<img class="dropdown-icon" src="/Assets/dropdown.svg">`;
+        if (dropdownType === "Duration") {
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/clock.svg">${element.querySelector("span").innerText}`;
+        }
+        else if (dropdownType === "Format") {
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/aspect-ratio.svg">${element.querySelector("span").innerText}`;
+        }
+        else {
+            dropdownButton.innerHTML = `${element.querySelector("span").innerText}<img class="dropdown-icon" src="/Assets/dropdown.svg">`;
+        }
 
         // Update hidden select field
         hiddenSelect.value = element.getAttribute("data-value");

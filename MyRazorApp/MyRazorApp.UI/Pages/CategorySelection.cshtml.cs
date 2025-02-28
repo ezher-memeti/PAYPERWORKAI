@@ -56,7 +56,7 @@ public class CategorySelectionModel : PageModel
 
     public List<string> Durations { get; set; } = new()
     {
-        "5s", "10s"
+        "5 sec.", "10 sec."
     };
 
     public List<string> Styles { get; set; } = new()

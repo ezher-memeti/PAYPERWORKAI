@@ -77,7 +77,7 @@ body {
 
 .dropdown-icon {
     position: relative;
-    width: 16px;
+    width: 17px;
     height: auto;
     color: white;
     pointer-events: none;
@@ -546,10 +546,7 @@ body {
     right: 0px;
 }
 
-#durationOptions {
-    width: 120px;
-    justify-content: space-around;
-}
+
 
 #durationOptions .dropdown-items {
     width: 70%;
@@ -574,7 +571,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding: 10px;
     border-radius: 4px;
     width: 145px;
@@ -654,6 +651,48 @@ body {
     height: 10px;
 }
 
+
+/* Duration dropdown */
+#durationOptions {
+    width: 151px;
+    height: 75px;
+    position: absolute;
+    padding: 15px 12px;
+    justify-content: space-around;
+}
+
+.d-type {
+    border: none;
+    display: flex;
+    justify-content: space-between !important;
+    min-width: 100% !important;
+    height: 17px;
+}
+
+.d-type-text-area {
+    display: flex;
+    width: 81.5px;
+    font-size: 14px;
+}
+
+.d-type:hover {
+    box-shadow: none;
+}
+
+.d-type:hover .d-box {
+    box-shadow: 0px 0px 2px white;
+}
+
+.d-type:active .d-box {
+    background-color: rgba(255, 255, 255, 0.361);
+}
+
+.d-box {
+    min-width: 17px;
+    min-height: 17px;
+    border-radius: 4px;
+    border: 0.1px solid rgba(255, 255, 255, 0.359);
+}
 
 /* Show dropdown when active */
 .custom-dropdown.active .dropdown-options {
