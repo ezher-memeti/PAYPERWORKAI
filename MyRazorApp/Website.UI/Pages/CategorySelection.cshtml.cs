@@ -60,15 +60,49 @@ public class CategorySelectionModel : PageModel
         return Page();
     }
     
+    var client = _httpClientFactory.CreateClient("server");
+    string Image1Name = "";
+    string Image2Name = "";
+    
+    using (var formData = new MultipartFormDataContent())
+    {
+        // Add first image
+        var fileStreamContent1 = new StreamContent(Image1.OpenReadStream());
+        fileStreamContent1.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        formData.Add(fileStreamContent1, "file1", Image1.FileName);
 
+        // Add second image
+        var fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
+        fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        formData.Add(fileStreamContent2, "file2", Image2.FileName);
+
+        // Add additional string parameters
+        formData.Add(new StringContent(Prompt), "prompt");
+
+        // Send the POST request
+        var response = await client.PostAsync("/api/server/upload", formData);
+
+        // Check response
+        if (!response.IsSuccessStatusCode)
+        {
+            ViewData["Message"] = "File upload failed.";
+            return Page();
+        }
+
+        var json = await response.Content.ReadAsStringAsync();
+        dynamic result = JsonConvert.DeserializeObject(json);
+        Image1Name = result.File1Name;
+        Image2Name = result.File2Name;
+    }
+    
 
 
     
     return RedirectToPage("/Download", new
         {
             category = SelectedCategory,
-            image1Url = Image1, // Parametre isimlerini düzelt
-            image2Url = Image2,
+            image1Url = Image1Name, // Parametre isimlerini düzelt
+            image2Url = Image2Name,
             prompt = Prompt
         }
     ); 

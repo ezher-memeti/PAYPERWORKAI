@@ -2,16 +2,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
-
+using MyRazorApp.Website.API.Models;
+using System.Text;
 
 namespace MyRazorApp.Website.UI.Pages{
 public class DownloadModel : PageModel
 {
     [BindProperty(Name = "image1Url", SupportsGet = true)] // Parametre ismi eklendi
-    public string Image1 { get; set; }
+    public string Image1FileName { get; set; }
 
     [BindProperty(Name = "image2Url", SupportsGet = true)] // Parametre ismi eklendi
-    public string Image2 { get; set; }
+    public string Image2FileName { get; set; }
 
     [BindProperty(SupportsGet = true)]
     public string Category { get; set; }
@@ -21,48 +22,41 @@ public class DownloadModel : PageModel
     public string VideoFileName { get; set; }
     public string VideoDownloadUrl { get; set; }
     public string VideoStreamUrl { get; set; }
+    public string Image1Url { get; set;}
+    public string Image2Url { get; set;}
     private readonly IHttpClientFactory _httpClientFactory;
 
     public DownloadModel(IHttpClientFactory httpClientFactory){
         _httpClientFactory =httpClientFactory;
     }
 
-    public async Task OnGetAsync()
+    public async Task<IActionResult> OnGetAsync()
     {
-       /* var client = _httpClientFactory.CreateClient("server");
-    
-    using (var formData = new MultipartFormDataContent())
+
+     
+    var client = _httpClientFactory.CreateClient("server");
+    var photoResponse = await client.GetAsync("/api/server/get-latest-images");
+
+    if (photoResponse.IsSuccessStatusCode)
     {
-        // Add first image
-        var fileStreamContent1 = new StreamContent(Image1.OpenReadStream());
-        fileStreamContent1.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
-        formData.Add(fileStreamContent1, "file1", Image1.FileName);
+        var json = await photoResponse.Content.ReadAsStringAsync();
+        dynamic result = JsonConvert.DeserializeObject(json);
 
-        // Add second image
-        var fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
-        fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
-        formData.Add(fileStreamContent2, "file2", Image2.FileName);
-
-        // Add additional string parameters
-        formData.Add(new StringContent(Prompt), "prompt");
-
-        // Send the POST request
-        var response = await client.PostAsync("/api/server/upload", formData);
-
-        // Check response
-        if (!response.IsSuccessStatusCode)
-        {
-            ViewData["Message"] = "File upload failed.";
-            return Page();
-        }
+        Image1Url = result.Image1Url;
+        Image2Url = result.Image2Url;
+    }
+    else
+    {
+        return Page();
     }
 
+    
     // Step 2: Trigger video generation
     var videoGenerationRequest = new VideoGenerationRequest
     {
         Prompt = Prompt,
-        Image = Image1.FileName, // Send only the filenames of the uploaded images
-        ImageTail = Image2.FileName,
+        Image = Image1FileName, // Send only the filenames of the uploaded images
+        ImageTail = Image2FileName,
         NegativePrompt = "animation, blur, low quality, glitches, low resolution, low quality, grainy textures, grainy, pixelation, overexposure, underexposure, noise, blurry focus, motion blur, blur, distortion, poor lighting, shimmering, washed-out colors, inconsistent frame rates, artifacts, visual distortions, morphing,",  // Set if you have a negative prompt
         CfgScale = 0.5f,      // Adjust as necessary
         Mode = "std",         // Adjust as necessary
@@ -76,7 +70,7 @@ public class DownloadModel : PageModel
     var jsonContent = JsonConvert.SerializeObject(videoGenerationRequest); // Serializing the object
     var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-    // Step 3: Send the video generation request
+    /* Step 3: Send the video generation request
     var videoResponse = await client.PostAsync("/api/video/generate", content);
     var videoResponseString = await videoResponse.Content.ReadAsStringAsync();
 
@@ -99,7 +93,7 @@ public class DownloadModel : PageModel
     else
     {
         ViewData["Message"] = "Video submission failed. Invalid response.";
-    }
+    }*/
     
      
 
@@ -114,7 +108,7 @@ public class DownloadModel : PageModel
     {
         try
         {
-            var queryResponse = await client.GetAsync($"/api/video/query/{taskId}");
+            var queryResponse = await client.GetAsync($"/api/video/query/CjJi7me0aekAAAAAAEzMSA");
             if (!queryResponse.IsSuccessStatusCode)
             {
                 ViewData["Message"] = "Failed to query video status.";
@@ -206,7 +200,7 @@ public class DownloadModel : PageModel
 
 
 
-*/
+
 
 
 
@@ -306,6 +300,7 @@ public class DownloadModel : PageModel
             }
             
         }
+        return Page();
     }
 
     /*public void OnGet()

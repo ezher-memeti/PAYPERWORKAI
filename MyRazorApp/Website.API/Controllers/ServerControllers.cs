@@ -58,6 +58,40 @@ namespace MyRazorApp.Website.API.ServerController
             });
         }
 
+
+        [HttpGet("get-latest-images")]
+        public IActionResult GetLatestImages()
+        {
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Media/UploadedPhotos");
+            var imageFiles = Directory.GetFiles(folderPath)
+                                    .OrderByDescending(f => new FileInfo(f).CreationTime)
+                                    .Take(2)
+                                    .ToList();
+
+            if (imageFiles.Count < 2)
+            {
+                return NotFound("Not enough images found.");
+            }
+
+            var fileName1 = Path.GetFileName(imageFiles[0]);
+            var fileName2 = Path.GetFileName(imageFiles[1]);
+
+            var encodedFileName1 = Uri.EscapeDataString(fileName1);
+            var encodedFileName2 = Uri.EscapeDataString(fileName2);
+
+            // Ensure correct URLs for both local and deployed environments
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            return Ok(new
+            {
+                Image1Url = $"{baseUrl}/Media/UploadedPhotos/{encodedFileName1}",
+                Image2Url = $"{baseUrl}/Media/UploadedPhotos/{encodedFileName2}"
+            });
+        }
+
+
+
+
         [HttpGet("stream/{fileName}")]
         public IActionResult StreamVideo(string fileName)
         {
