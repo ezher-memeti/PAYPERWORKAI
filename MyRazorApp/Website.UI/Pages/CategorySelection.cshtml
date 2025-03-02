@@ -109,7 +109,7 @@
                                 {
                                     <div class="dropdown-items" data-value="@perspective"
                                         onclick="selectDropdownItem(this, 'Perspective')">
-                                        <img class="perspective-img" src="/Assets/Dropdown/Bird's-eye-view.svg">
+                                        <img class="perspective-img" src="/Assets/Dropdown/Perspective/@(perspective.ToLower().Replace(" ", "-")).svg">
                                         <span>@perspective</span>
                                     </div>
                                 }
@@ -132,7 +132,7 @@
                                 @foreach (var shot in Model.ShotTypes)
                                 {
                                     <div class="dropdown-items" data-value="@shot"
-                                        style="background-image: url('/Assets/Dropdown/@(shot.ToLower().Replace(" ", "-")).jpg');"
+                                        style="background-image: url('/Assets/Dropdown/Shot-Type/@(shot.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'ShotType')">
                                         <span>@shot</span>
                                         
