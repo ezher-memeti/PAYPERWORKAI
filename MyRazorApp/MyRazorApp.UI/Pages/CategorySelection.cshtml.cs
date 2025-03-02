@@ -51,7 +51,7 @@ public class CategorySelectionModel : PageModel
 
     public List<string> Formats { get; set; } = new()
     {
-        "16:9", "9:16", "1:1", "4:3", "2:1"
+        "16:9", "9:16", "1:1"
     };
 
     public List<string> Durations { get; set; } = new()

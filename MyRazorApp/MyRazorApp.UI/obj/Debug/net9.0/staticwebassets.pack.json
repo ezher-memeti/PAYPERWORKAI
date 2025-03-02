@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets/MyRazorApp.UI.z9wuol4gkx.bundle.scp.css"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/1-1.svg",
+      "PackagePath": "staticwebassets/Assets/1-1.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/16-9.svg",
+      "PackagePath": "staticwebassets/Assets/16-9.svg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/2.png",
       "PackagePath": "staticwebassets/Assets/2.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/3.png",
       "PackagePath": "staticwebassets/Assets/3.png"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/9-16.svg",
+      "PackagePath": "staticwebassets/Assets/9-16.svg"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/Background/Ellipse1.png",
@@ -159,6 +171,10 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/generate.svg",
       "PackagePath": "staticwebassets/Assets/generate.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/image 10.png",
+      "PackagePath": "staticwebassets/Assets/image 10.png"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/MyRazorApp.UI/wwwroot/Assets/logo.png",

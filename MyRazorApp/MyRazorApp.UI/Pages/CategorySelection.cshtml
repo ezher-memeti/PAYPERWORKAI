@@ -288,18 +288,19 @@
                             }
                         </select>
 
-                        <div class="custom-dropdown s-type">
+                        <div class="custom-dropdown">
                             <button id="FormatDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/aspect-ratio.svg">Format</button>
                             <div id="formatOptions" class="dropdown-options">
                                 @foreach (var format in Model.Formats)
                                 {
-                                    <div class="dropdown-items" data-value="@format"
+                                    <div class="dropdown-items d-type d-flex justify-between" data-value="@format"
                                         style="background-image: url('/Assets/Dropdown/@(format.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Format')">
-                                        <span>@format</span>
-                                            
-                                            <span class="select-container select-text">Select<img class="select-icon" src="/Assets/Background/Vector.svg"></span>
-                                            
+                                        <div class="d-type-text-area">
+                                              <img style="width:15px !important; height:15px !important;" src="/Assets/@(format.ToLower().Replace(":", "-")).svg">
+                                            <span>@format</span>
+                                        </div>
+                                        <div class="d-box"></div>  
                                     </div>
                                 }
                             </div>
