@@ -1,5 +1,6 @@
 using MyRazorApp.Services;
 using MyRazorApp.Services.KlingAPI;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,14 @@ builder.Services.AddSession(options =>
 });
 
 var app = builder.Build();
+
+// Serve files from the /Media folder
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Media")),
+    RequestPath = "/Media"
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

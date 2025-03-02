@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using MyRazorApp.Website.API.Models;
 using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace MyRazorApp.Website.UI.Pages{
 public class DownloadModel : PageModel
@@ -24,6 +25,10 @@ public class DownloadModel : PageModel
     public string VideoStreamUrl { get; set; }
     public string Image1Url { get; set;}
     public string Image2Url { get; set;}
+
+    [BindProperty(SupportsGet = true)]
+    public string NegativePrompt {get; set; }
+
     private readonly IHttpClientFactory _httpClientFactory;
 
     public DownloadModel(IHttpClientFactory httpClientFactory){
@@ -33,20 +38,27 @@ public class DownloadModel : PageModel
     public async Task<IActionResult> OnGetAsync()
     {
 
-     
+    Console.WriteLine("IMAGE1 name: " + Image1FileName);
+    Console.WriteLine("IMAGE2 name: " + Image2FileName);
+
     var client = _httpClientFactory.CreateClient("server");
     var photoResponse = await client.GetAsync("/api/server/get-latest-images");
+    var photoResponseJson = await photoResponse.Content.ReadAsStringAsync();
 
     if (photoResponse.IsSuccessStatusCode)
     {
-        var json = await photoResponse.Content.ReadAsStringAsync();
-        dynamic result = JsonConvert.DeserializeObject(json);
+        var result = JObject.Parse(photoResponseJson);
 
-        Image1Url = result.Image1Url;
-        Image2Url = result.Image2Url;
+        Image1Url = result["image1Url"]?.ToString();
+        Image2Url = result["image2Url"]?.ToString();
+
+        Console.WriteLine("RESPONSE: " + photoResponseJson);
+        Console.WriteLine("IMAGE1ULR: " + Image1Url);
+        Console.WriteLine("IMAGE2ULR: " + Image2Url);
     }
     else
     {
+        Console.WriteLine("FAILED TO FETCH IMAGES");
         return Page();
     }
 
@@ -57,7 +69,7 @@ public class DownloadModel : PageModel
         Prompt = Prompt,
         Image = Image1FileName, // Send only the filenames of the uploaded images
         ImageTail = Image2FileName,
-        NegativePrompt = "animation, blur, low quality, glitches, low resolution, low quality, grainy textures, grainy, pixelation, overexposure, underexposure, noise, blurry focus, motion blur, blur, distortion, poor lighting, shimmering, washed-out colors, inconsistent frame rates, artifacts, visual distortions, morphing,",  // Set if you have a negative prompt
+        NegativePrompt = NegativePrompt,
         CfgScale = 0.5f,      // Adjust as necessary
         Mode = "std",         // Adjust as necessary
         StaticMask= "",
@@ -70,7 +82,7 @@ public class DownloadModel : PageModel
     var jsonContent = JsonConvert.SerializeObject(videoGenerationRequest); // Serializing the object
     var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-    /* Step 3: Send the video generation request
+    // Step 3: Send the video generation request
     var videoResponse = await client.PostAsync("/api/video/generate", content);
     var videoResponseString = await videoResponse.Content.ReadAsStringAsync();
 
@@ -93,7 +105,7 @@ public class DownloadModel : PageModel
     else
     {
         ViewData["Message"] = "Video submission failed. Invalid response.";
-    }*/
+    }
     
      
 
@@ -108,7 +120,7 @@ public class DownloadModel : PageModel
     {
         try
         {
-            var queryResponse = await client.GetAsync($"/api/video/query/CjJi7me0aekAAAAAAEzMSA");
+            var queryResponse = await client.GetAsync($"/api/video/query/{taskId}");
             if (!queryResponse.IsSuccessStatusCode)
             {
                 ViewData["Message"] = "Failed to query video status.";

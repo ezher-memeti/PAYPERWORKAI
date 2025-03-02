@@ -1,11 +1,75 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".custom-dropdown");
+
+    // Toggle dropdown visibility
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector(".dropdown-btn");
+        const options = dropdown.querySelector(".dropdown-options");
+
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Close all other dropdowns before opening this one
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove("active");
+                }
+            });
+
+            // Toggle the current dropdown
+            dropdown.classList.toggle("active");
+        });
+    });
+
+    // Select an item and update UI
+    window.selectDropdownItem = function (element, dropdownType) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Find the corresponding dropdown
+        const dropdown = element.closest(".custom-dropdown");
+        const dropdownButton = dropdown.querySelector(".dropdown-btn");
+        const hiddenSelect = document.getElementById("selected" + dropdownType);
+
+        // Update button text
+        if (dropdownType === "Duration") {
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/clock.svg">${element.querySelector("span").innerText}`;
+        }
+        else if (dropdownType === "Format") {
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/aspect-ratio.svg">${element.querySelector("span").innerText}`;
+        }
+        else {
+            dropdownButton.innerHTML = `${element.querySelector("span").innerText}<img class="dropdown-icon" src="/Assets/dropdown.svg">`;
+        }
+
+        // Update hidden select field
+        hiddenSelect.value = element.getAttribute("data-value");
+
+        // Close the dropdown
+        dropdown.classList.remove("active");
+    };
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function (event) {
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove("active");
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const categories = [
         { name: "Cinematic", image: "/Assets/Categories/Static/image8.png", hover: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
-        { name: "Fashion", image: "/Assets/Vector.png" },
+        { name: "Fashion", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Fashion.mp4" },
         { name: "Food", image: "MyRazorApp/wwwroot/Assets/Bildschirmfoto 2025-02-01 um 17.14.24 2.png", video: "/Assets/Categories/videos/Food.mp4" },
         { name: "Architecture", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Architecture.mp4" },
         { name: "Science Fiction", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/SciFi.mp4" },
-        { name: "Personal Video", image: "/Assets/Vector.png" },
+        { name: "Personal Video", image: "/Assets/Vector.png", video: "/Assets/Categories/videos/Personal-Video.mp4" },
         { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }
     ];
 
@@ -244,6 +308,25 @@ function removeImage(containerId, imageId, inputId) {
     fileInput.dispatchEvent(new Event('change')); // Trigger a change event to update the UI
 }
 
+///DROPDOWNS UPDATE
+// document.getElementById("generateBtn").addEventListener("click", function () {
+//     console.log("test: ");
+//     var selectedPerspective = document.getElementById("perspective").value;
+//     var selectedShotType = document.getElementById("shotType").value;
+//     var selectedCameraMovement = document.getElementById("cameraMovement").value;
+//     var selectedFormat = document.getElementById("format").value;
+//     var selectedDuration = document.getElementById("duration").value;
+//     var selectedStyle = document.getElementById("style").value;
+//     console.log(selectedCameraMovement);
+
+//     fetch(`/CategorySelection?handler=FetchSelection&perspective=${selectedPerspective}&shotType=${selectedShotType}&cameraMovement=${selectedCameraMovement}`)
+//         .then(response => response.text())
+//         .then(data => {
+//             document.getElementById("responseMessage").innerText = data;
+//         });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Checking if JavaScript is running...");
     var selectElement = document.getElementById("category");
@@ -321,4 +404,3 @@ document.addEventListener("DOMContentLoaded", function () {
         this.innerHTML = type === "password" ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
     });
 });
-
