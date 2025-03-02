@@ -77,6 +77,54 @@
       "PackagePath": "staticwebassets/Assets/Download.svg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Duration/10-sec.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Duration/10-sec.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Duration/5-sec.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Duration/5-sec.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Format/16:9.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Format/16:9.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Format/1:1.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Format/1:1.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Format/9:16.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Format/9:16.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Format/aspect-ratio.svg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Format/aspect-ratio.svg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/black-&-white.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/black-&-white.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/cool-blue.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/cool-blue.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/neon.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/neon.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/pastel.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/pastel.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/raw.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/raw.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Light-Color/warm-toned.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Light-Color/warm-toned.jpg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Perspective/angled-view.svg",
       "PackagePath": "staticwebassets/Assets/Dropdown/Perspective/angled-view.svg"
     },
@@ -125,6 +173,10 @@
       "PackagePath": "staticwebassets/Assets/Dropdown/Shot-Type/extreme-close-up.jpg"
     },
     {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Shot-Type/full-shot.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Shot-Type/full-shot.jpg"
+    },
+    {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Shot-Type/medium-close-up.jpg",
       "PackagePath": "staticwebassets/Assets/Dropdown/Shot-Type/medium-close-up.jpg"
     },
@@ -135,6 +187,34 @@
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Shot-Type/total-shot.jpg",
       "PackagePath": "staticwebassets/Assets/Dropdown/Shot-Type/total-shot.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/anime.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/anime.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/cartoon.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/cartoon.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/cyberpunk.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/cyberpunk.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/disney.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/disney.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/impressionistic.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/impressionistic.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/minimalistic.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/minimalistic.jpg"
+    },
+    {
+      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/Dropdown/Style/ultra-realistic.jpg",
+      "PackagePath": "staticwebassets/Assets/Dropdown/Style/ultra-realistic.jpg"
     },
     {
       "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/Assets/LogoMockup.png",

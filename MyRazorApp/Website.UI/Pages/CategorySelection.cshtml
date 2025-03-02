@@ -177,13 +177,7 @@
                                 <option value="@cameraMovement">@cameraMovement</option>
                             }
                         </select>
-                            @* <select asp-for="SelectedCameraMovement" class="dropdown-item">
-                                <option value="" disabled selected>Movement</option>
-                                @foreach (var movement in Model.CameraMovements)
-                                {
-                                    <option value="@movement">@movement</option>
-                                }
-                            </select> *@
+                            
                     </div>
                     </div>
                     <div class="settings-group style-settings ">
@@ -198,7 +192,7 @@
                                 @foreach (var style in Model.Styles)
                                 {
                                     <div class="dropdown-items" data-value="@style"
-                                        style="background-image: url('/Assets/Dropdown/@(style.ToLower().Replace(" ", "-")).jpg');"
+                                        style="background-image: url('/Assets/Dropdown/Style/@(style.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Style')">
                                         <span>@style</span>
                                             
@@ -218,14 +212,7 @@
                             }
                         </select>
 
-                            @* <select asp-for="SelectedStyle" class="dropdown-item" style="max-width=110px;">
-                                <option value="" disabled selected>Style</option>
-                                @foreach (var style in Model.Styles)
-                                {
-                                    <option value="@style">@style</option>
-                                }
-                            </select> *@
-
+    
                         @* Light-color dropdown *@
                         <div class="custom-dropdown s-type">
                             <button id="LightColorDropdownButton" class="dropdown-btn dropdown-item">Light & Color<img class="dropdown-icon" src="/Assets/dropdown.svg"></button>
@@ -233,7 +220,7 @@
                                 @foreach (var lightColor in Model.LightColors)
                                 {
                                     <div class="dropdown-items" data-value="@lightColor"
-                                        style="background-image: url('/Assets/Dropdown/@(lightColor.ToLower().Replace(" ", "-")).jpg');"
+                                        style="background-image: url('/Assets/Dropdown/Light-color/@(lightColor.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'LightColor')">
                                         <span>@lightColor</span>
                                             
@@ -262,15 +249,15 @@
 
                     @* duration dropdown *@
                       <div class="custom-dropdown">
-                            <button id="DurationDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/clock.svg">Duration</button>
+                            <button id="DurationDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/Dropdown/Duration/5-sec.svg">Duration</button>
                             <div id="durationOptions" class="dropdown-options">
                                 @foreach (var duration in Model.Durations)
                                 {
                                     <div class="dropdown-items d-type  d-flex justify-between" data-value="@duration"
-                                        style="background-image: url('/Assets/Dropdown/@(duration.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Duration')">
                                         <div class="d-type-text-area">
-                                            <img class="dropdown-icon" src="/Assets/clock.svg">
+                                            <img class="dropdown-icon" src="/Assets/Dropdown/Duration/@(duration.ToLower().Replace(" ", "-"))svg">
+
                                             <span>@duration</span>
                                         </div>
                                         <div class="d-box"></div>  
@@ -289,7 +276,7 @@
                         </select>
 
                         <div class="custom-dropdown">
-                            <button id="FormatDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/aspect-ratio.svg">Format</button>
+                            <button id="FormatDropdownButton" class="dropdown-btn dropdown-item"><img class="dropdown-icon" src="/Assets/Dropdown/Format/aspect-ratio.svg">Format</button>
                             <div id="formatOptions" class="dropdown-options">
                                 @foreach (var format in Model.Formats)
                                 {
@@ -297,7 +284,7 @@
                                         style="background-image: url('/Assets/Dropdown/@(format.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Format')">
                                         <div class="d-type-text-area">
-                                              <img style="width:15px !important; height:15px !important;" src="/Assets/@(format.ToLower().Replace(" ", "-")).svg">
+                                              <img style="width:15px !important; height:15px !important;" src="/Assets/Dropdown/Format/@(format.ToLower().Replace(" ", "-")).svg">
                                             <span>@format</span>
                                         </div>
                                         <div class="d-box"></div>  

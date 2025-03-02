@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Update button text
         if (dropdownType === "Duration") {
-            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/clock.svg">${element.querySelector("span").innerText}`;
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/Dropdown/Duration/${element.querySelector("span").innerText.replace(" ", "-")}svg">${element.querySelector("span").innerText}`;
+            console.log(dropdownButton.innerHTML);
         }
         else if (dropdownType === "Format") {
-            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/aspect-ratio.svg">${element.querySelector("span").innerText}`;
+            dropdownButton.innerHTML = `<img class="dropdown-icon" src="/Assets/Dropdown/Format/aspect-ratio.svg">${element.querySelector("span").innerText}`;
         }
         else {
             dropdownButton.innerHTML = `${element.querySelector("span").innerText}<img class="dropdown-icon" src="/Assets/dropdown.svg">`;
