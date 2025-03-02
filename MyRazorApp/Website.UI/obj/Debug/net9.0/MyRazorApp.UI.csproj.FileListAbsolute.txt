@@ -913,7 +913,6 @@
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/caumx28bez-muycvpuwrr.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/jicsuoe6t5-87fc7y1x7t.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/fs87k0sgoo-jfsiqqwiad.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/irzr0cuqtr-t91yh6zk1d.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/sion4j6e7f-z9wuol4gkx.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/5rz15td46b-z9wuol4gkx.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/staticwebassets.build.json

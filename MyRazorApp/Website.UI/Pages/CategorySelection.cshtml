@@ -277,7 +277,7 @@
                                     </div>
                                 }
                             </div>
-                        </div>
+                    </div>
 
                             <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
                         <select asp-for="SelectedDuration" id="selectedDuration" style="display: none; max-width:100px">
@@ -297,14 +297,13 @@
                                         style="background-image: url('/Assets/Dropdown/@(format.ToLower().Replace(" ", "-")).jpg');"
                                         onclick="selectDropdownItem(this, 'Format')">
                                         <div class="d-type-text-area">
-                                              <img style="width:15px !important; height:15px !important;" src="/Assets/@(format.ToLower().Replace(":", "-")).svg">
+                                              <img style="width:15px !important; height:15px !important;" src="/Assets/@(format.ToLower().Replace(" ", "-")).svg">
                                             <span>@format</span>
                                         </div>
                                         <div class="d-box"></div>  
                                     </div>
                                 }
                             </div>
-                        @* </div> *@
 
                             <!-- Hidden select for Shot Type dropdown (will be updated via JS) -->
                         <select asp-for="SelectedFormat" id="selectedFormat" style="display: none; max-width:100px">
@@ -314,53 +313,12 @@
                                 <option value="@format">@format</option>
                             }
                         </select>
-                    </div>
-                        @* <select asp-for="SelectedFormat" class="dropdown-item">
-                            <option value="" disabled selected>Format</option>
-                            @foreach (var format in Model.Formats)
-                            {
-                                <option value="@format">@format</option>
-                            }
-                        </select> *@
-
-                        
+                    </div>                       
                     </div>
                 </div>
 
             
         </div>
-
-        @* <div class="dropdown-inner-container">
-            <select id="duration" name="duration" asp-for="SelectedDuration" class="dropdown-item">
-                <option value="" disabled selected>Duration</option>
-                @foreach (var duration in Model.Durations)
-                {
-                    <option value="@duration" selected="@(duration == Model.SelectedDuration ? "selected" : null)">
-                        @duration
-                    </option>
-                }
-            </select>
-
-            <select id="style" name="style" class="dropdown-item">
-                <option value="" disabled selected>Style</option>
-                @foreach (var style in Model.Styles)
-                {
-                    <option value="@style" selected="@(style == Model.SelectedStyle ? "selected" : null)">
-                        @style
-                    </option>
-                }
-            </select>
-    
-            <select id="lightColor" name="lightColor" class="dropdown-item">
-                <option value="" disabled selected>Light & Color</option>
-                @foreach (var light in Model.LightColors)
-                {
-                    <option value="@light" selected="@(light == Model.SelectedLightColor ? "selected" : null)">
-                        @light
-                    </option>
-                }
-            </select> *@
-        @* </div> *@
     </div>
 
 
