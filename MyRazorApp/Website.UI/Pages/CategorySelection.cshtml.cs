@@ -165,8 +165,8 @@ public class CategorySelectionModel : PageModel
     prompt += GetLightColorPrompt(SelectedLightColor);
     
 
-    string NegativePrompt = $"{GetNegativeCategoryPrompt(SelectedCategory)}";
-    Console.WriteLine(prompt+" prompt"+ NegativePrompt+ "Negative");
+    string negativePrompt = $"{GetNegativeCategoryPrompt(SelectedCategory)}";
+    Console.WriteLine(prompt+" prompt"+ negativePrompt+ "Negative");
 
     
     return RedirectToPage("/Download", new
@@ -174,8 +174,8 @@ public class CategorySelectionModel : PageModel
             category = SelectedCategory,
             image1Url = Image1Name, // Parametre isimlerini düzelt
             image2Url = Image2Name,
-            prompt = prompt,
-            negativePrompt = NegativePrompt
+            Prompt = prompt,
+            negativePrompt = negativePrompt
         }
     ); 
 

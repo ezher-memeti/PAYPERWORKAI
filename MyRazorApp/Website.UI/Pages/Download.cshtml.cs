@@ -24,7 +24,8 @@ public class DownloadModel : PageModel
     public string VideoStreamUrl { get; set; }
     public string Image1Url { get; set;}
     public string Image2Url { get; set;}
-    public string negativePrompt {get; set; }
+    [BindProperty(SupportsGet = true)]
+    public string NegativePrompt {get; set; }
     private readonly IHttpClientFactory _httpClientFactory;
 
     public DownloadModel(IHttpClientFactory httpClientFactory){
@@ -58,7 +59,7 @@ public class DownloadModel : PageModel
         Prompt = Prompt,
         Image = Image1FileName, // Send only the filenames of the uploaded images
         ImageTail = Image2FileName,
-        NegativePrompt = negativePrompt,
+        NegativePrompt = NegativePrompt,
         CfgScale = 0.5f,      // Adjust as necessary
         Mode = "std",         // Adjust as necessary
         StaticMask= "",
@@ -67,7 +68,7 @@ public class DownloadModel : PageModel
         CallbackUrl = "",     // Set if you have a callback URL
         ExternalTaskId = ""   // Set if you need to include an external task ID
     };
-    Console.WriteLine("pr "+Prompt+"ng "+negativePrompt);
+    Console.WriteLine("pr "+Prompt+"ng "+NegativePrompt);
     var jsonContent = JsonConvert.SerializeObject(videoGenerationRequest); // Serializing the object
     var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
