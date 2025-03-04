@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Zxz2XuIc0tH96ACyQqx1PeGTKNBgw+8DVO5GhvQltTI=",
+  "Source": "MyRazorApp.API",
+  "BasePath": "_content/MyRazorApp.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
