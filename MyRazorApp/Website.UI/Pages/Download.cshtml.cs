@@ -38,6 +38,8 @@ public class DownloadModel : PageModel
     public async Task<IActionResult> OnGetAsync()
     {
 
+        Console.WriteLine("OnGetAsync execution started at: " + DateTime.Now);
+
         Console.WriteLine("IMAGE1 name: " + Image1FileName);
         Console.WriteLine("IMAGE2 name: " + Image2FileName);
         Console.WriteLine("PROMPT: "+ Prompt);

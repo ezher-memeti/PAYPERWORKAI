@@ -1,5 +1,15 @@
 ﻿document.addEventListener("DOMContentLoaded", async function () {
 
+    let runCount = sessionStorage.getItem("runCount") || 0;
+    runCount = parseInt(runCount, 10) + 1;
+
+    if (runCount >= 3) {
+        console.log("Script has already executed twice, exiting...");
+        return;
+    }
+
+    sessionStorage.setItem("runCount", runCount);
+
     console.log("Prompt: ", Prompt);
     console.log("Image 1: ", image1FileName);
     console.log("Image 2: ", image2FileName);
@@ -41,10 +51,11 @@
             const queryResult = await queryResponse.json();
             console.log("Video Query Response: ", queryResult);
 
-            if (queryResult?.data?.taskStatus?.toLowerCase() === "succeed") {
-                videoUrl = queryResult.data.taskResult?.videos[0]?.url || "";
+            if (queryResult?.data?.task_status?.toLowerCase() === "succeed") {
+                videoUrl = queryResult.data.task_result?.videos[0]?.url || "";
                 taskSucceeded = true;
-            } else if (queryResult?.data?.taskStatus?.toLowerCase() === "failed") {
+                break;
+            } else if (queryResult?.data?.task_status?.toLowerCase() === "failed") {
                 console.error("Video generation failed.");
                 return;
             }
@@ -59,11 +70,19 @@
 
         const downloadResult = await downloadResponse.json();
         const downloadUrl = downloadResult?.url;
+        console.log(downloadUrl);
 
         if (downloadUrl) {
             console.log("Download your video here:", downloadUrl);
             document.getElementById("videoPlayer").src = downloadUrl; // Show video
             document.getElementById("downloadBtn").href = downloadUrl; // Enable download button
+
+
+            setTimeout(function () {
+                document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
+                document.getElementById("videoPlayer").classList.remove("hidden"); // Show video
+                document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
+            }, 3000);
         } else {
             console.error("Download URL not found.");
         }
@@ -71,16 +90,11 @@
     } catch (error) {
         console.error("Error during video generation:", error);
     }
+
+    document.currentScript.remove();
 });
 
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
-        document.getElementById("videoPlayer").classList.remove("hidden"); // Show video
-        document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
-    }, 3000); // Simulated 3 seconds delay
-});
 
