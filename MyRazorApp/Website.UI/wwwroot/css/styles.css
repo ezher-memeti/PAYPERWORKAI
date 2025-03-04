@@ -45,7 +45,6 @@ button.category-btn {
     display: flex;
     align-items: flex-end;
     /* Align text at the bottom */
-    justify-content: flex-start;
 }
 
 button.category-btn:hover {
@@ -69,14 +68,14 @@ button.category-btn:hover {
     object-fit: cover;
     /* Ensures the video fills the button */
     display: block;
-    /* Hidden initially */
-    opacity: 1;
     z-index: 1;
     pointer-events: none;
+    /* mix-blend-mode: overlay; */
     mix-blend-mode: overlay;
-
     transition: opacity 0.5s ease-in-out;
+
 }
+
 
 .category-btn:hover .category-video {
     display: block;

@@ -25,6 +25,7 @@
     <div>
         <form method="get">
             <div id="category-wrapper" class="category-dropdown">
+            <div class="label-cont">
                 <label class="category-label">Category</label>
                 <select id="category" name="category" class="category-select" onchange="this.form.submit()">
                     @foreach (var category in Model.Categories)
@@ -33,9 +34,12 @@
                             @category
                         </option>
                     }
-                    <img src="/Assets/dropdown.svg" class=></img>
                 </select>
             </div>
+
+            <img class="dropdown-icon" src="/Assets/dropdown.svg"></img>    
+            </div>
+            
         </form>
     </div>
 </div>

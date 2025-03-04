@@ -843,12 +843,9 @@
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/go1iuz1fkz-99o13v99tp.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/plv3ryxqd8-vlx1t695h6.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/0wykbv4fvm-u4f9kuyz94.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/mcdsbxwrt8-wrbwcu1jv2.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/937cq4crjy-d4lyc5h02r.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/3blglndbps-hq5n7ibngt.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/109l97elez-6gz2aukltb.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/lievt5t7pk-61n19gt1b8.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-875nlr94ru.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/5k4e6l8jnp-bqjiyaj88i.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/dfulpfw052-c2jlpeoesf.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/uq3lkld522-erw9l3u2r3.gz
@@ -940,7 +937,6 @@
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/encglpv0lt-rl2b8vi5eo.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/9caijr5085-e6rqpelnno.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/r8z5mnwm2m-bd9fs8iy06.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/za9wrw83qb-cm7zics7ls.gz
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/oguavk2l93-or82hce2ke.gz
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/9caijr5085-e6rqpelnno.gz
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/r8z5mnwm2m-bd9fs8iy06.gz
@@ -958,3 +954,7 @@
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/8aor09fc5i-jpw4vfhmqg.gz
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/za9wrw83qb-3bj077oxdp.gz
 /Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-7067yu70h3.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/mcdsbxwrt8-cp1cxhpkjf.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-9gys956oos.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/za9wrw83qb-oqt61hey4a.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/109l97elez-5hvlvgucrk.gz

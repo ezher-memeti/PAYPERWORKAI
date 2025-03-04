@@ -1,4 +1,62 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const categories = [
+        { name: "Cinematic", video: "/Assets/Categories/videos/cinematic.mp4" },
+        { name: "Fashion", video: "/Assets/Categories/videos/Fashion.mp4" },
+        { name: "Food", video: "/Assets/Categories/videos/Food.mp4" },
+        { name: "Architecture", video: "/Assets/Categories/videos/Architecture.mp4" },
+        { name: "Science Fiction", video: "/Assets/Categories/videos/SciFi.mp4" },
+        { name: "Personal Video", video: "/Assets/Categories/videos/Personal-Video.mp4" },
+        { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }
+    ];
+
+    const dropdown = document.getElementById("category");
+    const wrapperElement = document.getElementById("category-wrapper");
+
+    function extractFirstFrame(videoSrc, callback) {
+        let video = document.createElement("video");
+        video.src = videoSrc;
+        video.crossOrigin = "anonymous";
+        video.muted = true;
+        video.playsInline = true;
+
+        let canvas = document.createElement("canvas");
+        let ctx = canvas.getContext("2d");
+
+        video.addEventListener("loadeddata", function () {
+            video.currentTime = 0.1; // Seek to the first frame
+        });
+
+        video.addEventListener("seeked", function () {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            callback(canvas.toDataURL()); // Convert to an image URL
+        });
+
+        video.load();
+    }
+
+    function updateCategoryBackground() {
+        const selectedValue = dropdown.value;
+        const category = categories.find(cat => cat.name === selectedValue);
+
+        if (category && category.video) {
+            extractFirstFrame(category.video, (imageURL) => {
+                wrapperElement.style.backgroundImage = `url('${imageURL}')`;
+                wrapperElement.style.backgroundSize = "cover";
+                wrapperElement.style.backgroundPosition = "center";
+                wrapperElement.style.backgroundRepeat = "no-repeat";
+            });
+        } else {
+            wrapperElement.style.backgroundImage = "none"; // Reset if no category found
+        }
+    }
+
+    dropdown.addEventListener("change", updateCategoryBackground);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll(".custom-dropdown");
 
     // Toggle dropdown visibility
@@ -62,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Document.getElementById("generateBtn").addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default form submission
-        
+
         // Submit the form manually
         let form = this.closest("form");
         if (form) {
@@ -122,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             video.src = category.video;
             video.loop = true;
             video.muted = true;
-            video.style.opacity = 0.6;
+            video.style.opacity = 1;
 
             // Canvas only for extracting colors
             canvas = document.createElement("canvas");
@@ -345,18 +403,19 @@ function removeImage(containerId, imageId, inputId) {
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Checking if JavaScript is running...");
+
     var selectElement = document.getElementById("category");
     var wrapperElement = document.getElementById("category-wrapper");
     var subtitleElement = document.getElementById("subtitle");
 
-    var categoryBackgrounds = {
-        "Cinematic": "/Assets/Categories/Hover/image7.png",
-        "Fashion": "/Assets/Categories/Static/image8.png",
-        "Food": "/Assets/Categories/Static/image8.png",
-        "Architecture": "/Assets/Categories/Static/image8.png",
-        "Science Fiction": "/Assets/Categories/Static/image8.png",
-        "Personal Video": "/Assets/Categories/Static/image8.png",
-        "Cars": "/images/cars.jpg"
+    var categories = {
+        "Cinematic": { image: "/Assets/Categories/Hover/image7.png", video: "/Assets/Categories/videos/cinematic.mp4" },
+        "Fashion": { image: "/Assets/Categories/Static/image8.png", video: "/Assets/Categories/videos/Fashion.mp4" },
+        "Food": { image: "/Assets/Categories/Static/image8.png", video: "/Assets/Categories/videos/Food.mp4" },
+        "Architecture": { image: "/Assets/Categories/Static/image8.png", video: "/Assets/Categories/videos/Architecture.mp4" },
+        "Science Fiction": { image: "/Assets/Categories/Static/SciFi.mp4", video: "/Assets/Categories/videos/SciFi.mp4" },
+        "Personal Video": { image: "/Assets/Categories/Static/image8.png", video: "/Assets/Categories/videos/Personal-Video.mp4" },
+        "Cars": { image: "/images/Car.mp4", video: "/Assets/Categories/videos/Car.mp4" }
     };
 
     var categoryDescriptions = {
@@ -369,28 +428,66 @@ document.addEventListener("DOMContentLoaded", function () {
         "Cars": "Two relevant images <br> (e.g., high-speed vehicles)"
     };
 
+    function extractFirstFrame(videoSrc, callback) {
+        let video = document.createElement("video");
+        video.src = videoSrc;
+        video.crossOrigin = "anonymous";
+        video.muted = true;
+        video.playsInline = true;
+
+        let canvas = document.createElement("canvas");
+        let ctx = canvas.getContext("2d");
+
+        video.addEventListener("loadeddata", function () {
+            video.currentTime = 0.1; // Seek to the first frame
+        });
+
+        video.addEventListener("seeked", function () {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            callback(canvas.toDataURL()); // Convert to an image URL
+        });
+
+        video.load();
+    }
+
     function updateBackground() {
         var selectedValue = selectElement.value;
-        var imageUrl = categoryBackgrounds[selectedValue] || "/Assets/logo.png"; // Default fallback
+        var category = categories[selectedValue];
 
-        console.log("Selected Category:", selectedValue);  // Debugging
-        console.log("Background Image URL:", imageUrl);   // Debugging
+        if (!category) {
+            wrapperElement.style.backgroundImage = "none"; // Reset if no category found
+            return;
+        }
 
-        wrapperElement.style.backgroundImage = `url('${imageUrl}')`;
-        wrapperElement.style.backgroundSize = "cover";
-        wrapperElement.style.backgroundPosition = "center";
-        wrapperElement.style.backgroundRepeat = "no-repeat";
+        if (category.video) {
+            extractFirstFrame(category.video, (imageURL) => {
+                wrapperElement.style.backgroundImage = `url('${imageURL}')`;
+                wrapperElement.style.backgroundSize = "cover";
+                wrapperElement.style.backgroundPosition = "center";
+                wrapperElement.style.backgroundRepeat = "no-repeat";
+            });
+        } else {
+            wrapperElement.style.backgroundImage = `url('${category.image}')`;
+            wrapperElement.style.backgroundSize = "cover";
+            wrapperElement.style.backgroundPosition = "center";
+            wrapperElement.style.backgroundRepeat = "no-repeat";
+        }
     }
+
     function updateSubtitle() {
         var selectedValue = selectElement.value;
         subtitleElement.innerHTML = categoryDescriptions[selectedValue] || "Two relevant images <br> (e.g., futuristic elements)";
     }
 
     selectElement.addEventListener("change", updateSubtitle);
-    updateSubtitle();
     selectElement.addEventListener("change", updateBackground);
+
+    updateSubtitle();
     updateBackground(); // Apply background on page load
 });
+
 
 
 document.getElementById("togglePassword").addEventListener("click", function () {

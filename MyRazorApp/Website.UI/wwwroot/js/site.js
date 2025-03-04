@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", async function() {
+﻿document.addEventListener("DOMContentLoaded", async function () {
 
     console.log("Prompt: ", Prompt);
     console.log("Image 1: ", image1FileName);
@@ -33,14 +33,14 @@
         // Step 2: Poll the API for Task Status
         let videoUrl = "";
         let taskSucceeded = false;
-        
+
         while (!taskSucceeded) {
             await new Promise(resolve => setTimeout(resolve, 30000)); // Wait 30 sec
-            
+
             const queryResponse = await fetch(`http://localhost:5123/api/video/query/${taskId}`);
             const queryResult = await queryResponse.json();
             console.log("Video Query Response: ", queryResult);
-            
+
             if (queryResult?.data?.taskStatus?.toLowerCase() === "succeed") {
                 videoUrl = queryResult.data.taskResult?.videos[0]?.url || "";
                 taskSucceeded = true;
@@ -83,3 +83,4 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
     }, 3000); // Simulated 3 seconds delay
 });
+

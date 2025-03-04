@@ -43,6 +43,12 @@ body {
     /* Rounded corners */
     padding: 12px 12px 12px 12px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label-cont {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -81,7 +87,7 @@ body {
     height: auto;
     color: white;
     pointer-events: none;
-    z-index: 10;
+    z-index: 100;
 }
 
 
