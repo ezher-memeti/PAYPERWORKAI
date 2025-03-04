@@ -2280,32 +2280,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/ezhermemeti/.nuget/packages/": {}
+    "/Users/emir/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/MyRazorApp.UI.csproj",
+      "projectUniqueName": "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/MyRazorApp.UI.csproj",
       "projectName": "MyRazorApp.UI",
-      "projectPath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/MyRazorApp.UI.csproj",
-      "packagesPath": "/Users/ezhermemeti/.nuget/packages/",
-      "outputPath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/",
+      "projectPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/MyRazorApp.UI.csproj",
+      "packagesPath": "/Users/emir/.nuget/packages/",
+      "outputPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.UI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ezhermemeti/.nuget/NuGet/NuGet.Config"
+        "/Users/emir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj": {
-              "projectPath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj"
+            "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj": {
+              "projectPath": "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj"
             }
           }
         }
@@ -2320,7 +2321,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -2354,7 +2355,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

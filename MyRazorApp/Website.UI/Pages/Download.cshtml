@@ -68,4 +68,14 @@
 </div>
 
 <!-- JavaScript for Handling Loading -->
+
+
+<script>
+    // Pass C# variables to JavaScript
+    var Prompt = @Json.Serialize(Model.Prompt);
+    var image1FileName = @Json.Serialize(Model.Image1FileName);
+    var image2FileName = @Json.Serialize(Model.Image2FileName);
+    var NegativePrompt = @Json.Serialize(Model.NegativePrompt);
+</script>
+
 <script src="~/js/site.js"></script>
