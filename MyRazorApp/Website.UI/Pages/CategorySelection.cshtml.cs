@@ -284,7 +284,7 @@ private string GetDurationPrompt(string duration)
     {
         "5 sec." => "5",
         "10 sec." => "10",
-        _ => ""
+        _ => "5"
     };
 }
 
