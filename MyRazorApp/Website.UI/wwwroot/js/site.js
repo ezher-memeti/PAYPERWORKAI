@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.log("Image 1:", image1FileName);
     console.log("Image 2:", image2FileName);
     console.log("NegativePrompt:", NegativePrompt);
+    console.log("duration", Duration);
 
     try {
         // // 🔹 Step 1: Start Video Generation
@@ -168,7 +169,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         //         negativePrompt: NegativePrompt,
         //         cfgScale: 0.5,
         //         mode: "std",
-        //         duration: "5"
+        //         duration: Duration
         //     })
         // });
 

@@ -163,7 +163,6 @@ public class CategorySelectionModel : PageModel
     prompt += GetShotTypePrompt(SelectedShotType);
     prompt += GetCameraMovementPrompt(SelectedCameraMovement);
     prompt += GetFormatPrompt(SelectedFormat);
-    prompt += GetDurationPrompt(SelectedDuration);
     prompt += GetStylePrompt(SelectedStyle);
     prompt += GetLightColorPrompt(SelectedLightColor);
     
@@ -171,6 +170,7 @@ public class CategorySelectionModel : PageModel
     string negativePrompt = $"{GetNegativeCategoryPrompt(SelectedCategory)}";
     Console.WriteLine(prompt+" prompt"+ negativePrompt+ "Negative");
 
+    string duration = $"{GetDurationPrompt(SelectedDuration)}";
     
     return RedirectToPage("/Download", new
         {
@@ -178,7 +178,8 @@ public class CategorySelectionModel : PageModel
             image1Url = Image1Name, // Parametre isimlerini düzelt
             image2Url = Image2Name,
             Prompt = prompt,
-            negativePrompt = negativePrompt
+            negativePrompt = negativePrompt,
+            duration = duration
         }
     ); 
 
@@ -281,8 +282,8 @@ private string GetDurationPrompt(string duration)
 {
     return duration switch
     {
-        "5s" => "Set the video duration to 5 seconds.",
-        "10s" => "Set the video duration to 10 seconds.",
+        "5 sec." => "5",
+        "10 sec." => "10",
         _ => ""
     };
 }

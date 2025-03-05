@@ -27,6 +27,9 @@ public class DownloadModel : PageModel
     public string Image2Url { get; set;}
 
     [BindProperty(SupportsGet = true)]
+    public string Duration { get; set; }
+
+    [BindProperty(SupportsGet = true)]
     public string NegativePrompt {get; set; }
 
     private readonly IHttpClientFactory _httpClientFactory;
@@ -44,6 +47,7 @@ public class DownloadModel : PageModel
         Console.WriteLine("IMAGE2 name: " + Image2FileName);
         Console.WriteLine("PROMPT: "+ Prompt);
         Console.WriteLine("CATEGORY: " + Category);
+        Console.WriteLine("DURATION: "+Duration);
 
         var client = _httpClientFactory.CreateClient("server");
         var photoResponse = await client.GetAsync("/api/server/get-latest-images");
