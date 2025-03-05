@@ -1,14 +1,10 @@
 ﻿document.addEventListener("DOMContentLoaded", async function () {
 
-    let runCount = sessionStorage.getItem("runCount") || 0;
-    runCount = parseInt(runCount, 10) + 1;
-
-    if (runCount >= 3) {
-        console.log("Script has already executed twice, exiting...");
+    if (window.siteJsLoaded) {
+        console.log("site.js already executed. Exiting...");
         return;
     }
-
-    sessionStorage.setItem("runCount", runCount);
+    window.siteJsLoaded = true;
 
     console.log("Prompt: ", Prompt);
     console.log("Image 1: ", image1FileName);
@@ -16,7 +12,7 @@
     console.log("NegativePrompt: ", NegativePrompt);
 
     try {
-        // Step 1: Start Video Generation
+        /* Step 1: Start Video Generation
         const response = await fetch("http://localhost:5123/api/video/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -38,7 +34,7 @@
         if (!taskId) {
             console.error("Failed to get task ID.");
             return;
-        }
+        }*/
 
         // Step 2: Poll the API for Task Status
         let videoUrl = "";
@@ -47,7 +43,7 @@
         while (!taskSucceeded) {
             await new Promise(resolve => setTimeout(resolve, 30000)); // Wait 30 sec
 
-            const queryResponse = await fetch(`http://localhost:5123/api/video/query/${taskId}`);
+            const queryResponse = await fetch(`http://localhost:5123/api/video/query/ChAkX2fGy3kAAAAAAFXyag`);
             const queryResult = await queryResponse.json();
             console.log("Video Query Response: ", queryResult);
 
@@ -91,7 +87,7 @@
         console.error("Error during video generation:", error);
     }
 
-    document.currentScript.remove();
+    
 });
 
 

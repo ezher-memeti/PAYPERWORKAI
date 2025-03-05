@@ -118,20 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    Document.getElementById("generateBtn").addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Submit the form manually
-        let form = this.closest("form");
-        if (form) {
-            form.submit();
-        }
-
-        // Redirect after a short delay to allow the backend to process
-        setTimeout(function () {
-            window.location.href = "/Download";
-        }, 2000); // Adjust delay if needed
-    });
 });
 
 

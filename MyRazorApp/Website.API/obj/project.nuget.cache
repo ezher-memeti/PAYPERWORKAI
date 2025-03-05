@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "dBSr9Yyuexw=",
   "success": true,
   "projectFilePath": "/Users/emir/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj",
@@ -35,42 +34,13 @@
     "/Users/emir/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/Users/emir/.nuget/packages/system.identitymodel.tokens.jwt/8.4.0/system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512",
     "/Users/emir/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
-=======
-  "dgSpecHash": "mRRFMCAS96g=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\yasir\\vscodeide\\PAYPERWORKAI6\\MyRazorApp\\Website.API\\MyRazorApp.API.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\yasir\\.nuget\\packages\\identitymodel\\6.1.0\\identitymodel.6.1.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.3.0\\microsoft.aspnetcore.cors.2.3.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.0\\microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\9.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.9.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.4.0\\microsoft.identitymodel.abstractions.8.4.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.4.0\\microsoft.identitymodel.jsonwebtokens.8.4.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.identitymodel.logging\\8.4.0\\microsoft.identitymodel.logging.8.4.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.4.0\\microsoft.identitymodel.tokens.8.4.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\microsoft.openapi\\1.6.22\\microsoft.openapi.1.6.22.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\swashbuckle.aspnetcore\\7.2.0\\swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\7.2.0\\swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\7.2.0\\swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\7.2.0\\swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.4.0\\system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512",
-    "C:\\Users\\yasir\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
->>>>>>> db32760119d0d3af65e9cc1b913264814cdaac85
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/emir/PAYPERWORKAI/MyRazorApp/Website.API/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
