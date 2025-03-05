@@ -1,19 +1,19 @@
 ﻿document.addEventListener("DOMContentLoaded", async function () {
+    // Prevent the script from executing multiple times within the session
+    // if (sessionStorage.getItem("siteJsLoaded") === "true") {
+    //     console.log("site.js already executed. Exiting...");
+    //     return;
+    // }
+    sessionStorage.setItem("siteJsLoaded", "true");
 
-    if (window.siteJsLoaded) {
-        console.log("site.js already executed. Exiting...");
-        return;
-    }
-    window.siteJsLoaded = true;
-
-    console.log("Prompt: ", Prompt);
-    console.log("Image 1: ", image1FileName);
-    console.log("Image 2: ", image2FileName);
-    console.log("NegativePrompt: ", NegativePrompt);
+    console.log("Prompt:", Prompt);
+    console.log("Image 1:", image1FileName);
+    console.log("Image 2:", image2FileName);
+    console.log("NegativePrompt:", NegativePrompt);
 
     try {
-        /* Step 1: Start Video Generation
-        const response = await fetch("http://localhost:5123/api/video/generate", {
+        // Step 1: Start Video Generation
+        /* const response = await fetch("http://localhost:5123/api/video/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -34,7 +34,7 @@
         if (!taskId) {
             console.error("Failed to get task ID.");
             return;
-        }*/
+        } */
 
         // Step 2: Poll the API for Task Status
         let videoUrl = "";
@@ -66,13 +66,12 @@
 
         const downloadResult = await downloadResponse.json();
         const downloadUrl = downloadResult?.url;
-        console.log(downloadUrl);
+        console.log("Download URL:", downloadUrl);
 
         if (downloadUrl) {
             console.log("Download your video here:", downloadUrl);
             document.getElementById("videoPlayer").src = downloadUrl; // Show video
             document.getElementById("downloadBtn").href = downloadUrl; // Enable download button
-
 
             setTimeout(function () {
                 document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
@@ -86,11 +85,43 @@
     } catch (error) {
         console.error("Error during video generation:", error);
     }
-
-    
 });
 
+// Disable page reload by preventing form submissions and button clicks that may cause it
+window.addEventListener("beforeunload", function (event) {
+    if (sessionStorage.getItem("siteJsLoaded") === "true") {
+        event.preventDefault();
+        event.returnValue = ''; // Some browsers require this for it to work (for confirmation)
+        // Optional: Customize the confirmation message (not supported on all browsers)
+        event.returnValue = 'Are you sure you want to leave?';
+    }
+});
+// Prevent forms or buttons that might trigger a reload (e.g., from refreshing the page)
+document.querySelectorAll('form').forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent page reload from form submission
+    });
+});
 
+document.querySelectorAll('button').forEach(function (button) {
+    button.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page reload from button click
+    });
+});
 
+// document.querySelectorAll('a').forEach(function (anchor) {
+//     anchor.addEventListener("click", function (event) {
+//         event.preventDefault(); // Prevent page reload from anchor link click
+//         // You can manually handle the navigation or download here instead
+//     });
+// });
 
+// document.querySelector('.return-btn').addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent page reload
+//     window.location.href = '/CategorySelection'; // Navigate without reload
+// });
 
+// document.querySelector('#downloadBtn').addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent page reload
+//     window.location.href = downloadUrl; // Trigger download manually
+// });

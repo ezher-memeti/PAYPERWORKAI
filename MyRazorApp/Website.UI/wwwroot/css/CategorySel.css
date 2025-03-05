@@ -56,9 +56,10 @@ body {
 
 .category-label {
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 10px;
     padding-left: 2px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0);
     color: #FFFFFF;
 }
 
@@ -69,6 +70,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
