@@ -144,10 +144,12 @@ document.addEventListener("DOMContentLoaded", async function () {
     // sessionStorage.setItem("siteJsLoaded", "true");
 
     // Check if a video was already generated and stored in sessionStorage
+    // Check if a video was already generated
     const storedVideoUrl = sessionStorage.getItem("finalVideoUrl");
     if (storedVideoUrl) {
         console.log("Using stored video URL:", storedVideoUrl);
-        displayVideo(storedVideoUrl);
+        // 🔹 Step 3: Display Video
+        displayVideo(storedVideoUrl, sessionStorage.getItem("downloadVideoUrl"));
         return;
     }
 
@@ -222,24 +224,79 @@ document.addEventListener("DOMContentLoaded", async function () {
             console.error("Download URL not found.");
         }
 
+        // 🔹 Fetch Latest Video File Name
+        const latestVideoResponse = await fetch("http://localhost:5123/api/server/latest-video");
+
+        if (!latestVideoResponse.ok) {
+            console.error("Failed to fetch the latest video file.");
+            return;
+        }
+
+        const latestVideoResult = await latestVideoResponse.json();
+        const fileName = latestVideoResult?.fileName;
+
+        if (!fileName) {
+            console.error("No latest video found.");
+            return;
+        }
+
+        console.log("Latest Video File:", fileName);
+
+        // 🔹 Step 2: Construct the correct Stream and Download URLs
+        const streamUrl = `http://localhost:5123/api/server/stream-file/${encodeURIComponent(fileName)}`;
+        const downloadUrl = `http://localhost:5123/api/server/download-file/${encodeURIComponent(fileName)}`;
+
+        // 🔹 Step 3: Ensure the video is accessible before displaying it
+        const streamCheck = await fetch(streamUrl);
+        if (!streamCheck.ok) {
+            console.error("Stream URL is not accessible:", streamUrl);
+            return;
+        }
+
+        const downloadCheck = await fetch(downloadUrl);
+        if (!downloadCheck.ok) {
+            console.error("Download URL is not accessible:", downloadUrl);
+            return;
+        }
+
+        // Store video URL in sessionStorage
+        sessionStorage.setItem("finalVideoUrl", streamUrl);
+        sessionStorage.setItem("downloadVideoUrl", downloadUrl);
+
+        // 🔹 Display Video
+        // displayVideo(streamUrl, downloadUrl);
+
     } catch (error) {
-        console.error("Error during video generation:", error);
+        console.error("Error fetching latest video:", error);
     }
 });
 
 /**
  * 🔹 Helper function to display the video and enable download button.
  */
-function displayVideo(videoUrl) {
-    document.getElementById("videoPlayer").src = videoUrl; // Show video
-    document.getElementById("downloadBtn").href = videoUrl; // Enable download button
-    document.getElementById("downloadBtn").setAttribute("download", "generated_video.mp4");
+function displayVideo(streamUrl, downloadUrl) {
+    const videoElement = document.getElementById("videoPlayer");
+    const downloadButton = document.getElementById("downloadBtn");
+    const loadingContainer = document.getElementById("loadingContainer");
 
-    setTimeout(function () {
-        document.getElementById("loadingContainer").style.display = "none"; // Hide loading GIF
-        document.getElementById("videoPlayer").classList.remove("hidden"); // Show video
-        document.getElementById("downloadBtn").classList.remove("hidden"); // Show download button
-    }, 3000);
+    if (!videoElement || !downloadButton || !loadingContainer) {
+        console.error("Missing HTML elements for video display.");
+        return;
+    }
+
+    // Set video source for streaming
+    videoElement.src = streamUrl;
+    videoElement.load(); // Ensure the video reloads properly
+
+    // Set download link
+    downloadButton.href = downloadUrl;
+    downloadButton.setAttribute("download", "generated_video.mp4");
+
+    setTimeout(() => {
+        loadingContainer.style.display = "none"; // Hide loading GIF
+        videoElement.classList.remove("hidden"); // Show video
+        downloadButton.classList.remove("hidden"); // Show download button
+    }, 1000);
 }
 
 // // 🔹 Prevent page reload by blocking form submissions and button clicks
