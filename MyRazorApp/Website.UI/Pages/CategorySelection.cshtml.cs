@@ -155,6 +155,8 @@ public class CategorySelectionModel : PageModel
         Console.WriteLine("IMAGE1 name: " + Image1Name);
         Console.WriteLine("IMAGE2 name: " + Image2Name);
     }
+
+    string UIPrompt = $"{Prompt}.";
     
     // Build the dynamic prompt based on selected dropdowns
     string prompt = $"{Prompt}. ";
@@ -179,7 +181,8 @@ public class CategorySelectionModel : PageModel
             image2Url = Image2Name,
             Prompt = prompt,
             negativePrompt = negativePrompt,
-            duration = duration
+            duration = duration,
+            UIPrompt=UIPrompt
         }
     ); 
 

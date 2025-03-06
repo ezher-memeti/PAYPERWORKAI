@@ -32,6 +32,9 @@ public class DownloadModel : PageModel
     [BindProperty(SupportsGet = true)]
     public string NegativePrompt {get; set; }
 
+    [BindProperty(SupportsGet = true)]
+    public string UIPrompt { get; set; }
+
     private readonly IHttpClientFactory _httpClientFactory;
 
     public DownloadModel(IHttpClientFactory httpClientFactory){

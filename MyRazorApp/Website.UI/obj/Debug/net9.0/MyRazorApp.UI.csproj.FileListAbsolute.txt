@@ -1364,7 +1364,6 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI6/MyRazorApp/Website.UI/obj/Debug/net9.0/re
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/109l97elez-vdfsonlb1l.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/lievt5t7pk-61n19gt1b8.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/za9wrw83qb-qupfrhtdx5.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-4pvahygezg.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/5k4e6l8jnp-bqjiyaj88i.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/dfulpfw052-c2jlpeoesf.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/uq3lkld522-erw9l3u2r3.gz
@@ -1442,3 +1441,4 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI6/MyRazorApp/Website.UI/obj/Debug/net9.0/re
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/MyRazorApp.UI.pdb
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/MyRazorApp.UI.genruntimeconfig.cache
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/ref/MyRazorApp.UI.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-nxct3eoksk.gz
