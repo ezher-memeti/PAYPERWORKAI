@@ -39,10 +39,10 @@ namespace MyRazorApp.Website.API.VideoController
                     return NotFound(new { message = "Image not found in uploads folder." });
                 }
 
-                if (!System.IO.File.Exists(imageTailPath))
-                {
-                    return NotFound(new { message = "ImageTail not found in uploads folder." });
-                }
+                // if (!System.IO.File.Exists(imageTailPath))
+                // {
+                //     return NotFound(new { message = "ImageTail not found in uploads folder." });
+                // }
 
                 string imageBase64;
                 using (var image = System.IO.File.OpenRead(imagePath))
@@ -53,13 +53,12 @@ namespace MyRazorApp.Website.API.VideoController
                 }
 
                 string imageTailBase64;
-                using (var image = System.IO.File.OpenRead(imageTailPath))
-                {
-                    byte[] imageBytes = new byte[image.Length];
-                    await image.ReadAsync(imageBytes, 0, (int)image.Length);
-                    imageTailBase64 = Convert.ToBase64String(imageBytes);
-                }
-
+                    using (var image = System.IO.File.OpenRead(imageTailPath))
+                    {
+                        byte[] imageBytes = new byte[image.Length];
+                        await image.ReadAsync(imageBytes, 0, (int)image.Length);
+                        imageTailBase64 = Convert.ToBase64String(imageBytes);
+                    }
 
                 // Call the service to generate the video
                 string result = await _videoGenerationService.GenerateVideo(
