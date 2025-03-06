@@ -117,6 +117,10 @@ public class CategorySelectionModel : PageModel
         ModelState.AddModelError("", "Please select a tail image.");
         return Page();
     }
+
+    Console.WriteLine("IMAGE1: ", Image1);
+    Console.WriteLine("IMAGE2: ", Image2);
+
     
     var client = _httpClientFactory.CreateClient("server");
     string Image1Name = "";
@@ -135,13 +139,15 @@ public class CategorySelectionModel : PageModel
         // fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
         // formData.Add(fileStreamContent2, "file2", Image2.FileName);    
 
-        // Process the second image (optional)
+       // Process the second image (optional)
         StreamContent fileStreamContent2 = null;
-        if (Image2 != null)
+        if (Image2 != null) // <-- FIX: Only process if the image exists
         {
             fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
-            fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+            fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
+            formData.Add(fileStreamContent2, "file2", Image2.FileName);
         }
+
         
 
         // Add additional string parameters

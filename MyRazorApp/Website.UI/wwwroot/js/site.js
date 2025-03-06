@@ -16,29 +16,29 @@
     console.log("duration", Duration);
 
     try {
-        // // 🔹 Step 1: Start Video Generation
-        // const response = await fetch("http://localhost:5123/api/video/generate", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify({
-        //         prompt: Prompt,
-        //         image: image1FileName,
-        //         imageTail: image2FileName,
-        //         negativePrompt: NegativePrompt,
-        //         cfgScale: 0.5,
-        //         mode: "std",
-        //         duration: Duration
-        //     })
-        // });
+        //     // 🔹 Step 1: Start Video Generation
+        //     const response = await fetch("http://localhost:5123/api/video/generate", {
+        //         method: "POST",
+        //         headers: { "Content-Type": "application/json" },
+        //         body: JSON.stringify({
+        //             prompt: Prompt,
+        //             image: image1FileName,
+        //             imageTail: image2FileName,
+        //             negativePrompt: NegativePrompt,
+        //             cfgScale: 0.5,
+        //             mode: "std",
+        //             duration: Duration
+        //         })
+        //     });
 
-        // const result = await response.json();
-        // const taskId = result?.data?.task_id;
-        // console.log("Video Submit Response:", result);
+        //     const result = await response.json();
+        //     const taskId = result?.data?.task_id;
+        //     console.log("Video Submit Response:", result);
 
-        // if (!taskId) {
-        //     console.error("Failed to get task ID.");
-        //     return;
-        // }
+        //     if (!taskId) {
+        //         console.error("Failed to get task ID.");
+        //         return;
+        //     }
 
         // 🔹 Step 2: Poll the API for Task Status
         let videoUrl = "";

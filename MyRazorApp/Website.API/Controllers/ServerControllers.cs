@@ -59,48 +59,68 @@ namespace MyRazorApp.Website.API.ServerController
         //     });
         // }
 
-        [HttpPost("upload")]
+      [HttpPost("upload")]
         public async Task<IActionResult> UploadImagesAsync([FromForm] IFormFile file1, [FromForm] string prompt, [FromForm] IFormFile file2 = null)
         {
-            // Check if the first image is provided
             if (file1 == null || file1.Length == 0)
             {
                 return BadRequest("No first image uploaded.");
             }
 
-            // Define the upload directory
-            var uploadDir = Path.Combine(Directory.GetCurrentDirectory(), "Media/UploadedPhotos");
-            Directory.CreateDirectory(uploadDir);
-
-            // Save first image
-            var fileName1 = Path.GetFileName(file1.FileName);
-            var savePath1 = Path.Combine(uploadDir, fileName1);
-            using (var fileStream1 = new FileStream(savePath1, FileMode.Create))
+            try
             {
-                await file1.CopyToAsync(fileStream1);
-            }
-
-            // If the second image is provided, save it
-            string fileName2 = null;
-            if (file2 != null && file2.Length > 0)
-            {
-                fileName2 = Path.GetFileName(file2.FileName);
-                var savePath2 = Path.Combine(uploadDir, fileName2);
-                using (var fileStream2 = new FileStream(savePath2, FileMode.Create))
+                // Define the upload directory
+                var uploadDir = Path.Combine(Directory.GetCurrentDirectory(), "Media", "UploadedPhotos");
+                if (!Directory.Exists(uploadDir))
                 {
-                    await file2.CopyToAsync(fileStream2);
+                    Directory.CreateDirectory(uploadDir);
                 }
-            }
 
-            // Return confirmation with one response
-            return Ok(new
+                // Function to generate a unique file name (avoid duplicates)
+                string GetUniqueFileName(string originalName)
+                {
+                    var fileExt = Path.GetExtension(originalName);
+                    var fileNameWithoutExt = Path.GetFileNameWithoutExtension(originalName);
+                    return $"{fileNameWithoutExt}_{DateTime.UtcNow:yyyyMMddHHmmssfff}{fileExt}";
+                }
+
+                // Save first image
+                var uniqueFileName1 = GetUniqueFileName(file1.FileName);
+                var savePath1 = Path.Combine(uploadDir, uniqueFileName1);
+                
+                using (var fileStream1 = new FileStream(savePath1, FileMode.Create))
+                {
+                    await file1.CopyToAsync(fileStream1);
+                }
+
+                // Process second image (if provided)
+                string uniqueFileName2 = null;
+                if (file2 != null && file2.Length > 0)
+                {
+                    uniqueFileName2 = GetUniqueFileName(file2.FileName);
+                    var savePath2 = Path.Combine(uploadDir, uniqueFileName2);
+                    
+                    using (var fileStream2 = new FileStream(savePath2, FileMode.Create))
+                    {
+                        await file2.CopyToAsync(fileStream2);
+                    }
+                }
+
+                // Return confirmation with updated file names
+                return Ok(new
+                {
+                    Message = "Files uploaded successfully.",
+                    File1Name = uniqueFileName1,
+                    File2Name = uniqueFileName2, // Null if second image wasn't uploaded
+                    Prompt = prompt
+                });
+            }
+            catch (Exception ex)
             {
-                Message = "Files uploaded successfully.",
-                File1Name = fileName1,
-                File2Name = fileName2,  // This will be null if the second image wasn't uploaded
-                Prompt = prompt
-            });
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
 
 
         [HttpGet("get-latest-images")]

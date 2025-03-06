@@ -80,10 +80,6 @@ public class DownloadModel : PageModel
             return Page();
         }
 
-    
-
-
-
         Console.WriteLine("OnGetAsync is being executed");
         return Page();
     }
