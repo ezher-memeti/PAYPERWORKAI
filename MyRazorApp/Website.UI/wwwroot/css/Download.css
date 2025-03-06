@@ -180,6 +180,10 @@
     object-fit: cover;
 }
 
+.no-image {
+    background-color: black;
+}
+
 /* Button Styles */
 .download-btn,
 .generate-btn {

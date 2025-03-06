@@ -545,10 +545,6 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Id": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/wwwroot/uploads/Frame (2).svg",
-      "PackagePath": "staticwebassets/uploads/Frame (2).svg"
-    },
-    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MyRazorApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

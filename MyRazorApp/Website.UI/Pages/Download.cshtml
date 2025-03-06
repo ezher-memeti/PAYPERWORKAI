@@ -42,7 +42,14 @@
                 <span class="label">Images</span>
                 <div class="images-box">
                     <img src="@Model.Image1Url" alt="Uploaded Image 1" class="image-thumbnail">
-                    <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
+                    @if (string.IsNullOrEmpty(Model.Image2Url))
+                    {
+                        <div class="image-thumbnail no-image"></div>
+                    }
+                    else
+                    {
+                        <img src="@Model.Image2Url" alt="Uploaded Image 2" class="image-thumbnail">
+                    }
                 </div>
             </div>
 

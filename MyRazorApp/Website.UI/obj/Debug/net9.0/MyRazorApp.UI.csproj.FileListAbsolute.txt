@@ -1359,7 +1359,6 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI6/MyRazorApp/Website.UI/obj/Debug/net9.0/re
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/ev8yrdd9bj-fiutpcq65u.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/0wykbv4fvm-u4f9kuyz94.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/mcdsbxwrt8-n6xug7wqzi.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/937cq4crjy-d4lyc5h02r.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/3blglndbps-hq5n7ibngt.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/109l97elez-vdfsonlb1l.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/lievt5t7pk-61n19gt1b8.gz
@@ -1423,7 +1422,6 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI6/MyRazorApp/Website.UI/obj/Debug/net9.0/re
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/caumx28bez-muycvpuwrr.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/jicsuoe6t5-87fc7y1x7t.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/fs87k0sgoo-jfsiqqwiad.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/irzr0cuqtr-t91yh6zk1d.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/sion4j6e7f-z9wuol4gkx.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/5rz15td46b-z9wuol4gkx.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/staticwebassets.build.json
@@ -1442,3 +1440,4 @@ C:/Users/yasir/vscodeide/PAYPERWORKAI6/MyRazorApp/Website.UI/obj/Debug/net9.0/re
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/MyRazorApp.UI.genruntimeconfig.cache
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/ref/MyRazorApp.UI.dll
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/nc2uslp1tq-nxct3eoksk.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Debug/net9.0/compressed/937cq4crjy-x8alsydn82.gz

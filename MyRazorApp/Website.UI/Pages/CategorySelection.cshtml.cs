@@ -112,7 +112,7 @@ public class CategorySelectionModel : PageModel
         return Page();
     }
 
-    if (Image2 == null || Image2.Length == 0)
+    if (Image2 != null && Image2.Length == 0)
     {
         ModelState.AddModelError("", "Please select a tail image.");
         return Page();
@@ -121,6 +121,7 @@ public class CategorySelectionModel : PageModel
     var client = _httpClientFactory.CreateClient("server");
     string Image1Name = "";
     string Image2Name = "";
+    bool Image2Controller = false;
     
     using (var formData = new MultipartFormDataContent())
     {
@@ -129,10 +130,19 @@ public class CategorySelectionModel : PageModel
         fileStreamContent1.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
         formData.Add(fileStreamContent1, "file1", Image1.FileName);
 
-        // Add second image
-        var fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
-        fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
-        formData.Add(fileStreamContent2, "file2", Image2.FileName);
+        
+        // var fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
+        // fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        // formData.Add(fileStreamContent2, "file2", Image2.FileName);    
+
+        // Process the second image (optional)
+        StreamContent fileStreamContent2 = null;
+        if (Image2 != null)
+        {
+            fileStreamContent2 = new StreamContent(Image2.OpenReadStream());
+            fileStreamContent2.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg"); // Adjust if needed
+        }
+        
 
         // Add additional string parameters
         formData.Add(new StringContent(Prompt), "prompt");
@@ -154,8 +164,15 @@ public class CategorySelectionModel : PageModel
         Image2Name = result.file2Name;
         Console.WriteLine("IMAGE1 name: " + Image1Name);
         Console.WriteLine("IMAGE2 name: " + Image2Name);
+
+        //check if image2 is uploaded
+        
+        if(Image2Name != null){
+            Image2Controller = true;
+        }
     }
 
+    //Prompt that will be shown to the user
     string UIPrompt = $"{Prompt}.";
     
     // Build the dynamic prompt based on selected dropdowns
@@ -182,7 +199,8 @@ public class CategorySelectionModel : PageModel
             Prompt = prompt,
             negativePrompt = negativePrompt,
             duration = duration,
-            UIPrompt=UIPrompt
+            UIPrompt = UIPrompt,
+            Image2Controller = Image2Controller
         }
     ); 
 

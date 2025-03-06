@@ -9,10 +9,10 @@ public class HomeModel : PageModel
     public string Username { get; set; }
 
      [BindProperty]
-        public IFormFile Photo1 { get; set; }
+     public IFormFile Photo1 { get; set; }
         
-        [BindProperty]
-        public IFormFile Photo2 { get; set; }
+    [BindProperty]
+    public IFormFile? Photo2 { get; set; }
 
     public IActionResult OnGet()
     {

@@ -35,6 +35,9 @@ public class DownloadModel : PageModel
     [BindProperty(SupportsGet = true)]
     public string UIPrompt { get; set; }
 
+    [BindProperty(SupportsGet = true)]
+    public bool Image2Controller { get; set; }
+
     private readonly IHttpClientFactory _httpClientFactory;
 
     public DownloadModel(IHttpClientFactory httpClientFactory){
@@ -61,7 +64,11 @@ public class DownloadModel : PageModel
             var result = JObject.Parse(photoResponseJson);
 
             Image1Url = result["image1Url"]?.ToString();
-            Image2Url = result["image2Url"]?.ToString();
+            //if image 2 is not uploaded it = null
+            Image2Url = null;
+            if(Image2Controller){
+                Image2Url = result["image2Url"]?.ToString();
+            }
 
             Console.WriteLine("RESPONSE: " + photoResponseJson);
             Console.WriteLine("IMAGE1ULR: " + Image1Url);
