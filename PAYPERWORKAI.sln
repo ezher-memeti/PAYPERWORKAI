@@ -2,9 +2,9 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRazorApp.API", "MyRazorApp.API\MyRazorApp.API.csproj", "{422AE00A-C3F4-4F74-89B3-AAB978845A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRazorApp.API", "MyRazorApp/Website.API\MyRazorApp.API.csproj", "{422AE00A-C3F4-4F74-89B3-AAB978845A22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRazorApp.UI", "MyRazorApp.UI\MyRazorApp.UI.csproj", "{59754CF2-2040-41B1-B202-04CCE8F4CD6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRazorApp.UI", "MyRazorApp/Website.UI\MyRazorApp.UI.csproj", "{59754CF2-2040-41B1-B202-04CCE8F4CD6F}"
 EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution

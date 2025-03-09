@@ -481,6 +481,6 @@
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/937cq4crjy-x8alsydn82.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/109l97elez-8sn12gddwi.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/za9wrw83qb-qupfrhtdx5.gz
-/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/nc2uslp1tq-x8dksgx1ry.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/sion4j6e7f-bhfe4m09au.gz
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/5rz15td46b-bhfe4m09au.gz
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/obj/Release/net9.0/compressed/nc2uslp1tq-5505x8n726.gz
