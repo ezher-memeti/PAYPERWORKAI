@@ -2,6 +2,8 @@
 
     // Check if a video was already generated
     const storedVideoUrl = sessionStorage.getItem("finalVideoUrl");
+    sessionStorage.setItem("Category", Category);
+
     if (storedVideoUrl) {
         console.log("Using stored video URL:", storedVideoUrl);
         // 🔹 Step 3: Display Video
@@ -14,31 +16,32 @@
     console.log("Image 2:", image2FileName);
     console.log("NegativePrompt:", NegativePrompt);
     console.log("duration", Duration);
+    console.log("Category: ", Category)
 
     try {
-        // 🔹 Step 1: Start Video Generation
-        const response = await fetch("http://localhost:5123/api/video/generate", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                prompt: Prompt,
-                image: image1FileName,
-                imageTail: image2FileName,
-                negativePrompt: NegativePrompt,
-                cfgScale: 0.5,
-                mode: "pro",
-                duration: Duration
-            })
-        });
+        // // 🔹 Step 1: Start Video Generation
+        // const response = await fetch("http://localhost:5123/api/video/generate", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify({
+        //         prompt: Prompt,
+        //         image: image1FileName,
+        //         imageTail: image2FileName,
+        //         negativePrompt: NegativePrompt,
+        //         cfgScale: 0.5,
+        //         mode: "pro",
+        //         duration: Duration
+        //     })
+        // });
 
-        const result = await response.json();
-        const taskId = result?.data?.task_id;
-        console.log("Video Submit Response:", result);
+        // const result = await response.json();
+        // const taskId = result?.data?.task_id;
+        // console.log("Video Submit Response:", result);
 
-        if (!taskId) {
-            console.error("Failed to get task ID.");
-            return;
-        }
+        // if (!taskId) {
+        //     console.error("Failed to get task ID.");
+        //     return;
+        // }
 
         // 🔹 Step 2: Poll the API for Task Status
         let videoUrl = "";
@@ -47,7 +50,7 @@
         while (!taskSucceeded) {
             await new Promise(resolve => setTimeout(resolve, 30000)); // Wait 30 sec
 
-            const queryResponse = await fetch(`http://localhost:5123/api/video/query/${taskId}`);
+            const queryResponse = await fetch(`http://localhost:5123/api/video/query/ChAkX2fGy3kAAAAAAFXyag`);
             const queryResult = await queryResponse.json();
             console.log("Video Query Response:", queryResult);
 
@@ -166,11 +169,33 @@ document.querySelectorAll('form').forEach(function (form) {
 document.querySelectorAll('button').forEach(function (button) {
     button.addEventListener("click", function (event) {
         event.preventDefault();
+        const category = sessionStorage.getItem("Category") || Category;
+        window.location.href = `/CategorySelection?category=${encodeURIComponent(category)}`;
     });
 });
 
 // 🔹 Handle navigation manually without full page reload
 document.querySelector('.return-btn')?.addEventListener('click', function (event) {
     event.preventDefault();
-    window.location.href = '/CategorySelection';
+    const category = sessionStorage.getItem("Category") || Category;
+
+    sessionStorage.removeItem("finalVideoUrl");
+    sessionStorage.removeItem("downloadVideoUrl");
+    sessionStorage.removeItem("Category");
+
+    window.location.href = `/CategorySelection?category=${encodeURIComponent(category)}`;
+});
+
+document.getElementById('GenerateNewVideo')?.addEventListener('click', function (event) {
+    event.preventDefault();
+    const category = sessionStorage.getItem("Category") || Category;
+
+    sessionStorage.removeItem("finalVideoUrl");
+    sessionStorage.removeItem("downloadVideoUrl");
+    sessionStorage.removeItem("Category");
+
+
+    window.location.href = `/CategorySelection?category=${encodeURIComponent(category)}`;
+
+
 });
