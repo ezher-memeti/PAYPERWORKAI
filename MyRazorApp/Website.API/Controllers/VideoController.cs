@@ -31,7 +31,8 @@ namespace MyRazorApp.Website.API.VideoController
             {
 
                 string imagePath = Path.Combine(_uploadsFolder, request.Image);
-                string imageTailPath = Path.Combine(_uploadsFolder, request.ImageTail);
+                // string imageTailPath = Path.Combine(_uploadsFolder, request.ImageTail);
+                string imageTailPath;
                 
                 // Check if the file exists
                 if (!System.IO.File.Exists(imagePath))
@@ -52,13 +53,28 @@ namespace MyRazorApp.Website.API.VideoController
                     imageBase64 = Convert.ToBase64String(imageBytes);
                 }
 
-                string imageTailBase64;
-                    using (var image = System.IO.File.OpenRead(imageTailPath))
+                string imageTailBase64 = "";
+                if (!string.IsNullOrEmpty(request.ImageTail))
+                {
+                    imageTailPath = Path.Combine(_uploadsFolder, request.ImageTail);
+                    if (System.IO.File.Exists(imageTailPath))
                     {
-                        byte[] imageBytes = new byte[image.Length];
-                        await image.ReadAsync(imageBytes, 0, (int)image.Length);
-                        imageTailBase64 = Convert.ToBase64String(imageBytes);
+                        using (var image = System.IO.File.OpenRead(imageTailPath))
+                        {
+                            byte[] imageBytes = new byte[image.Length];
+                            await image.ReadAsync(imageBytes, 0, (int)image.Length);
+                            imageTailBase64 = Convert.ToBase64String(imageBytes);
+                        }
                     }
+                }
+
+                // string imageTailBase64;
+                //     using (var image = System.IO.File.OpenRead(imageTailPath))
+                //     {
+                //         byte[] imageBytes = new byte[image.Length];
+                //         await image.ReadAsync(imageBytes, 0, (int)image.Length);
+                //         imageTailBase64 = Convert.ToBase64String(imageBytes);
+                //     }
 
                 // Call the service to generate the video
                 string result = await _videoGenerationService.GenerateVideo(
@@ -180,7 +196,7 @@ namespace MyRazorApp.Website.API.VideoController
         
         public string Prompt { get; set; } = "";
         public string Image { get; set; } =""; // Only the filename, e.g., "myImage.jpg"
-        public string ImageTail { get; set; } ="";
+        public string? ImageTail { get; set; } ="";
         public string NegativePrompt { get; set; } ="";
         public float CfgScale { get; set; } = 0.5f; 
         public string Mode { get; set; } = "std";

@@ -44,3 +44,9 @@
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/obj/Release/net9.0/MyRazorApp.API.pdb
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/obj/Release/net9.0/MyRazorApp.API.genruntimeconfig.cache
 /Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/obj/Release/net9.0/ref/MyRazorApp.API.dll
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/web.config
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/appsettings.Development.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/appsettings.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/MyRazorApp.API.deps.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/MyRazorApp.API.runtimeconfig.json
+/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/bin/Release/net9.0/publish_output_api/MyRazorApp.API.staticwebassets.endpoints.json

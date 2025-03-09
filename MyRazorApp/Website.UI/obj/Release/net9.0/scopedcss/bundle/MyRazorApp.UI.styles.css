@@ -20,6 +20,7 @@ a[b-x08l9gs8sr] {
 }
 
 .container[b-x08l9gs8sr] {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -49,14 +50,21 @@ a[b-x08l9gs8sr] {
 }
 
 button.accept-policy[b-x08l9gs8sr] {
-  font-size: 1rem;
+  font-size: 12px;
   line-height: inherit;
 }
 
 .footer[b-x08l9gs8sr] {
+  font-size: 12px;
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  border-top: 1px solid white;
+}
+
+.footer-elements li[b-x08l9gs8sr] {
+  font-size: 12px;
+  font-weight: 100;
 }

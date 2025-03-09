@@ -4,7 +4,7 @@ namespace MyRazorApp.Website.API.Models{
         
         public string Prompt { get; set; } = "";
         public string Image { get; set; } =""; // Only the filename, e.g., "myImage.jpg"
-        public string ImageTail { get; set; } ="";
+        public string? ImageTail { get; set; } ="";
         public string NegativePrompt { get; set; } ="";
         public float CfgScale { get; set; } = 0.5f; 
         public string Mode { get; set; } = "std";

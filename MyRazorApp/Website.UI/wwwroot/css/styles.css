@@ -233,6 +233,7 @@ button.category-btn:hover {
     /* Allow them to wrap if the screen is too small */
 }
 
+
 /* File input and preview image styling */
 .square-img-upload input[type="file"] {
     position: absolute;

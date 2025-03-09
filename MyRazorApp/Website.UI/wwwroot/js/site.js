@@ -26,7 +26,7 @@
                 imageTail: image2FileName,
                 negativePrompt: NegativePrompt,
                 cfgScale: 0.5,
-                mode: "std",
+                mode: "pro",
                 duration: Duration
             })
         });
