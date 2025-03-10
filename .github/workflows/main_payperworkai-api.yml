@@ -33,32 +33,36 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    permissions:
-      id-token: write # This is required for requesting the JWT
-      contents: read # This is required for actions/checkout
+  runs-on: ubuntu-latest
+  needs: build
+  environment:
+    name: 'Production'
+    url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+  permissions:
+    id-token: write
+    contents: read
 
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v4
-        with:
-          name: .net-app
+  steps:
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v4
+      with:
+        name: .net-app
+        path: ./myapp  # Store it in a known folder
 
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E76ACC7F92F24E3AB689678895015E87 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E0D1C660A36E4077BD0643860431451F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E986EB7A3DE54692ABEDB55042AA3A6C }}
+    - name: List downloaded files (Debugging Step)
+      run: ls -R ./myapp  # Verify files exist
 
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v3
-        with:
-          app-name: 'PayperworkAI-API'
-          slot-name: 'Production'
-          package: '${{env.DOTNET_ROOT}}/myapp'  # This should match the artifact path you used earlier
+    - name: Login to Azure
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E76ACC7F92F24E3AB689678895015E87 }}
+        tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E0D1C660A36E4077BD0643860431451F }}
+        subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E986EB7A3DE54692ABEDB55042AA3A6C }}
+
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: 'PayperworkAI-API'
+        slot-name: 'Production'
+        package: './myapp'  # Match the correct download path
