@@ -24,16 +24,16 @@ jobs:
         run: dotnet build MyRazorApp/Website.API/MyRazorApp.API.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish MyRazorApp/Website.API/MyRazorApp.API.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish MyRazorApp/Website.API/MyRazorApp.API.csproj -c Release -o ./MyRazorApp/Website.API/publish_output_api  # Updated output directory
 
       - name: List contents of the publish folder (Debugging)
-        run: ls -R ${{env.DOTNET_ROOT}}/myapp  # Ensure the necessary files are present
+        run: ls -R ./MyRazorApp/Website.API/publish_output_api  # Ensure the necessary files are present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ./MyRazorApp/Website.API/publish_output_api  # Correct the path for the artifact
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,7 +52,7 @@ jobs:
           name: .net-app
 
       - name: List downloaded artifact contents (Debugging)
-        run: ls -R ./myapp  # Ensure the files are downloaded correctly
+        run: ls -R ./MyRazorApp/Website.API/publish_output_api  # Ensure the files are downloaded correctly
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -67,4 +67,4 @@ jobs:
         with:
           app-name: 'PayperworkAI-API'
           slot-name: 'Production'
-          package: './myapp'  # Use the correct path here
+          package: './MyRazorApp/Website.API/publish_output_api'  # Ensure this is the correct directory to deploy
