@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read # This is required for actions/checkout
+      contents: read #This is required for actions/checkout
 
     steps:
       - uses: actions/checkout@v4
@@ -23,17 +23,15 @@ jobs:
       - name: Build with dotnet
         run: dotnet build MyRazorApp/Website.API/MyRazorApp.API.csproj --configuration Release
 
-      - name: dotnet publish
-        run: dotnet publish MyRazorApp/Website.API/MyRazorApp.API.csproj -c Release -o ./MyRazorApp/Website.API/publish_output_api  # Updated output directory
 
-      - name: List contents of the publish folder (Debugging)
-        run: ls -R ./MyRazorApp/Website.API/publish_output_api  # Ensure the necessary files are present
+      - name: dotnet publish
+        run: dotnet publish MyRazorApp/Website.API/MyRazorApp.API.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ./MyRazorApp/Website.API/publish_output_api  # Correct the path for the artifact
+          path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: ubuntu-latest
@@ -42,18 +40,15 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT
-      contents: read # This is required for actions/checkout
+      id-token: write #This is required for requesting the JWT
+      contents: read #This is required for actions/checkout
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-
-      - name: List downloaded artifact contents (Debugging)
-        run: ls -R ./MyRazorApp/Website.API/publish_output_api  # Ensure the files are downloaded correctly
-
+      
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -67,4 +62,4 @@ jobs:
         with:
           app-name: 'PayperworkAI-API'
           slot-name: 'Production'
-          package: './MyRazorApp/Website.API/publish_output_api'  # Ensure this is the correct directory to deploy
+          package: MyRazorApp/Website.API/publish_output_api # Ensure this is the correct directory to deploy
