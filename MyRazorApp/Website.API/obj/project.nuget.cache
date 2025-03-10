@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V8HEcCATXyc=",
+  "dgSpecHash": "31SFO1ixRZk=",
   "success": true,
   "projectFilePath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.API/MyRazorApp.API.csproj",
   "expectedPackageFiles": [
@@ -9,15 +9,14 @@
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.0/microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.extensions/2.3.0/microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.features/2.3.0/microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.jsonpatch/8.0.0/microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.bcl.memory/9.0.0/microsoft.bcl.memory.9.0.0.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.jsonpatch/9.0.0/microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/9.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.9.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.identitymodel.abstractions/8.4.0/microsoft.identitymodel.abstractions.8.4.0.nupkg.sha512",
@@ -34,10 +33,7 @@
     "/Users/ezhermemeti/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/system.identitymodel.tokens.jwt/8.4.0/system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+    "/Users/ezhermemeti/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
