@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Cinematic", video: "/Assets/Categories/videos/cinematic.mp4" },
         { name: "Fashion", video: "/Assets/Categories/videos/Fashion.mp4" },
         { name: "Food", video: "/Assets/Categories/videos/Food.mp4" },
-        { name: "Architecture", video: "/Assets/Categories/videos/Architecture.mp4" },
+        { name: "Architecture", video: "/Assets/Categories/videos/architecture.mp4" },
         { name: "Science Fiction", video: "/Assets/Categories/videos/SciFi.mp4" },
         { name: "Personal Video", video: "/Assets/Categories/videos/Personal-Video.mp4" },
         { name: "Cars", video: "/Assets/Categories/videos/Car.mp4" }

@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5o27vp3pq9</Fingerprint>
-      <Integrity>Rfw4d2/o0v8YP9shgjZd2pR0a8ceGWtWDn9nvt5UK+Q=</Integrity>
+      <Fingerprint>7e4j1zyfm9</Fingerprint>
+      <Integrity>/4kbbgRZKocY359VN9tzkQwZFeOjEHcBgxgW6nFuzYU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Categories\videos\Architecture.mp4'))</OriginalItemSpec>
@@ -323,24 +323,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Categories\videos\Cinematic.mp4'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Categories\videos\Fashion.mp4'))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyRazorApp.UI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyRazorApp.UI</BasePath>
-      <RelativePath>Assets/Categories/videos/Fashion.mp4</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0nz8jbfykd</Fingerprint>
-      <Integrity>bNVQoElEwDs9P6dNcSPoax3//xW+Byt0G7IL5grlNfA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Categories\videos\Fashion.mp4'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Categories\videos\Food.mp4'))">
       <SourceType>Package</SourceType>
@@ -1326,8 +1308,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qupfrhtdx5</Fingerprint>
-      <Integrity>oh9HFKLeAEMRwlfi/ZXoEj+WBsjL8IzjLuJ+624yzrM=</Integrity>
+      <Fingerprint>oqt6mc4e9l</Fingerprint>
+      <Integrity>ECJJ6bW2hK0UPLjdInY6mza3Hd7Ztwwrswdtq+SQ25U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</OriginalItemSpec>

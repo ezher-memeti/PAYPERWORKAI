@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ychMSxXp+vE=",
+  "dgSpecHash": "QZ2kl/C0uFs=",
   "success": true,
   "projectFilePath": "/Users/ezhermemeti/Desktop/DATABASE/PAYPERWORKAI/MyRazorApp/Website.UI/MyRazorApp.UI.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,8 @@
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.0/microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.extensions/2.3.0/microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.http.features/2.3.0/microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.jsonpatch/8.0.0/microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
-    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.jsonpatch/9.0.0/microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512",
+    "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/9.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.9.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.0/microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/9.0.0/microsoft.aspnetcore.mvc.razor.runtimecompilation.9.0.0.nupkg.sha512",
     "/Users/ezhermemeti/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
